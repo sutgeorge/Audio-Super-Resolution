@@ -18,6 +18,7 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 ## Related papers that could be used as references
 
 ### Audio signals
+ - [Time-frequency Networks For Audio Super-Resolution](https://teckyianlim.me/audio-sr/res/3828.pdf)
  - [MidiNet: A Convolutional Generative Adversarial Network for Symbolic-domain Music Generation](https://arxiv.org/pdf/1703.10847.pdf)
  - [Adversarial Audio Super-Resolution With Unsupervised Feature Losses](https://openreview.net/pdf?id=H1eH4n09KX)
  - [On the evaluation of generative models in music](https://musicinformatics.gatech.edu/wp-content_nondefault/uploads/2018/11/postprint.pdf)

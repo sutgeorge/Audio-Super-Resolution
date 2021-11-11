@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.4)  11 NOV 2021 09:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.4)  11 NOV 2021 10:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -115,14 +115,263 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtranrubishbin=\box46
 )
 ** ATTENTION: Overriding command lockouts (line 2).
-(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count182
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count183
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count184
+\c@listtotal=\count185
+\c@listcount=\count186
+\c@liststart=\count187
+\c@liststop=\count188
+\c@citecount=\count189
+\c@citetotal=\count190
+\c@multicitecount=\count191
+\c@multicitetotal=\count192
+\c@instcount=\count193
+\c@maxnames=\count194
+\c@minnames=\count195
+\c@maxitems=\count196
+\c@minitems=\count197
+\c@citecounter=\count198
+\c@maxcitecounter=\count199
+\c@savedcitecounter=\count266
+\c@uniquelist=\count267
+\c@uniquename=\count268
+\c@refsection=\count269
+\c@refsegment=\count270
+\c@maxextratitle=\count271
+\c@maxextratitleyear=\count272
+\c@maxextraname=\count273
+\c@maxextradate=\count274
+\c@maxextraalpha=\count275
+\c@abbrvpenalty=\count276
+\c@highnamepenalty=\count277
+\c@lownamepenalty=\count278
+\c@maxparens=\count279
+\c@parenlevel=\count280
+\blx@tempcnta=\count281
+\blx@tempcntb=\count282
+\blx@tempcntc=\count283
+\blx@maxsection=\count284
+\blx@maxsegment@0=\count285
+\blx@notetype=\count286
+\blx@parenlevel@text=\count287
+\blx@parenlevel@foot=\count288
+\blx@sectionciteorder@0=\count289
+\blx@entrysetcounter=\count290
+\labelnumberwidth=\skip50
+\labelalphawidth=\skip51
+\biblabelsep=\skip52
+\bibitemsep=\skip53
+\bibnamesep=\skip54
+\bibinitsep=\skip55
+\bibparsep=\skip56
+\bibhang=\skip57
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language85
+\c@mincomprange=\count291
+\c@maxcomprange=\count292
+\c@mincompwidth=\count293
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count294
+\c@savedafterword=\count295
+\c@annotator=\count296
+\c@savedannotator=\count297
+\c@author=\count298
+\c@savedauthor=\count299
+\c@bookauthor=\count300
+\c@savedbookauthor=\count301
+\c@commentator=\count302
+\c@savedcommentator=\count303
+\c@editor=\count304
+\c@savededitor=\count305
+\c@editora=\count306
+\c@savededitora=\count307
+\c@editorb=\count308
+\c@savededitorb=\count309
+\c@editorc=\count310
+\c@savededitorc=\count311
+\c@foreword=\count312
+\c@savedforeword=\count313
+\c@holder=\count314
+\c@savedholder=\count315
+\c@introduction=\count316
+\c@savedintroduction=\count317
+\c@namea=\count318
+\c@savednamea=\count319
+\c@nameb=\count320
+\c@savednameb=\count321
+\c@namec=\count322
+\c@savednamec=\count323
+\c@translator=\count324
+\c@savedtranslator=\count325
+\c@shortauthor=\count326
+\c@savedshortauthor=\count327
+\c@shorteditor=\count328
+\c@savedshorteditor=\count329
+\c@labelname=\count330
+\c@savedlabelname=\count331
+\c@institution=\count332
+\c@savedinstitution=\count333
+\c@lista=\count334
+\c@savedlista=\count335
+\c@listb=\count336
+\c@savedlistb=\count337
+\c@listc=\count338
+\c@savedlistc=\count339
+\c@listd=\count340
+\c@savedlistd=\count341
+\c@liste=\count342
+\c@savedliste=\count343
+\c@listf=\count344
+\c@savedlistf=\count345
+\c@location=\count346
+\c@savedlocation=\count347
+\c@organization=\count348
+\c@savedorganization=\count349
+\c@origlocation=\count350
+\c@savedoriglocation=\count351
+\c@origpublisher=\count352
+\c@savedorigpublisher=\count353
+\c@publisher=\count354
+\c@savedpublisher=\count355
+\c@language=\count356
+\c@savedlanguage=\count357
+\c@origlanguage=\count358
+\c@savedoriglanguage=\count359
+\c@pageref=\count360
+\c@savedpageref=\count361
+\shorthandwidth=\skip58
+\shortjournalwidth=\skip59
+\shortserieswidth=\skip60
+\shorttitlewidth=\skip61
+\shortauthorwidth=\skip62
+\shorteditorwidth=\skip63
+\locallabelnumberwidth=\skip64
+\locallabelalphawidth=\skip65
+\localshorthandwidth=\skip66
+\localshortjournalwidth=\skip67
+\localshortserieswidth=\skip68
+\localshorttitlewidth=\skip69
+\localshortauthorwidth=\skip70
+\localshorteditorwidth=\skip71
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count362
+\c@textcitetotal=\count363
+\c@textcitemaxnames=\count364
+\c@biburlbigbreakpenalty=\count365
+\c@biburlbreakpenalty=\count366
+\c@biburlnumpenalty=\count367
+\c@biburlucpenalty=\count368
+\c@biburllcpenalty=\count369
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count370
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count371
+\c@bbx:relatedtotal=\count372
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip50
+\@mathmargin=\skip72
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -130,7 +379,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks16
 \ex@=\dimen158
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -140,13 +389,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count182
+\inf@bad=\count373
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count183
-\leftroot@=\count184
+\uproot@=\count374
+\leftroot@=\count375
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count185
-\DOTSCASE@=\count186
+\classnum@=\count376
+\DOTSCASE@=\count377
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -155,26 +404,26 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen160
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count187
-\c@MaxMatrixCols=\count188
-\dotsspace@=\muskip16
-\c@parentequation=\count189
-\dspbrk@lvl=\count190
-\tag@help=\toks16
-\row@=\count191
-\column@=\count192
-\maxfields@=\count193
-\andhelp@=\toks17
+\macc@depth=\count378
+\c@MaxMatrixCols=\count379
+\dotsspace@=\muskip21
+\c@parentequation=\count380
+\dspbrk@lvl=\count381
+\tag@help=\toks17
+\row@=\count382
+\column@=\count383
+\maxfields@=\count384
+\andhelp@=\toks18
 \eqnshift@=\dimen161
 \alignsep@=\dimen162
 \tagshift@=\dimen163
 \tagwidth@=\dimen164
 \totwidth@=\dimen165
 \lineht@=\dimen166
-\@envbody=\toks18
-\multlinegap=\skip51
-\multlinetaggap=\skip52
-\mathdisplay@stack=\toks19
+\@envbody=\toks19
+\multlinegap=\skip73
+\multlinetaggap=\skip74
+\mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
@@ -191,20 +440,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks20
-)
-\c@ALC@unique=\count194
-\c@ALC@line=\count195
-\c@ALC@rem=\count196
-\c@ALC@depth=\count197
-\ALC@tlm=\skip53
-\algorithmicindent=\skip54
+\c@ALC@unique=\count385
+\c@ALC@line=\count386
+\c@ALC@rem=\count387
+\c@ALC@depth=\count388
+\ALC@tlm=\skip75
+\algorithmicindent=\skip76
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -246,42 +487,111 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+\@quotelevel=\count389
+\@quotereset=\count390
+
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count198
+\l__kernel_color_stack_int=\count391
 \l__pdf_internal_box=\box49
 )
 (./project_paper.aux)
 \openout1 = `project_paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 -- Lines per column: 56 (exact).
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `project_paper.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'project_paper.bbl' found.
+
+(./project_paper.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                b1
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                b2
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                b3
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                b4
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                b5
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                b6
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                b7
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 13.
+Package biblatex Info: Reference segment=0 on input line 13.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count199
+\scratchcounter=\count392
 \scratchdimen=\dimen169
 \scratchbox=\box50
-\nofMPsegments=\count266
-\nofMParguments=\count267
+\nofMPsegments=\count393
+\nofMParguments=\count394
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count268
+\MPscratchCnt=\count395
 \MPscratchDim=\dimen170
-\MPnumerator=\count269
-\makeMPintoPDFobject=\count270
+\MPnumerator=\count396
+\makeMPintoPDFobject=\count397
 \everyMPtoPDFconversion=\toks22
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -292,20 +602,20 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 9
-3.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -313,19 +623,19 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 
 ]
-<fig1.png, id=14, 265.99374pt x 315.1775pt>
+<fig1.png, id=13, 265.99374pt x 315.1775pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 198.
+Package pdftex.def Info: fig1.png  used on input line 199.
 (pdftex.def)             Requested size: 265.99309pt x 315.17673pt.
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 2
-09.
+10.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 209.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 210.
  [2]
 
 ** Conference Paper **
@@ -338,27 +648,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3 <./fig1.png>] (./project_paper.aux) ) 
+[3 <./fig1.png>] (./project_paper.aux)
+Package logreq Info: Writing requests to 'project_paper.run.xml'.
+\openout1 = `project_paper.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3922 strings out of 481239
- 55880 string characters out of 5920377
- 304363 words of memory out of 5000000
- 19142 multiletter control sequences out of 15000+600000
+ 11202 strings out of 481239
+ 195853 string characters out of 5920377
+ 827115 words of memory out of 5000000
+ 26349 multiletter control sequences out of 15000+600000
  577438 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,11n,37p,952b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/en
-c/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
-es/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on project_paper.pdf (3 pages, 141345 bytes).
+ 35i,11n,45p,1177b,1575s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on project_paper.pdf (3 pages, 141720 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
