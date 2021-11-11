@@ -20,23 +20,26 @@
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
     \entry{audiosuperresusingneuralnets2017}{book}{}
-      \name{author}{1}{}{%
-        {{hash=18acb7588bd1093fc09ad435fb94e35a}{%
-           family={Kuleshov},
-           familyi={K\bibinitperiod},
-           given={Ermon},
-           giveni={E\bibinitperiod},
-           suffix={Enam},
-           suffixi={E\bibinitperiod}}}%
+      \name{author}{2}{}{%
+        {{hash=fd3141286a83a5c2aa6189f7494993bd}{%
+           family={Volodymyr\bibnamedelima Kuleshov},
+           familyi={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={S.\bibnamedelimi Zayd\bibnamedelima Enam},
+           giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=160929a7e6ceecdf3f7c9a13abd5ea35}{%
+           family={Ermon},
+           familyi={E\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{18acb7588bd1093fc09ad435fb94e35a}
-      \strng{fullhash}{18acb7588bd1093fc09ad435fb94e35a}
-      \strng{bibnamehash}{18acb7588bd1093fc09ad435fb94e35a}
-      \strng{authorbibnamehash}{18acb7588bd1093fc09ad435fb94e35a}
-      \strng{authornamehash}{18acb7588bd1093fc09ad435fb94e35a}
-      \strng{authorfullhash}{18acb7588bd1093fc09ad435fb94e35a}
-      \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \strng{namehash}{3297f2488934cce8f372f8c86e5fbaed}
+      \strng{fullhash}{3297f2488934cce8f372f8c86e5fbaed}
+      \strng{bibnamehash}{3297f2488934cce8f372f8c86e5fbaed}
+      \strng{authorbibnamehash}{3297f2488934cce8f372f8c86e5fbaed}
+      \strng{authornamehash}{3297f2488934cce8f372f8c86e5fbaed}
+      \strng{authorfullhash}{3297f2488934cce8f372f8c86e5fbaed}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Audio Super-Resolution Using Neural Nets}

@@ -2184,16 +2184,19 @@
   <bcf:section number="0">
     <bcf:citekey order="1">audiosuperresusingneuralnets2017</bcf:citekey>
     <bcf:citekey order="2">audiosuperresusingneuralnets2017</bcf:citekey>
-    <bcf:citekey order="3">b7</bcf:citekey>
-    <bcf:citekey order="4">b1</bcf:citekey>
-    <bcf:citekey order="5">b2</bcf:citekey>
-    <bcf:citekey order="6">b3</bcf:citekey>
-    <bcf:citekey order="7">b3</bcf:citekey>
-    <bcf:citekey order="8">b3</bcf:citekey>
-    <bcf:citekey order="9">b3</bcf:citekey>
-    <bcf:citekey order="10">b4</bcf:citekey>
-    <bcf:citekey order="11">b5</bcf:citekey>
-    <bcf:citekey order="12">b6</bcf:citekey>
+    <bcf:citekey order="3">srgan2017</bcf:citekey>
+    <bcf:citekey order="5">audiosuperresusingneuralnets2017</bcf:citekey>
+    <bcf:citekey order="6">audiosuperresusingneuralnets2017</bcf:citekey>
+    <bcf:citekey order="7">b7</bcf:citekey>
+    <bcf:citekey order="8">b1</bcf:citekey>
+    <bcf:citekey order="9">b2</bcf:citekey>
+    <bcf:citekey order="10">b3</bcf:citekey>
+    <bcf:citekey order="11">b3</bcf:citekey>
+    <bcf:citekey order="12">b3</bcf:citekey>
+    <bcf:citekey order="13">b3</bcf:citekey>
+    <bcf:citekey order="14">b4</bcf:citekey>
+    <bcf:citekey order="15">b5</bcf:citekey>
+    <bcf:citekey order="16">b6</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

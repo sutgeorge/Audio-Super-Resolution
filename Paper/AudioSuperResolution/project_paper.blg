@@ -1,25 +1,29 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'project_paper.blg'
-[55] biber:322> INFO - === Thu Nov 11, 2021, 10:32:30
+[54] biber:322> INFO - === Thu Nov 11, 2021, 11:03:50
 [65] Biber.pm:415> INFO - Reading 'project_paper.bcf'
-[112] Biber.pm:943> INFO - Found 8 citekeys in bib section 0
-[121] Biber.pm:4256> INFO - Processing section 0
+[112] Biber.pm:943> INFO - Found 9 citekeys in bib section 0
+[122] Biber.pm:4256> INFO - Processing section 0
 [122] Utils.pm:75> INFO - Globbing data source 'references.bib'
 [122] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[129] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[129] bibtex.pm:1653> INFO - LaTeX decoding ...
-[131] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[155] Utils.pm:293> WARN - I didn't find a database entry for 'b7' (section 0)
-[155] Utils.pm:293> WARN - I didn't find a database entry for 'b1' (section 0)
-[155] Utils.pm:293> WARN - I didn't find a database entry for 'b2' (section 0)
-[155] Utils.pm:293> WARN - I didn't find a database entry for 'b3' (section 0)
-[155] Utils.pm:293> WARN - I didn't find a database entry for 'b4' (section 0)
-[156] Utils.pm:293> WARN - I didn't find a database entry for 'b5' (section 0)
-[156] Utils.pm:293> WARN - I didn't find a database entry for 'b6' (section 0)
-[161] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[161] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[161] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[161] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[162] bbl.pm:652> INFO - Writing 'project_paper.bbl' with encoding 'UTF-8'
-[163] bbl.pm:755> INFO - Output to project_paper.bbl
-[163] Biber.pm:128> INFO - WARNINGS: 7
+[130] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[130] bibtex.pm:1653> INFO - LaTeX decoding ...
+[132] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[148] Utils.pm:309> ERROR - Name "Christian Ledig, Lucas Theis, Ferenc Huszar, Jose Caballero, Andrew Cunningham, Alejandro Acosta, Andrew Aitken, Alykhan Tejani, Johannes Totz, Zehan Wang, Wenzhe Shi" has too many commas, skipping entry 'srgan2017'
+[148] Utils.pm:293> WARN - Entry with key 'srgan2017' in section '0' is cited and found but not created (likely due to sourcemap)
+[149] Utils.pm:293> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[149] Utils.pm:293> WARN - I didn't find a database entry for 'b7' (section 0)
+[149] Utils.pm:293> WARN - I didn't find a database entry for 'b1' (section 0)
+[149] Utils.pm:293> WARN - I didn't find a database entry for 'b2' (section 0)
+[149] Utils.pm:293> WARN - I didn't find a database entry for 'b3' (section 0)
+[149] Utils.pm:293> WARN - I didn't find a database entry for 'b4' (section 0)
+[149] Utils.pm:293> WARN - I didn't find a database entry for 'b5' (section 0)
+[149] Utils.pm:293> WARN - I didn't find a database entry for 'b6' (section 0)
+[155] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[155] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[155] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[155] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[156] bbl.pm:652> INFO - Writing 'project_paper.bbl' with encoding 'UTF-8'
+[157] bbl.pm:755> INFO - Output to project_paper.bbl
+[157] Biber.pm:128> INFO - WARNINGS: 9
+[157] Biber.pm:132> INFO - ERRORS: 1
