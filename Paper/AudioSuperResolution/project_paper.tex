@@ -34,7 +34,7 @@ component, formatting, style, styling, insert
 \end{IEEEkeywords}
 
 \section{Introduction}
-Audio super-resolution refers to the task of increasing the sampling rate of an audio signal, usually by training a generative adversarial network to produce outputs whose sampling rate is higher by a specific factor (x2, x4, x6 etc.). In this paper, the goal is to investigate on whether a GAN can be trained with downsampled "low-resolution" audio data given as an input to produce "high-resolution" audio. The point of the model is to predict the samples which are missing from the audio signal, which in this case will consist of short, downsampled pieces of music.
+Audio super-resolution refers to the task of increasing the sampling rate of an audio signal, usually by training a generative adversarial network to produce outputs whose sampling rate is higher by a specific factor (x2, x4, x6 etc.). In this paper, the goal is to investigate on whether a GAN can be trained with low-resolution audio data given as an input to produce super-resolution audio (i.e a reconstructed high-resolution audio signal). The point of the model is to predict the samples which are missing from the audio signal, which in this case will consist of short, downsampled pieces of music collected from a publicly available API. The project has been inspired by image super-resolution and especially by time-series super-resolution, which in essence operates with the same methods for generating the training dataset by downsampling high-resolution data and making use of a generative model to reconstruct a signal.
 
 \section{Ease of Use}
 
