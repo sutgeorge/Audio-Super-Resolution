@@ -25,6 +25,9 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
  - [INCO-GAN: Variable-Length Music Generation Method Based
 on Inception Model-Based Conditional GAN](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj62YWr14_0AhXch_0HHf0dDckQFnoECAQQAQ&url=https%3A%2F%2Fwww.mdpi.com%2F2227-7390%2F9%2F4%2F387%2Fpdf&usg=AOvVaw1Bt1-i7aM7Fp8OmwRJ2GtX)
  - [WSRGlow: A Glow-based Waveform Generative Model for Audio Super-Resolution](https://arxiv.org/abs/2106.08507)
+ - [Self-Attention for Audio Super-Resolution](https://arxiv.org/pdf/2108.11637v1.pdf)
+ - [On Filter Generalization for Music Bandwidth Extension Using Deep Neural Networks](https://arxiv.org/pdf/2011.07274v2.pdf)
+ - [NU-Wave: A Diffusion Probabilistic Model for Neural Audio Upsampling](https://arxiv.org/pdf/2104.02321v2.pdf)
 
 ### Image super-resolution 
  - [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial
@@ -32,6 +35,13 @@ Network](https://arxiv.org/pdf/1609.04802.pdf)
 
 ### Time-series
  - [Imaging Time-Series to Improve Classification and Imputation](https://arxiv.org/pdf/1506.00327.pdf)
+
+### Articles
+ - [Using Deep-Learning to Reconstruct High-Resolution Audio](https://blog.insightdatascience.com/using-deep-learning-to-reconstruct-high-resolution-audio-29deee8b7ccd)
+
+## Possible uses
+ - increasing sample rate of music
+ - restoring audio from old movies
 
 
 ## To do:

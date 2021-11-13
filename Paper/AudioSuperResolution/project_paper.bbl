@@ -19,40 +19,165 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{audiosuperresusingneuralnets2017}{book}{}
-      \name{author}{2}{}{%
-        {{hash=fd3141286a83a5c2aa6189f7494993bd}{%
-           family={Volodymyr\bibnamedelima Kuleshov},
-           familyi={V\bibinitperiod\bibinitdelim K\bibinitperiod},
-           given={S.\bibnamedelimi Zayd\bibnamedelima Enam},
-           giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+    \entry{hu2020phaseaware}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=66a1a3003bcb29b3c558430761b0a5a5}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Shichao},
+           giveni={S\bibinitperiod}}}%
+        {{hash=edefadf2737f4300dd8a9daa07b31f02}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d06bc64610402e24b2e7979c53a7bc6b}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Beici},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1902bb728bf5f7e27e51c2b36a7b81f4}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Ethan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=87a356b09c9bb250816d35a6bfdffdfe}{%
+           family={Lui},
+           familyi={L\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e227a4fe77afcf267554598fa4d15eb}
+      \strng{fullhash}{6c8f5b0f6fa3d0217fb64e0bcf0fe479}
+      \strng{bibnamehash}{1e227a4fe77afcf267554598fa4d15eb}
+      \strng{authorbibnamehash}{1e227a4fe77afcf267554598fa4d15eb}
+      \strng{authornamehash}{1e227a4fe77afcf267554598fa4d15eb}
+      \strng{authorfullhash}{6c8f5b0f6fa3d0217fb64e0bcf0fe479}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{eess.AS}
+      \field{eprinttype}{arXiv}
+      \field{title}{Phase-aware music super-resolution using generative adversarial networks}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2010.04506
+      \endverb
+    \endentry
+    \entry{kuleshov2017audio}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=2e7fab79c30ca590cb9a99af964a32c9}{%
+           family={Kuleshov},
+           familyi={K\bibinitperiod},
+           given={Volodymyr},
+           giveni={V\bibinitperiod}}}%
+        {{hash=9fdf860180054bb380e42b68007fe8bd}{%
+           family={Enam},
+           familyi={E\bibinitperiod},
+           given={S.\bibnamedelimi Zayd},
+           giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
         {{hash=160929a7e6ceecdf3f7c9a13abd5ea35}{%
            family={Ermon},
            familyi={E\bibinitperiod},
            given={Stefano},
            giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{3297f2488934cce8f372f8c86e5fbaed}
-      \strng{fullhash}{3297f2488934cce8f372f8c86e5fbaed}
-      \strng{bibnamehash}{3297f2488934cce8f372f8c86e5fbaed}
-      \strng{authorbibnamehash}{3297f2488934cce8f372f8c86e5fbaed}
-      \strng{authornamehash}{3297f2488934cce8f372f8c86e5fbaed}
-      \strng{authorfullhash}{3297f2488934cce8f372f8c86e5fbaed}
-      \field{sortinit}{V}
-      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \strng{namehash}{4a29e791f5da1262ac24c74ccaf69600}
+      \strng{fullhash}{4a29e791f5da1262ac24c74ccaf69600}
+      \strng{bibnamehash}{4a29e791f5da1262ac24c74ccaf69600}
+      \strng{authorbibnamehash}{4a29e791f5da1262ac24c74ccaf69600}
+      \strng{authornamehash}{4a29e791f5da1262ac24c74ccaf69600}
+      \strng{authorfullhash}{4a29e791f5da1262ac24c74ccaf69600}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Audio Super-Resolution Using Neural Nets}
+      \field{eprintclass}{cs.SD}
+      \field{eprinttype}{arXiv}
+      \field{title}{Audio Super Resolution using Neural Networks}
       \field{year}{2017}
+      \verb{eprint}
+      \verb 1708.00853
+      \endverb
+    \endentry
+    \entry{ledig2017photorealistic}{misc}{}
+      \name{author}{11}{}{%
+        {{hash=dee0b959a6d8e56154a0c6381ea357af}{%
+           family={Ledig},
+           familyi={L\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5314c7da92c0dd8f017ad76fc7a24e02}{%
+           family={Theis},
+           familyi={T\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=55245b2fad09f9c922d0006d08f5b7f0}{%
+           family={Huszar},
+           familyi={H\bibinitperiod},
+           given={Ferenc},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3b9836d6278f3cf5dc21ab6e8c010ecb}{%
+           family={Caballero},
+           familyi={C\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c1b16923730dc02c52fbcfe531bad999}{%
+           family={Cunningham},
+           familyi={C\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=054b92db4c82434176e894d7fa6055ce}{%
+           family={Acosta},
+           familyi={A\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b9d6efcdb8c05d59bf4b6c18cba1518c}{%
+           family={Aitken},
+           familyi={A\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3feeeebee8583ecc208f7fb3e0a55068}{%
+           family={Tejani},
+           familyi={T\bibinitperiod},
+           given={Alykhan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1381c64db5234527e34e6f3b4977fe54}{%
+           family={Totz},
+           familyi={T\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f9c196f615b0bde00b8ef1e7cfaa8055}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zehan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=59260dd2ba392e626647c9ee8f8c6b35}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Wenzhe},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{fullhash}{99894a18ba4e3e9cb34c3b03d10f3ad7}
+      \strng{bibnamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authorbibnamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authornamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authorfullhash}{99894a18ba4e3e9cb34c3b03d10f3ad7}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1609.04802
+      \endverb
     \endentry
   \enddatalist
-  \missing{b1}
-  \missing{b2}
-  \missing{b3}
-  \missing{b4}
-  \missing{b5}
-  \missing{b6}
-  \missing{b7}
 \endrefsection
 \endinput
 
