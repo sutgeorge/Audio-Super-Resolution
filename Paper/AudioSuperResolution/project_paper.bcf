@@ -2184,10 +2184,10 @@
   <bcf:section number="0">
     <bcf:citekey order="1">kuleshov2017audio</bcf:citekey>
     <bcf:citekey order="2">kuleshov2017audio</bcf:citekey>
-    <bcf:citekey order="3">hu2020phaseaware</bcf:citekey>
-    <bcf:citekey order="4">hu2020phaseaware</bcf:citekey>
-    <bcf:citekey order="5">ledig2017photorealistic</bcf:citekey>
-    <bcf:citekey order="6">ledig2017photorealistic</bcf:citekey>
+    <bcf:citekey order="3">hetherly2017audio</bcf:citekey>
+    <bcf:citekey order="4">hetherly2017audio</bcf:citekey>
+    <bcf:citekey order="5">kuleshov2017audio</bcf:citekey>
+    <bcf:citekey order="6">kuleshov2017audio</bcf:citekey>
     <bcf:citekey order="7">kuleshov2017audio</bcf:citekey>
     <bcf:citekey order="8">kuleshov2017audio</bcf:citekey>
   </bcf:section>
