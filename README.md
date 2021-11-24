@@ -1,9 +1,9 @@
 # Audio Super-Resolution
-A project concerning the super-resolution of audio signals i.e. increasing the sample rate of an audio signal by using a generative adversarial network.
+A project concerning the super-resolution of audio signals i.e. increasing the sample rate of an audio signal by using a U-Net architecture and eventually a generative adversarial network like SRGAN (only as an experiment, considering that SRGAN hasn't been designed for this task).
 
 
 ## Dataset
-The dataset should be generated with the Python module [Spotipy](https://spotipy.readthedocs.io/en/2.19.0/) which works with the Spotify API.
+The dataset used will be VCTK, but if there's enough time to research more about super-resolution applied on music, the dataset could be either MagnaTagATune or it could be generated with the Python module [Spotipy](https://spotipy.readthedocs.io/en/2.19.0/) which works with the Spotify API.
 
 
 ## Converting a spectrogram to audio
@@ -13,11 +13,11 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ## Main references
  - [Audio Super-Resolution Using Neural Nets](https://arxiv.org/pdf/1708.00853v1.pdf)
- - [Phase-aware music super-resolution using generative adversarial networks](https://arxiv.org/pdf/2010.04506.pdf)
 
 ## Related papers that could be used as references
 
 ### Audio signals
+ - [Phase-aware music super-resolution using generative adversarial networks](https://arxiv.org/pdf/2010.04506.pdf)
  - [Time-frequency Networks For Audio Super-Resolution](https://teckyianlim.me/audio-sr/res/3828.pdf)
  - [MidiNet: A Convolutional Generative Adversarial Network for Symbolic-domain Music Generation](https://arxiv.org/pdf/1703.10847.pdf)
  - [Adversarial Audio Super-Resolution With Unsupervised Feature Losses](https://openreview.net/pdf?id=H1eH4n09KX)
@@ -41,6 +41,7 @@ Network](https://arxiv.org/pdf/1609.04802.pdf)
 
 ## Possible uses
  - increasing sample rate of music
+ - voice-over-IP
  - restoring audio from old movies
 
 
@@ -49,5 +50,8 @@ Network](https://arxiv.org/pdf/1609.04802.pdf)
 
  - [X] Find a way to gather data
 
- - [ ] Write the introduction section 
+ - [X] Write the introduction section 
+
+ - [ ] Write the data generator scripts (obtaining the low-res/high-res pairs of audio clips)
+
  
