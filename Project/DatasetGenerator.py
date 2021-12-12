@@ -7,7 +7,7 @@ import soundfile as sf
 import random
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
-VCTK_DATASET_SAMPLING_RATE = 44100
+VCTK_DATASET_SAMPLING_RATE = 48000
 RESAMPLING_FACTOR = 4
 DOWNSAMPLED_RATE = int(VCTK_DATASET_SAMPLING_RATE / RESAMPLING_FACTOR)
 
@@ -28,7 +28,7 @@ class DatasetGenerator:
         print(dataset_information)
         number_of_samples = len(dataset['train'])
         sample_index = 0
-        chosen_sample_index = 10 # random.randint(0, number_of_samples)
+        chosen_sample_index = 1 # random.randint(0, number_of_samples)
         print("Data samples: {}".format(number_of_samples))
         print("Chosen demo sample index: {}".format(chosen_sample_index))
 
@@ -40,6 +40,8 @@ class DatasetGenerator:
                 print("Text read by the person: {}".format(text))
                 downsampled_array = librosa.resample(
                     sample_array, VCTK_DATASET_SAMPLING_RATE, DOWNSAMPLED_RATE)
+                sample_array = np.int16(sample_array)
+                downsampled_array = np.int16(downsampled_array)
                 sf.write(
                     'normal_audio_{}.wav'.format(text), sample_array, VCTK_DATASET_SAMPLING_RATE)
                 sf.write(
@@ -47,5 +49,6 @@ class DatasetGenerator:
 
                 print("Audio sample length: {}".format(len(sample_array)))
                 print("Downsampled audio length: {}".format(len(downsampled_array)))
+                break
 
             sample_index += 1

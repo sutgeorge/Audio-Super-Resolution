@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7c792ff1-254d-46e9-a061-7ec221eb4a8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatasetGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/DatasetGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downsampled_audio_b&quot;I just couldn't believe what had happened.&quot;.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/normal_audio_b&quot;I just couldn't believe what had happened.&quot;.wav" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +33,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="21NAf3zHga8fsBxx3OphO338BNs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,6 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -82,6 +89,12 @@
       <workItem from="1637771275776" duration="20014000" />
       <workItem from="1637832642827" duration="9621000" />
       <workItem from="1637844577920" duration="2917000" />
+      <workItem from="1638894974949" duration="10000" />
+      <workItem from="1638989048417" duration="776000" />
+      <workItem from="1639034681272" duration="2446000" />
+      <workItem from="1639046284848" duration="1479000" />
+      <workItem from="1639130892355" duration="35000" />
+      <workItem from="1639308336071" duration="3611000" />
     </task>
     <servers />
   </component>
@@ -89,6 +102,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Project$main.coverage" NAME="main Coverage Results" MODIFIED="1637843226445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$main.coverage" NAME="main Coverage Results" MODIFIED="1639313258351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
