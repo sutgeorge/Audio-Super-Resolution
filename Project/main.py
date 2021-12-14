@@ -1,7 +1,7 @@
-from DatasetGenerator import DatasetGenerator
+from DatasetGeneratorMock import DatasetGeneratorMock
 
 def main():
-    dataset_generator = DatasetGenerator()
+    dataset_generator = DatasetGeneratorMock()
     dataset_generator.downsampling_demo()
 
 main()
