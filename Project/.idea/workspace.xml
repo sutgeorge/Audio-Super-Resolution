@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7c792ff1-254d-46e9-a061-7ec221eb4a8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatasetGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/DatasetGeneratorMock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downsampled_audio_b&quot;She also defended the Lord Chancellor's existing powers.&quot;.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/normal_audio_b&quot;She also defended the Lord Chancellor's existing powers.&quot;.wav" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +96,8 @@
       <workItem from="1639368650366" duration="221000" />
       <workItem from="1639376397793" duration="2754000" />
       <workItem from="1639391338831" duration="5675000" />
-      <workItem from="1639452540609" duration="1037000" />
+      <workItem from="1639452540609" duration="13044000" />
+      <workItem from="1639474488189" duration="1484000" />
     </task>
     <servers />
   </component>
@@ -118,6 +116,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Project$main.coverage" NAME="main Coverage Results" MODIFIED="1639453335473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$main.coverage" NAME="main Coverage Results" MODIFIED="1639475728539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
