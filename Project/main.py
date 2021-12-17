@@ -1,11 +1,11 @@
-from DatasetGeneratorMock import DatasetGeneratorMock
+from DatasetGenerator import DatasetGenerator
 from model import create_model
 
 
 def main():
     #model = create_model(4)
-    dataset_generator = DatasetGeneratorMock()
-    dataset_generator.decimate_and_interpolate()
+    dataset_generator = DatasetGenerator()
+    dataset_generator.generate_dataset()
 
 
 main()
