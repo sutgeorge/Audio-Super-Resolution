@@ -1,25 +1,22 @@
 import tensorflow as tf
 from tensorflow.keras.layers import Conv1D, PReLU, Dropout, Lambda, concatenate, Input, add
 from tensorflow.keras.models import Model
+from constants import *
 
 
 def subpixel1d(input_shape, r, color=False):
-    def _phase_shift(I, r=2):
-        x = tf.transpose(I, [2, 1, 0])
-        x = tf.batch_to_space(x, [r], [[0, 0]])
-        x = tf.transpose(x, [2, 1, 0])
-        return x
-
     def subpixel_shape(input_shape):
         dims = [input_shape[0],
                 input_shape[1] * r,
-                int(input_shape[2] / (r))]
+                int(input_shape[2] / r)]
         output_shape = tuple(dims)
         return output_shape
 
     def subpixel(x):
-        x_upsampled = _phase_shift(x, r)
-        return x_upsampled
+        x = tf.transpose(x, [2, 1, 0])
+        x = tf.batch_to_space(x, [r], [[0, 0]])
+        x = tf.transpose(x, [2, 1, 0])
+        return x
 
     return Lambda(subpixel, output_shape=subpixel_shape)
 
@@ -39,8 +36,8 @@ def create_upsampling_block(x, filters, kernel_size, corresponding_downsample_bl
     return x
 
 
-def create_model(number_of_blocks, input_size=256):
-    x = Input((input_size, 1))
+def create_model(number_of_blocks, batch_size=BATCH_SIZE, input_size=SAMPLE_DIMENSION):
+    x = Input((batch_size, input_size, 1))
     x_input = x
     downsampling_blocks = []
 
