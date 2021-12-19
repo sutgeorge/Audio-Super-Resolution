@@ -3,12 +3,15 @@ from model import create_model
 from constants import *
 from DatasetGenerator import DatasetGenerator
 import numpy as np
-from metrics import signal_to_noise_ratio
+from metrics import signal_to_noise_ratio, normalised_root_mean_squared_error
+# tf.config.experimental_run_functions_eagerly(True)
 
 model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
 model.summary()
-model.compile(loss='mse', optimizer='Adam', metrics=[signal_to_noise_ratio])
-(input_data_files, target_data_files), (input_validation_files, target_validation_files), _ = DatasetGenerator.split_list_of_files()
+model.compile(loss=normalised_root_mean_squared_error, optimizer='Adam',
+              metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
+(input_data_files, target_data_files), (input_validation_files, target_validation_files), _ \
+    = DatasetGenerator.split_list_of_files()
 input_data, target_data, input_validation_data, target_validation_data = [], [], [], []
 
 print("Loading the .npy files...")
