@@ -4,7 +4,8 @@ from constants import *
 from DatasetGenerator import DatasetGenerator
 import numpy as np
 from metrics import signal_to_noise_ratio, normalised_root_mean_squared_error
-# tf.config.experimental_run_functions_eagerly(True)
+from tensorflow.keras.callbacks import ModelCheckpoint
+import os
 
 model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
 model.summary()
@@ -39,8 +40,13 @@ print("Input validation data: {}".format(input_validation_data.shape))
 print("Target validation data: {}".format(target_validation_data.shape))
 print("Training started...")
 
+checkpoint_callback = ModelCheckpoint(filepath=CHECKPOINT_PATH,
+                                      save_weights_only=True,
+                                      verbose=True)
+
 model.fit(input_data, target_data,
           batch_size=BATCH_SIZE,
           epochs=1,
           validation_data=(input_validation_data, target_validation_data),
+          callbacks=[checkpoint_callback],
           verbose=True)

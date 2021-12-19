@@ -1,7 +1,5 @@
-import numpy as np
 from tensorflow.keras import backend as K
 import tensorflow as tf
-from tensorflow.keras.metrics import RootMeanSquaredError
 
 
 def signal_to_noise_ratio(actual_signal, predicted_signal):
