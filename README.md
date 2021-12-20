@@ -28,6 +28,12 @@ on Inception Model-Based Conditional GAN](https://www.google.com/url?sa=t&rct=j&
  - [Self-Attention for Audio Super-Resolution](https://arxiv.org/pdf/2108.11637v1.pdf)
  - [On Filter Generalization for Music Bandwidth Extension Using Deep Neural Networks](https://arxiv.org/pdf/2011.07274v2.pdf)
  - [NU-Wave: A Diffusion Probabilistic Model for Neural Audio Upsampling](https://arxiv.org/pdf/2104.02321v2.pdf)
+ - [Temporal FiLM: Capturing Long-Range Sequence Dependencies with Feature-Wise Modulation](https://arxiv.org/pdf/1909.06628v3.pdf)
+ - [Learning Continuous Representation of Audio for Arbitrary Scale Super Resolution](https://arxiv.org/pdf/2111.00195.pdf)
+ - [An investigation of pre-upsampling generative modelling and Generative Adversarial Networks in audio super resolution](https://arxiv.org/pdf/2109.14994.pdf)
+ - [Adversarial Training for Speech Super-Resolution](https://www.researchgate.net/publication/332201260_Adversarial_Training_for_Speech_Super-Resolution)
+ - [Super-Resolution for Music Signals Using Generative Adversarial Networks](https://www.researchgate.net/publication/354040914_Super-Resolution_for_Music_Signals_Using_Generative_Adversarial_Networks)
+
 
 ### Image super-resolution 
  - [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial
@@ -36,14 +42,23 @@ Network](https://arxiv.org/pdf/1609.04802.pdf)
 ### Time-series
  - [Imaging Time-Series to Improve Classification and Imputation](https://arxiv.org/pdf/1506.00327.pdf)
 
+### Generative models
+ - [Wasserstein GANs](https://arxiv.org/pdf/1701.07875.pdf)
+ - [STGAN: A Unified Selective Transfer Network
+for Arbitrary Image Attribute Editing](https://arxiv.org/pdf/1904.09709.pdf)
+
+### Possibly useful
+ - [Audio Super-Resolution Using Analysis Dictionary
+Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015.pdf)
+
 ### Articles
  - [Using Deep-Learning to Reconstruct High-Resolution Audio](https://blog.insightdatascience.com/using-deep-learning-to-reconstruct-high-resolution-audio-29deee8b7ccd)
 
 ## Possible uses
  - increasing sample rate of music
  - voice-over-IP
- - restoring audio from old movies
-
+ - improved speech recognition
+ - remastering audio from old movies
 
 ## To do:
  - [X] Find and read 2-3 online tutorials or research papers that solve the same problem. 
@@ -52,6 +67,7 @@ Network](https://arxiv.org/pdf/1609.04802.pdf)
 
  - [X] Write the introduction section 
 
- - [ ] Write the data generator scripts (obtaining the low-res/high-res pairs of audio clips)
+ - [X] Write the data generator scripts (obtaining the low-res/high-res pairs of audio clips)
 
+ - [X] Write the training/testing scripts
  
