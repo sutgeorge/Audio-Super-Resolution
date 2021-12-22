@@ -1,0 +1,209 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{kuleshov2017audio}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=2e7fab79c30ca590cb9a99af964a32c9}{%
+           family={Kuleshov},
+           familyi={K\bibinitperiod},
+           given={Volodymyr},
+           giveni={V\bibinitperiod}}}%
+        {{hash=9fdf860180054bb380e42b68007fe8bd}{%
+           family={Enam},
+           familyi={E\bibinitperiod},
+           given={S.\bibnamedelimi Zayd},
+           giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=160929a7e6ceecdf3f7c9a13abd5ea35}{%
+           family={Ermon},
+           familyi={E\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a29e791f5da1262ac24c74ccaf69600}
+      \strng{fullhash}{4a29e791f5da1262ac24c74ccaf69600}
+      \strng{bibnamehash}{4a29e791f5da1262ac24c74ccaf69600}
+      \strng{authorbibnamehash}{4a29e791f5da1262ac24c74ccaf69600}
+      \strng{authornamehash}{4a29e791f5da1262ac24c74ccaf69600}
+      \strng{authorfullhash}{4a29e791f5da1262ac24c74ccaf69600}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.SD}
+      \field{eprinttype}{arXiv}
+      \field{title}{Audio Super Resolution using Neural Networks}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1708.00853
+      \endverb
+    \endentry
+    \entry{ledig2017photorealistic}{misc}{}
+      \name{author}{11}{}{%
+        {{hash=dee0b959a6d8e56154a0c6381ea357af}{%
+           family={Ledig},
+           familyi={L\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5314c7da92c0dd8f017ad76fc7a24e02}{%
+           family={Theis},
+           familyi={T\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=55245b2fad09f9c922d0006d08f5b7f0}{%
+           family={Huszar},
+           familyi={H\bibinitperiod},
+           given={Ferenc},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3b9836d6278f3cf5dc21ab6e8c010ecb}{%
+           family={Caballero},
+           familyi={C\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c1b16923730dc02c52fbcfe531bad999}{%
+           family={Cunningham},
+           familyi={C\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=054b92db4c82434176e894d7fa6055ce}{%
+           family={Acosta},
+           familyi={A\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b9d6efcdb8c05d59bf4b6c18cba1518c}{%
+           family={Aitken},
+           familyi={A\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3feeeebee8583ecc208f7fb3e0a55068}{%
+           family={Tejani},
+           familyi={T\bibinitperiod},
+           given={Alykhan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1381c64db5234527e34e6f3b4977fe54}{%
+           family={Totz},
+           familyi={T\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f9c196f615b0bde00b8ef1e7cfaa8055}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zehan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=59260dd2ba392e626647c9ee8f8c6b35}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Wenzhe},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{fullhash}{99894a18ba4e3e9cb34c3b03d10f3ad7}
+      \strng{bibnamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authorbibnamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authornamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authorfullhash}{99894a18ba4e3e9cb34c3b03d10f3ad7}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1609.04802
+      \endverb
+    \endentry
+    \entry{lietal2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f8507f682a2ae766e90753979edd2b66}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Kehuang},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1a0371e0a62b44d30cc131417169cf7c}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zhen},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=90812e2aac1e3fb393dfd7663b4eefe1}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=26883d806fdb5a0cdc88e4154acb0773}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Chin-Hui},
+           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
+      \strng{fullhash}{28cf2989feaea6e0c4ef47aec80c1f43}
+      \strng{bibnamehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
+      \strng{authorbibnamehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
+      \strng{authornamehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
+      \strng{authorfullhash}{28cf2989feaea6e0c4ef47aec80c1f43}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dnn-based speech bandwidth expansion and its application to adding high-frequency missing features for automatic speech recognition of narrowband speech}
+      \field{year}{2015}
+    \endentry
+    \entry{ronneberger2015unet}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=8e46da9de9e53ea5d37089897d69cdd9}{%
+           family={Ronneberger},
+           familyi={R\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod}}}%
+        {{hash=168e84ce3582cbc6bac5e2ebc3ef8442}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b452a32296958371572717940f900884}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{fullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{bibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authorbibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authornamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authorfullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{U-Net: Convolutional Networks for Biomedical Image Segmentation}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1505.04597
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

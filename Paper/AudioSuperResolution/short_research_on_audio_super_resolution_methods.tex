@@ -1,0 +1,53 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{A short research on audio super-resolution methods \\
+}
+
+\author{
+\IEEEauthorblockN{Şut George-Mihai}
+\IEEEauthorblockA{\textit{3rd-year undergraduate, Computer Science} \\
+\textit{Babeş-Bolyai University}\\
+georgesut@yahoo.com}
+}
+
+\maketitle
+
+\begin{abstract}
+Audio super-resolution refers to the task of increasing the sample rate of an audio signal by training a neural net to produce upsampled outputs whose sampling rate is larger by a specific factor.
+\end{abstract}
+
+\section{Introduction}
+	In this short paper, the goal is to investigate the methods discovered so far for audio super-resolution, a topic mainly inspired by image super-resolution (\textcite{ledig2017photorealistic}) and especially by time-series super-resolution. Removing aliasing from an audio signal can be solved by audio super-resolution which is supposed to reconstruct a signal by inserting more predicted samples.
+\\
+
+\section{Audio super-resolution using neural nets, 2017}
+
+	One of the leading deep learning-oriented works on this topic is \textcite{kuleshov2017audio}, which introduces a convolutional neural net architecture similar to U-Net's bottleneck structure (\textcite{ronneberger2015unet}), whose goal is to upsample an audio signal as a solution to the well-known signal processing problem of bandwidth extension (i.e expanding the frequency range of a signal). The model is trained on data containing high-resolution audio clips mapped to their low-resolution counterparts obtained by downsampling clips from VCTK, a popular speech dataset, and the PIANO dataset. 
+
+	There are essentially two reference points to which the problem solved by \textcite{kuleshov2017audio} is compared: cubic spline interpolation and the dense neural network described in \textcite{lietal2015}, which targets the prediction of the phase and magnitude of the high frequencies in the signal. The loss function used is the mean-squared error, computing the sum of the squared differences between the low- and high-resolution signals, while the main metric that is highlighted is the signal-to-noise $ SNR $ ratio, often used in the signal processing domain. 
+
+	The evaluation results show that the model outperforms the other referenced tasks, a fact which is also underlined by the MUSHRA test of individuals' ratings.
+
+	Concluding the study, some of the impediments of the model are the lack of diverse data and the requirement for solid computing power, leading to results for a music dataset that are weaker than the cubic spline interpolation method.
+	
+
+		
+\printbibliography
+\vspace{12pt}
+
+\end{document}
+
+
