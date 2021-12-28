@@ -33,6 +33,7 @@ on Inception Model-Based Conditional GAN](https://www.google.com/url?sa=t&rct=j&
  - [An investigation of pre-upsampling generative modelling and Generative Adversarial Networks in audio super resolution](https://arxiv.org/pdf/2109.14994.pdf)
  - [Adversarial Training for Speech Super-Resolution](https://www.researchgate.net/publication/332201260_Adversarial_Training_for_Speech_Super-Resolution)
  - [Super-Resolution for Music Signals Using Generative Adversarial Networks](https://www.researchgate.net/publication/354040914_Super-Resolution_for_Music_Signals_Using_Generative_Adversarial_Networks)
+ - [Bandwidth extension on raw audio via generative adversarial networks](https://arxiv.org/pdf/1903.09027.pdf)
 
 
 ### Image super-resolution 
