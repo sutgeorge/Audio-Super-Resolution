@@ -1,17 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'short_research_on_audio_super_resolution_methods.blg'
-[56] biber:322> INFO - === Wed Dec 22, 2021, 11:50:07
-[67] Biber.pm:415> INFO - Reading 'short_research_on_audio_super_resolution_methods.bcf'
-[115] Biber.pm:943> INFO - Found 4 citekeys in bib section 0
-[125] Biber.pm:4256> INFO - Processing section 0
-[126] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[126] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[134] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[135] bibtex.pm:1653> INFO - LaTeX decoding ...
-[146] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[195] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[195] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[195] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[195] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[199] bbl.pm:652> INFO - Writing 'short_research_on_audio_super_resolution_methods.bbl' with encoding 'UTF-8'
-[202] bbl.pm:755> INFO - Output to short_research_on_audio_super_resolution_methods.bbl
+[59] biber:322> INFO - === Wed Dec 29, 2021, 18:42:22
+[70] Biber.pm:415> INFO - Reading 'short_research_on_audio_super_resolution_methods.bcf'
+[122] Biber.pm:943> INFO - Found 5 citekeys in bib section 0
+[132] Biber.pm:4256> INFO - Processing section 0
+[132] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[132] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[140] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[140] bibtex.pm:1653> INFO - LaTeX decoding ...
+[152] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[206] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[206] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[206] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[206] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[214] bbl.pm:652> INFO - Writing 'short_research_on_audio_super_resolution_methods.bbl' with encoding 'UTF-8'
+[217] bbl.pm:755> INFO - Output to short_research_on_audio_super_resolution_methods.bbl

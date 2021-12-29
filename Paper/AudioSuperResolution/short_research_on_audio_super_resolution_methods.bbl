@@ -167,6 +167,59 @@
       \field{title}{Dnn-based speech bandwidth expansion and its application to adding high-frequency missing features for automatic speech recognition of narrowband speech}
       \field{year}{2015}
     \endentry
+    \entry{timefrequencynetworks2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2352a9b7fc97a1cfc91d6dfd8539c218}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Teck},
+           giveni={T\bibinitperiod},
+           suffix={Yian},
+           suffixi={Y\bibinitperiod}}}%
+        {{hash=53b85b47b32486923f598b78fc90443f}{%
+           family={Yeh},
+           familyi={Y\bibinitperiod},
+           given={Raymond},
+           giveni={R\bibinitperiod},
+           suffix={A.},
+           suffixi={A\bibinitperiod}}}%
+        {{hash=de2a4a6ef6641242f10ba42f67ecb549}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yijia},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2e4e67138bdbacb934d756ca1495c627}{%
+           family={Do},
+           familyi={D\bibinitperiod},
+           given={Minh},
+           giveni={M\bibinitperiod},
+           suffix={N.},
+           suffixi={N\bibinitperiod}}}%
+        {{hash=0dbee011dcb9eff4a8a05c0d5b93f0f6}{%
+           family={Hasegawa-Johnson},
+           familyi={H\bibinithyphendelim J\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9676b3fa04490c8044d28791f9a2a2e}
+      \strng{fullhash}{e747960dede6789bda02c3a96e197d98}
+      \strng{bibnamehash}{d9676b3fa04490c8044d28791f9a2a2e}
+      \strng{authorbibnamehash}{d9676b3fa04490c8044d28791f9a2a2e}
+      \strng{authornamehash}{d9676b3fa04490c8044d28791f9a2a2e}
+      \strng{authorfullhash}{e747960dede6789bda02c3a96e197d98}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Time-frequency networks for audio super-resolution}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://teckyianlim.me/audio-sr/res/3828.pdf
+      \endverb
+      \verb{url}
+      \verb https://teckyianlim.me/audio-sr/res/3828.pdf
+      \endverb
+    \endentry
     \entry{ronneberger2015unet}{misc}{}
       \name{author}{3}{}{%
         {{hash=8e46da9de9e53ea5d37089897d69cdd9}{%

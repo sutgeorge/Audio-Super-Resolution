@@ -41,10 +41,19 @@ Audio super-resolution refers to the task of increasing the sample rate of an au
 
 	The evaluation results show that the model outperforms the other referenced tasks, a fact which is also underlined by the MUSHRA test of individuals' ratings.
 
-	Concluding the study, some of the impediments of the model are the lack of diverse data and the requirement for solid computing power, leading to results for a music dataset that are weaker than the cubic spline interpolation method.
-	
+	Concluding the study, some of the impediments of the model are the lack of diverse data and the requirement for solid computing power, leading to results for a music dataset that are weaker than the cubic spline interpolation baseline.
 
-		
+\section{Time-Frequency Networks for Audio Super-Resolution, 2018}
+
+	A significant improvement for the previous paper (\textcite{kuleshov2017audio}) is introduced in \textcite{timefrequencynetworks2018}, in which both the time-domain and the frequency-domain representation of the audio signal are used for the super-resolution task. 
+
+	The proposed model is composed out of an encoder-decoder which contains two branches for processing the frequency-domain representation of the signal and the time-domain representation. 
+	Low-resolution inputs to the network are upsampled by using bicubic interpolation, then on the frequency-domain branch, the spectral replicator receives the spectrograms whose lower frequencies are replicated by a specific factor, followed by the AudioUNet (\textcite{kuleshov2017audio}) and the concatenation layer. The branch associated with the time domain also uses an AudioUNet. Before creating the output, a spectral fusion layer merges the reconstructed high-resolution audio signal and its spectral magnitude into the final result.
+
+	To train the network, the L2 loss is used together with regularization. Just as in \textcite{kuleshov2017audio}, the VCTK dataset is resampled and split into the 88/6/6 proportions for the training, testing and validation datasets. The evaluation metrics are also identical to the ones found in the previously mentioned paper.
+	
+	Finally, the obtained results surpass the ones found in \textcite{kuleshov2017audio} proving that the inclusion of both of the signal representations inside the network is an approach which, as underlined in the ablation tests, leads to slight refinements of the model.   
+	
 \printbibliography
 \vspace{12pt}
 
