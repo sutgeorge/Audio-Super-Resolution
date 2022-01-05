@@ -44,6 +44,8 @@ print("Input validation data: {}".format(input_validation_data.shape))
 print("Target validation data: {}".format(target_validation_data.shape))
 print("Number of input batches: {}".format(number_of_input_batches))
 print("Number of validation batches: {}".format(number_of_validation_batches))
+print("Number of input data files: {}".format(len(input_data_files)))  #112388
+print("Number of validation data files: {}".format(len(input_validation_files)))  #6242
 print("Training started...")
 
 checkpoint_callback = ModelCheckpoint(filepath=CHECKPOINT_PATH,
@@ -52,7 +54,7 @@ checkpoint_callback = ModelCheckpoint(filepath=CHECKPOINT_PATH,
 
 model.fit(input_data, target_data,
           batch_size=BATCH_SIZE,
-          epochs=1,
+          epochs=NUMBER_OF_EPOCHS,
           validation_data=(input_validation_data, target_validation_data),
           callbacks=[checkpoint_callback],
           verbose=True)

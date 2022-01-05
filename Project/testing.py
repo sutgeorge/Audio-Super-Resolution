@@ -7,7 +7,8 @@ from metrics import *
 _, _, (input_test_files, target_test_files) = DatasetGenerator.split_list_of_files()
 input_test_data, target_test_data = [], []
 
-for index in range(0, BATCH_SIZE*100):
+number_of_testing_batches = int(NUMBER_OF_TESTING_TENSORS / BATCH_SIZE)
+for index in range(0, number_of_testing_batches*BATCH_SIZE):
     input_test_data.append(np.load("preprocessed_dataset/low_res/" + input_test_files[index]))
     target_test_data.append(np.load("preprocessed_dataset/high_res/" + target_test_files[index]))
     print("Loaded validation sample {}".format(index))
