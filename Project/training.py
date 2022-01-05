@@ -17,12 +17,16 @@ input_data, target_data, input_validation_data, target_validation_data = [], [],
 
 print("Loading the .npy files...")
 
-for index in range(0, BATCH_SIZE*NUMBER_OF_BATCHES):
+print("Number of input data files: {}".format(len(input_data_files)))
+print("Number of target data files: {}".format(len(target_data_files)))
+number_of_input_batches = int(NUMBER_OF_TRAINING_TENSORS / BATCH_SIZE)
+for index in range(0, number_of_input_batches*BATCH_SIZE):
     input_data.append(np.load("preprocessed_dataset/low_res/" + input_data_files[index]))
     target_data.append(np.load("preprocessed_dataset/high_res/" + target_data_files[index]))
     print("Loaded training sample {}".format(index))
 
-for index in range(0, 100):
+number_of_validation_batches = int(NUMBER_OF_VALIDATION_TENSORS / BATCH_SIZE)
+for index in range(0, number_of_validation_batches*BATCH_SIZE):
     input_validation_data.append(np.load("preprocessed_dataset/low_res/" + input_validation_files[index]))
     target_validation_data.append(np.load("preprocessed_dataset/high_res/" + target_validation_files[index]))
     print("Loaded validation sample {}".format(index))
@@ -38,6 +42,8 @@ print("Input data: {}".format(input_data.shape))
 print("Target data: {}".format(target_data.shape))
 print("Input validation data: {}".format(input_validation_data.shape))
 print("Target validation data: {}".format(target_validation_data.shape))
+print("Number of input batches: {}".format(number_of_input_batches))
+print("Number of validation batches: {}".format(number_of_validation_batches))
 print("Training started...")
 
 checkpoint_callback = ModelCheckpoint(filepath=CHECKPOINT_PATH,

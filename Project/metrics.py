@@ -1,5 +1,6 @@
 from tensorflow.keras import backend as K
 import tensorflow as tf
+from sklearn.metrics import mean_squared_error
 
 
 def signal_to_noise_ratio(actual_signal, predicted_signal):
@@ -11,6 +12,4 @@ def signal_to_noise_ratio(actual_signal, predicted_signal):
 
 
 def normalised_root_mean_squared_error(actual_signal, predicted_signal):
-    minimum_value = tf.reduce_min(actual_signal)
-    maximum_value = tf.reduce_max(actual_signal)
-    return tf.sqrt(tf.losses.mean_squared_error(actual_signal, predicted_signal)) / (maximum_value - minimum_value)
+    return tf.sqrt(tf.losses.mean_squared_error(actual_signal, predicted_signal)) / tf.math.reduce_mean(actual_signal)
