@@ -15,7 +15,11 @@ for index in range(0, number_of_testing_batches*BATCH_SIZE):
 
 model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
 model.load_weights(CHECKPOINT_PATH)
+"""
 model.compile(loss=normalised_root_mean_squared_error, optimizer='Adam',
+              metrics=[signal_to_noise_ratio])
+"""
+model.compile(loss="mean_squared_error", optimizer='Adam',
               metrics=[signal_to_noise_ratio])
 
 input_test_data = np.array(input_test_data)
@@ -24,7 +28,7 @@ target_test_data = np.array(target_test_data)
 print("Input test data shape: {}".format(input_test_data.shape))
 print("Target test data shape: {}".format(target_test_data.shape))
 
-nrmse_loss, snr_metric = model.evaluate(input_test_data, target_test_data, batch_size=BATCH_SIZE, verbose=True)
+mse_loss, snr_metric = model.evaluate(input_test_data, target_test_data, batch_size=BATCH_SIZE, verbose=True)
 
-print("NRMSE: {}".format(nrmse_loss))
+print("MSE: {}".format(mse_loss))
 print("SNR: {}".format(snr_metric))

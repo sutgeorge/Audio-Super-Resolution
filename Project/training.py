@@ -5,11 +5,16 @@ from DatasetGenerator import DatasetGenerator
 import numpy as np
 from metrics import signal_to_noise_ratio, normalised_root_mean_squared_error
 from tensorflow.keras.callbacks import ModelCheckpoint
+import matplotlib.pyplot as plt
 import os
 
 model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
 model.summary()
-model.compile(loss=normalised_root_mean_squared_error, optimizer='Adam',
+"""
+model.compile(loss=normalised_root_mean_squared_error, optimizer='RMSprop',
+              metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
+"""
+model.compile(loss="mean_squared_error", optimizer='Adam',
               metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
 (input_data_files, target_data_files), (input_validation_files, target_validation_files), _ \
     = DatasetGenerator.split_list_of_files()
@@ -52,9 +57,25 @@ checkpoint_callback = ModelCheckpoint(filepath=CHECKPOINT_PATH,
                                       save_weights_only=True,
                                       verbose=True)
 
-model.fit(input_data, target_data,
-          batch_size=BATCH_SIZE,
-          epochs=NUMBER_OF_EPOCHS,
-          validation_data=(input_validation_data, target_validation_data),
-          callbacks=[checkpoint_callback],
-          verbose=True)
+history = model.fit(input_data, target_data,
+                    batch_size=BATCH_SIZE,
+                    epochs=NUMBER_OF_EPOCHS,
+                    validation_data=(input_validation_data, target_validation_data),
+                    callbacks=[checkpoint_callback],
+                    verbose=True)
+
+print("model.fit history:")
+print(list(history.history.keys()))
+print(history.history)
+
+fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(10, 6), sharex=True)
+# fig.tight_layout(pad=2.0)
+axes[0].plot(history.history['loss'], color=(255/255.0, 0/255.0, 0/255.0))
+axes[0].set_title("Training loss")
+axes[0].set_xlabel("Epoch")
+axes[0].set_ylabel("Loss (MSE)")
+axes[1].plot(history.history['val_loss'], color=(0/255.0, 255/255.0, 0/255.0))
+axes[1].set_title("Validation loss")
+axes[1].set_xlabel("Epoch")
+plt.savefig("training_validation_plot.png", bbox_inches='tight')
+plt.show()
