@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c792ff1-254d-46e9-a061-7ec221eb4a8e" name="Changes" comment="">
+    <list default="true" id="6d36769a-56cc-4b90-8e7a-9ff63c68819a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.bbl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.bcf" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.bcf" afterDir="false" />
@@ -14,13 +14,6 @@
       <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/references.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatasetGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/DatasetGenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoints/checkpoint.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoints/checkpoint.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/training.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_validation_plot.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,28 +21,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="21NAf3zHga8fsBxx3OphO338BNs" />
+  <component name="ProjectId" id="23n7xHWR8oZ1jI3Qks5whY4exrX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -59,37 +34,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.testing">
-    <configuration name="generate_dataset" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_dataset.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,77 +59,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="training" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.testing" />
-        <item itemvalue="Python.training" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7c792ff1-254d-46e9-a061-7ec221eb4a8e" name="Changes" comment="" />
-      <created>1637771270594</created>
+      <changelist id="6d36769a-56cc-4b90-8e7a-9ff63c68819a" name="Changes" comment="" />
+      <created>1642358251459</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637771270594</updated>
-      <workItem from="1637771275776" duration="20014000" />
-      <workItem from="1637832642827" duration="9621000" />
-      <workItem from="1637844577920" duration="2917000" />
-      <workItem from="1638894974949" duration="10000" />
-      <workItem from="1638989048417" duration="776000" />
-      <workItem from="1639034681272" duration="2446000" />
-      <workItem from="1639046284848" duration="1479000" />
-      <workItem from="1639130892355" duration="35000" />
-      <workItem from="1639308336071" duration="9650000" />
-      <workItem from="1639368650366" duration="221000" />
-      <workItem from="1639376397793" duration="2754000" />
-      <workItem from="1639391338831" duration="5675000" />
-      <workItem from="1639452540609" duration="13044000" />
-      <workItem from="1639474488189" duration="2477000" />
-      <workItem from="1639479726219" duration="2089000" />
-      <workItem from="1639493370650" duration="52000" />
-      <workItem from="1639497655617" duration="666000" />
-      <workItem from="1639553025042" duration="98000" />
-      <workItem from="1639662105634" duration="1799000" />
-      <workItem from="1639718467496" duration="9216000" />
-      <workItem from="1639740818752" duration="6575000" />
-      <workItem from="1639748441143" duration="165000" />
-      <workItem from="1639756950085" duration="11127000" />
-      <workItem from="1639815778246" duration="11071000" />
-      <workItem from="1639839556448" duration="8910000" />
-      <workItem from="1639895857864" duration="8503000" />
-      <workItem from="1639910578658" duration="11457000" />
-      <workItem from="1640864020222" duration="2419000" />
-      <workItem from="1641315918660" duration="4825000" />
-      <workItem from="1641367484135" duration="14000" />
-      <workItem from="1641390711927" duration="1689000" />
-      <workItem from="1641395455952" duration="5465000" />
-      <workItem from="1642173984890" duration="4591000" />
-      <workItem from="1642324563128" duration="21099000" />
+      <updated>1642358251459</updated>
+      <workItem from="1642358259761" duration="141000" />
     </task>
     <servers />
   </component>
@@ -202,7 +93,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Project$generate_dataset.coverage" NAME="generate_dataset Coverage Results" MODIFIED="1639758591752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Project$testing.coverage" NAME="testing Coverage Results" MODIFIED="1642356364534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$testing.coverage" NAME="testing Coverage Results" MODIFIED="1642356593537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$training.coverage" NAME="training Coverage Results" MODIFIED="1642348598119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$main.coverage" NAME="main Coverage Results" MODIFIED="1639743631982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

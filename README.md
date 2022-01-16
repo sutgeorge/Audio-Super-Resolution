@@ -81,6 +81,11 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
  - [X] create plots with the training and validation loss
  - [X] train 100 epochs
  - [X] train 1000 epochs
- - [ ] read more about why the loss approaches the nan value during training when using NRMSE as the loss function
-
+ - [X] read more about why the loss approaches the nan value during training when using NRMSE as the loss function
+	 - [-] usually, it is either because of an exploding gradient or a vanishing gradient (in my case, I accidentally used NRMSE as a loss function instead of using it only as a metric, the number was so small that Keras displayed the loss as being "nan")
+	 - [-] relevant StackOverflow post: https://stackoverflow.com/questions/37232782/nan-loss-when-training-regression-network 
+ - [X] adjust the data split to use all of the data for training/validation/testing
+ - [X] increase the number of training tensors (if impossible, generate more data) and train 100 epochs
+ - [ ] increase the batch size
+ - [ ] try to use the RMSE as a loss function instead of the MSE
 

@@ -34,20 +34,44 @@ Audio super-resolution refers to the task of increasing the sampling rate of an 
 
 	The process of audio super-resolution using neural nets (also called bandwidth extension) is explained in \textcite{kuleshov2017audio} which states that the goal is to reconstruct a low-resolution signal with a sample rate $ R_{1} $ into a high-resolution signal with a greater sample rate $ R_{2} $. The paper clarifies the concept by giving a simple example of a 4 KHz signal being upsampled through audio super-resolution to a 16 KHz signal by a factor of 4. The audio signal is encoded into a spectrogram which displays the frequencies contained in the signal and the sound intensity in decibels. 
 
-	For the model, a bottleneck-type architecture has been used, similar to the U-Net architecture, containing residual connections between pairs of layer $ b $ and layer $ B - b + 1 $, where $ B $ is the number of layers in the network. The first part of the network is responsible for downsampling data, whereas the second part upsamples it. The experiment conducted on the MagnaTagATune dataset in \textcite{kuleshov2017audio} shows that applying this architecture on music leads to poor results which could be improved with a larger and more computationally demanding model, so the model is mostly suitable only for vocal recordings, meaning that it can be useful in voice-over-IP applications.
+	A bottleneck-type architecture has been used, similar to the U-Net architecture, containing residual connections between pairs of layer $ b $ and layer $ B - b + 1 $, where $ B $ is the number of layers in the network. The first part of the network is responsible for downsampling data, whereas the second part upsamples it.
 
-	The second article (\textcite{hetherly2017audio}) mentions that the presented implementation has only been trained on 10 epochs, hence the mediocre outputs, compared to the 400-epoch model described by \textcite{kuleshov2017audio}
+	The model is trained on data containing high-resolution audio clips mapped to their low-resolution counterparts obtained by downsampling clips from VCTK, a popular speech dataset, and the PIANO dataset.
 
-	
+	There are essentially two reference points to which the problem solved by \textcite{kuleshov2017audio} is compared: cubic spline interpolation and the dense neural network described in \textcite{lietal2015}, which targets the prediction of the phase and magnitude of the high frequencies in the signal. The loss function used is the mean-squared error, computing the sum of the squared differences between the low- and high-resolution signals, while the main metric that is highlighted is the signal-to-noise $ SNR $ ratio, often used in the signal processing domain.
+
 \begin{figure}[htbp]
 		\centerline{\includegraphics[width=9.5cm,height=5.5cm]{spectrogram.png}}
 \caption{Example of a spectrogram where time is shown on the $ x $ axis, the frequencies out of which the signal is composed are shown on the $ y $ axis and their corresponding magnitudes in decibels are displayed in the colorbar on the right.}
 \label{fig}
 \end{figure}
 
+	The evaluation results in the paper show that the model outperforms the other referenced tasks, a fact which is also underlined by the MUSHRA test of individuals' ratings. The experiment conducted on the MagnaTagATune dataset in \textcite{kuleshov2017audio} shows that applying this architecture on music leads to poor results which could be improved with a larger and more computationally demanding model, so the model is mostly suitable only for vocal recordings, meaning that it can be useful in voice-over-IP applications.
+
+	Concluding the study, some of the impediments of the model are the lack of diverse data and the requirement for solid computing power, leading to results for a music dataset that are weaker than the cubic spline interpolation baseline.
+
+	The second article (\textcite{hetherly2017audio}) mentions that the presented implementation has only been trained on 10 epochs, hence the mediocre outputs, compared to the 400-epoch model described by \textcite{kuleshov2017audio}
 
 
-		
+\section{Implementation}
+
+The loss function used is the mean-squared error, while the metrics are the signal-to-noise ratio and the normalised root mean-squared error (which doesn't highlight any important characteristics about the result). The optimizer is Adam. Another important detail is the number of residual blocks used in the model, which is 6.
+
+The network has been trained in two ways:
+
+\begin{enumerate}
+  \item 100 epochs, with batches of size 16
+  \item 1000 epochs, with batches of size 16 
+  \item 100 epochs, with batches of size 16 on all of the data, with a 90/5/5 split
+\end{enumerate}
+
+\section{Results}
+
+Compared to each of the methods, the third one seems to achieve the best performance so far, based on the MSE and SNR output (25940.2207, 22.95). The plots containing the evolution of the loss values during training and validation are located in the current directory.
+
+\section{Conclusion}
+The network needs a lot of improvement, so the next steps would be to use more training epochs and more generated data, while also refining hyperparameters. Afterwards, a spectrogram-based solution could possibly surpass the performance of the current model. 
+
 \printbibliography
 \vspace{12pt}
 

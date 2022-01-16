@@ -1,17 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'project_paper.blg'
-[57] biber:322> INFO - === Sun Nov 14, 2021, 06:56:31
-[67] Biber.pm:415> INFO - Reading 'project_paper.bcf'
-[116] Biber.pm:943> INFO - Found 2 citekeys in bib section 0
-[125] Biber.pm:4256> INFO - Processing section 0
-[126] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[126] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[134] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[134] bibtex.pm:1653> INFO - LaTeX decoding ...
-[141] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[167] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[167] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[167] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[167] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[172] bbl.pm:652> INFO - Writing 'project_paper.bbl' with encoding 'UTF-8'
-[173] bbl.pm:755> INFO - Output to project_paper.bbl
+[164] biber:322> INFO - === Sun Jan 16, 2022, 19:27:11
+[185] Biber.pm:415> INFO - Reading 'project_paper.bcf'
+[291] Biber.pm:943> INFO - Found 3 citekeys in bib section 0
+[312] Biber.pm:4256> INFO - Processing section 0
+[313] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[313] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[328] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[330] bibtex.pm:1653> INFO - LaTeX decoding ...
+[356] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[421] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[421] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[421] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[421] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[448] bbl.pm:652> INFO - Writing 'project_paper.bbl' with encoding 'UTF-8'
+[451] bbl.pm:755> INFO - Output to project_paper.bbl

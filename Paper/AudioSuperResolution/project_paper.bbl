@@ -82,6 +82,42 @@
       \verb 1708.00853
       \endverb
     \endentry
+    \entry{lietal2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f8507f682a2ae766e90753979edd2b66}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Kehuang},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1a0371e0a62b44d30cc131417169cf7c}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zhen},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=90812e2aac1e3fb393dfd7663b4eefe1}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=26883d806fdb5a0cdc88e4154acb0773}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Chin-Hui},
+           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
+      \strng{fullhash}{28cf2989feaea6e0c4ef47aec80c1f43}
+      \strng{bibnamehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
+      \strng{authorbibnamehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
+      \strng{authornamehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
+      \strng{authorfullhash}{28cf2989feaea6e0c4ef47aec80c1f43}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dnn-based speech bandwidth expansion and its application to adding high-frequency missing features for automatic speech recognition of narrowband speech}
+      \field{year}{2015}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
