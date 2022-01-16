@@ -49,8 +49,8 @@ print("Input validation data: {}".format(input_validation_data.shape))
 print("Target validation data: {}".format(target_validation_data.shape))
 print("Number of input batches: {}".format(number_of_input_batches))
 print("Number of validation batches: {}".format(number_of_validation_batches))
-print("Number of input data files: {}".format(len(input_data_files)))  #112388
-print("Number of validation data files: {}".format(len(input_validation_files)))  #6242
+print("Number of input data files: {}".format(len(input_data_files)))
+print("Number of validation data files: {}".format(len(input_validation_files)))
 print("Training started...")
 
 checkpoint_callback = ModelCheckpoint(filepath=CHECKPOINT_PATH,
@@ -68,15 +68,31 @@ print("model.fit history:")
 print(list(history.history.keys()))
 print(history.history)
 
-fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(12, 6), sharex=True)
+fig, axes = plt.subplots(nrows=2, ncols=3, figsize=(24, 16), sharex=True)
 # fig.tight_layout(pad=2.0)
-axes[0].plot(history.history['loss'], color=(255/255.0, 0/255.0, 0/255.0))
-axes[0].set_title("Training loss")
-axes[0].set_xlabel("Epoch")
-axes[0].set_ylabel("Loss (MSE)")
-axes[1].plot(history.history['val_loss'], color=(0/255.0, 255/255.0, 0/255.0))
-axes[1].set_title("Validation loss")
-axes[1].set_xlabel("Epoch")
+axes[0, 0].plot(history.history['loss'], color=(255/255.0, 0/255.0, 0/255.0))
+axes[0, 0].set_xlabel("Epoch")
+axes[0, 0].set_ylabel("Loss (MSE)")
+axes[1, 0].plot(history.history['val_loss'], color=(125/255.0, 0/255.0, 0/255.0))
+axes[1, 0].set_xlabel("Epoch")
+axes[1, 0].set_ylabel("Loss (MSE)")
+
+axes[0, 1].plot(history.history['normalised_root_mean_squared_error'], color=(0/255.0, 255/255.0, 0/255.0))
+axes[0, 1].set_title("Training")
+axes[0, 1].set_xlabel("Epoch")
+axes[0, 1].set_ylabel("NRMSE")
+axes[1, 1].plot(history.history['val_normalised_root_mean_squared_error'], color=(0/255.0, 125/255.0, 0/255.0))
+axes[1, 1].set_title("Validation")
+axes[1, 1].set_xlabel("Epoch")
+axes[1, 1].set_ylabel("NRMSE")
+
+axes[0, 2].plot(history.history['signal_to_noise_ratio'], color=(0/255.0, 0/255.0, 255/255.0))
+axes[0, 2].set_xlabel("Epoch")
+axes[0, 2].set_ylabel("SNR")
+axes[1, 2].plot(history.history['val_signal_to_noise_ratio'], color=(0/255.0, 0/255.0, 125/255.0))
+axes[1, 2].set_xlabel("Epoch")
+axes[1, 2].set_ylabel("SNR")
+
 plot_title = "Resampling factor: " + str(RESAMPLING_FACTOR) \
                       + "; Overlap: " + str(OVERLAP) \
                       + "; Sample dimension: " + str(SAMPLE_DIMENSION) \
@@ -84,6 +100,6 @@ plot_title = "Resampling factor: " + str(RESAMPLING_FACTOR) \
                       + "; Batch size: " + str(BATCH_SIZE) \
                       + "; Data split: " + str(NUMBER_OF_TRAINING_TENSORS) + "/" + str(NUMBER_OF_VALIDATION_TENSORS) + "/" + str(NUMBER_OF_TESTING_TENSORS)
 plot_filename = plot_title.replace(" ", "_").replace(":", "").replace(";", "").replace("/", "_")
-fig.suptitle(plot_title)
+fig.suptitle(plot_title, fontsize="medium")
 plt.savefig("training_validation_plot_" + plot_filename.lower() + ".png")
 plt.show()

@@ -39,17 +39,15 @@ class DatasetGenerator:
             sample_index += 1
 
     @staticmethod
-    def split_list_of_files(training_percentage=0.9):
+    def split_list_of_files():
         low_resolution_files = np.sort(np.array(os.listdir("preprocessed_dataset/low_res")))
         high_resolution_files = np.sort(np.array(os.listdir("preprocessed_dataset/high_res")))
-        final_index_for_training_chunk = int(len(low_resolution_files) * training_percentage) - 1
-        validation_chunk_size = int(len(low_resolution_files) * (1 - training_percentage) / 2) - 1
-        training_set = (low_resolution_files[:final_index_for_training_chunk],
-                        high_resolution_files[:final_index_for_training_chunk])
-        validation_set = (low_resolution_files[final_index_for_training_chunk:final_index_for_training_chunk+validation_chunk_size],
-                          high_resolution_files[final_index_for_training_chunk:final_index_for_training_chunk+validation_chunk_size])
-        testing_set = (low_resolution_files[final_index_for_training_chunk+validation_chunk_size:],
-                       high_resolution_files[final_index_for_training_chunk+validation_chunk_size:])
+        training_set = (low_resolution_files[:NUMBER_OF_TRAINING_TENSORS],
+                        high_resolution_files[:NUMBER_OF_TRAINING_TENSORS])
+        validation_set = (low_resolution_files[NUMBER_OF_TRAINING_TENSORS:NUMBER_OF_TRAINING_TENSORS+NUMBER_OF_VALIDATION_TENSORS],
+                          high_resolution_files[NUMBER_OF_TRAINING_TENSORS:NUMBER_OF_TRAINING_TENSORS+NUMBER_OF_VALIDATION_TENSORS])
+        testing_set = (low_resolution_files[NUMBER_OF_TRAINING_TENSORS+NUMBER_OF_VALIDATION_TENSORS:],
+                       high_resolution_files[NUMBER_OF_TRAINING_TENSORS+NUMBER_OF_VALIDATION_TENSORS:])
         return training_set, validation_set, testing_set
 
     @staticmethod

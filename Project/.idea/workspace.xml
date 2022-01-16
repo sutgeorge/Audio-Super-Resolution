@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c792ff1-254d-46e9-a061-7ec221eb4a8e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.bbl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.bcf" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.bcf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.blg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/project_paper.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Paper/AudioSuperResolution/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../Paper/AudioSuperResolution/references.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoints/checkpoint.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/checkpoint.ckpt.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoints/checkpoint.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoints/checkpoint.ckpt.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatasetGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/DatasetGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/checkpoint.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoints/checkpoint.ckpt.index" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_validation_plot.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +67,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.training">
+  <component name="RunManager" selected="Python.testing">
     <configuration name="generate_dataset" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,8 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.training" />
         <item itemvalue="Python.testing" />
+        <item itemvalue="Python.training" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +182,7 @@
       <workItem from="1641390711927" duration="1689000" />
       <workItem from="1641395455952" duration="5465000" />
       <workItem from="1642173984890" duration="4591000" />
-      <workItem from="1642324563128" duration="11987000" />
+      <workItem from="1642324563128" duration="21099000" />
     </task>
     <servers />
   </component>
@@ -192,8 +202,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Project$generate_dataset.coverage" NAME="generate_dataset Coverage Results" MODIFIED="1639758591752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Project$testing.coverage" NAME="testing Coverage Results" MODIFIED="1642334693238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Project$training.coverage" NAME="training Coverage Results" MODIFIED="1642335194086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$testing.coverage" NAME="testing Coverage Results" MODIFIED="1642356364534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$training.coverage" NAME="training Coverage Results" MODIFIED="1642348598119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$main.coverage" NAME="main Coverage Results" MODIFIED="1639743631982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
