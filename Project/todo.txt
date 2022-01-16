@@ -1,0 +1,4 @@
+X train with the NRMSE normalized by the mean with more epochs --> NRMSE loss approaces nan value
+X try to write the NRMSE by normalizing with the range (max-min, but handle the max=min case by computing the RMSE divided by the mean of the values) --> loss approaches nan value again
+X retrain with both of those versions, with LeakyReLU instead of PReLU --> loss approaches nan value again
+- check why the loss approaches the nan value during training

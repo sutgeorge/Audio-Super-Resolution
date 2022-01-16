@@ -1,6 +1,6 @@
 import tensorflow as tf
 from tensorlayer.layers import SubpixelConv1d
-from tensorflow.keras.layers import Conv1D, PReLU, Dropout, Lambda, concatenate, Input, add, Activation
+from tensorflow.keras.layers import Conv1D, LeakyReLU, Dropout, Lambda, concatenate, Input, add, Activation
 from tensorflow.keras.models import Model
 from constants import *
 
@@ -28,13 +28,13 @@ def subpixel1d(input_shape, r):
 
 def create_downsampling_block(x, filters, kernel_size, stride=1):
     x = Conv1D(filters, kernel_size, strides=stride, padding='same')(x)
-    x = PReLU()(x)
+    x = LeakyReLU()(x)
     return x
 
 
 def create_upsampling_block(x, filters, kernel_size, corresponding_downsample_block, stride=1):
     x = Conv1D(filters, kernel_size, strides=stride, padding='same')(x)
-    x = PReLU()(x)
+    x = LeakyReLU()(x)
     x = Dropout(rate=0.5)(x)
     x = subpixel1d(x.shape, r=2)(x)
     x = concatenate([x, corresponding_downsample_block])
@@ -54,7 +54,7 @@ def create_model(number_of_blocks, batch_size=BATCH_SIZE, input_size=SAMPLE_DIME
         downsampling_blocks.append(x)
 
     x = Conv1D(padding='same', filters=32, kernel_size=4, strides=2)(x)
-    x = PReLU()(x)
+    x = LeakyReLU()(x)
 
     for layer_index in range(0, number_of_blocks):
         number_of_filters = 16 if layer_index == number_of_blocks - 1 else 32
