@@ -68,7 +68,7 @@ print("model.fit history:")
 print(list(history.history.keys()))
 print(history.history)
 
-fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(10, 6), sharex=True)
+fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(12, 6), sharex=True)
 # fig.tight_layout(pad=2.0)
 axes[0].plot(history.history['loss'], color=(255/255.0, 0/255.0, 0/255.0))
 axes[0].set_title("Training loss")
@@ -77,5 +77,12 @@ axes[0].set_ylabel("Loss (MSE)")
 axes[1].plot(history.history['val_loss'], color=(0/255.0, 255/255.0, 0/255.0))
 axes[1].set_title("Validation loss")
 axes[1].set_xlabel("Epoch")
-plt.savefig("training_validation_plot.png", bbox_inches='tight')
+plot_title = "Resampling factor: " + str(RESAMPLING_FACTOR) \
+                      + "; Overlap: " + str(OVERLAP) \
+                      + "; Sample dimension: " + str(SAMPLE_DIMENSION) \
+                      + "; Epochs: " + str(NUMBER_OF_EPOCHS) \
+                      + "; Batch size: " + str(BATCH_SIZE) \
+                      + "; Data split: " + str(NUMBER_OF_TRAINING_TENSORS) + "/" + str(NUMBER_OF_VALIDATION_TENSORS) + "/" + str(NUMBER_OF_TESTING_TENSORS)
+fig.suptitle(plot_title)
+plt.savefig("training_validation_plot.png")
 plt.show()
