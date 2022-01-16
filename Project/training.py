@@ -6,10 +6,10 @@ import numpy as np
 from metrics import signal_to_noise_ratio, normalised_root_mean_squared_error
 from tensorflow.keras.callbacks import ModelCheckpoint
 import matplotlib.pyplot as plt
-import os
 
 model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
 model.summary()
+
 """
 model.compile(loss=normalised_root_mean_squared_error, optimizer='RMSprop',
               metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
@@ -83,6 +83,7 @@ plot_title = "Resampling factor: " + str(RESAMPLING_FACTOR) \
                       + "; Epochs: " + str(NUMBER_OF_EPOCHS) \
                       + "; Batch size: " + str(BATCH_SIZE) \
                       + "; Data split: " + str(NUMBER_OF_TRAINING_TENSORS) + "/" + str(NUMBER_OF_VALIDATION_TENSORS) + "/" + str(NUMBER_OF_TESTING_TENSORS)
+plot_filename = plot_title.replace(" ", "_").replace(":", "").replace(";", "").replace("/", "_")
 fig.suptitle(plot_title)
-plt.savefig("training_validation_plot.png")
+plt.savefig("training_validation_plot_" + plot_filename.lower() + ".png")
 plt.show()

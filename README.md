@@ -70,3 +70,17 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
 
  - [X] Write the training/testing scripts
  
+ - [X] train with the NRMSE normalized by the mean with more epochs --> NRMSE loss approaces nan value
+ - [X] try to write the NRMSE by normalizing with the range (max-min, but handle the max=min case by computing the RMSE divided by the mean of the values) --> loss approaches nan value again
+ - [X] retrain with both of those versions, with LeakyReLU instead of PReLU --> loss approaches nan value again
+ - [X] replace the Adam optimizer with RMSprop --> loss approaches nan value again
+ - [X] reduce the number of layers in the model --> loss approaches nan value again 
+ - [X] try with MSE and with both Adam and RMSprop
+	 - [-] MSE + RMSprop --> the network learns appropriately, considering that the value of the MSE loss decreases
+	 - [-] MSE + Adam --> the network learns appropriately, considering that the value of the MSE loss decreases
+ - [X] create plots with the training and validation loss
+ - [X] train 100 epochs
+ - [X] train 1000 epochs
+ - [ ] read more about why the loss approaches the nan value during training when using NRMSE as the loss function
+
+

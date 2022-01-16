@@ -7,4 +7,6 @@ X try with MSE and with both Adam and RMSprop
 	- MSE + RMSprop --> the network learns appropriately, considering that the value of the MSE loss decreases
 	- MSE + Adam --> the network learns appropriately, considering that the value of the MSE loss decreases
 X create plots with the training and validation loss
+X train 100 epochs
+X train 1000 epochs
 - read more about why the loss approaches the nan value during training when using NRMSE as the loss function
