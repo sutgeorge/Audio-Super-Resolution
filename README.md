@@ -60,16 +60,13 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
  - remastering audio from old movies
 
 ## To do:
- - [X] Find and read 2-3 online tutorials or research papers that solve the same problem. 
 
- - [X] Find a way to gather data
+### Implementation of "Audio Super Resolution Using Neural Networks (Kuleshov, Enam, Ermon, 2017)"
 
- - [X] Write the introduction section 
+![Data generation, training and testing diagram](Paper/AudioSuperResolution/diagram.png)  
 
  - [X] Write the data generator scripts (obtaining the low-res/high-res pairs of audio clips)
-
- - [X] Write the training/testing scripts
- 
+ - [X] Write the training/testing scripts 
  - [X] train with the NRMSE normalized by the mean with more epochs --> NRMSE loss approaces nan value
  - [X] try to write the NRMSE by normalizing with the range (max-min, but handle the max=min case by computing the RMSE divided by the mean of the values) --> loss approaches nan value again
  - [X] retrain with both of those versions, with LeakyReLU instead of PReLU --> loss approaches nan value again
