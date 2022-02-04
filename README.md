@@ -67,22 +67,22 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
 
  - [X] Write the data generator scripts (obtaining the low-res/high-res pairs of audio clips)
  - [X] Write the training/testing scripts 
- - [X] train with the NRMSE normalized by the mean with more epochs --> NRMSE loss approaces nan value
+ - [X] train with the NRMSE normalized by the mean with more epochs --> loss approaches nan value
  - [X] try to write the NRMSE by normalizing with the range (max-min, but handle the max=min case by computing the RMSE divided by the mean of the values) --> loss approaches nan value again
  - [X] retrain with both of those versions, with LeakyReLU instead of PReLU --> loss approaches nan value again
  - [X] replace the Adam optimizer with RMSprop --> loss approaches nan value again
  - [X] reduce the number of layers in the model --> loss approaches nan value again 
  - [X] try with MSE and with both Adam and RMSprop
-	 - [-] MSE + RMSprop --> the network learns appropriately, considering that the value of the MSE loss decreases
-	 - [-] MSE + Adam --> the network learns appropriately, considering that the value of the MSE loss decreases
+ - [X] read more about why the loss approaches the nan value during training when using NRMSE as the loss function
+	 -  usually, it is either because of an exploding gradient or a vanishing gradient (in my case, I accidentally used NRMSE as a loss function instead of using it only as a metric, the number was so small that Keras displayed the loss as being "nan")
+	 - relevant StackOverflow post: https://stackoverflow.com/questions/37232782/nan-loss-when-training-regression-network 
  - [X] create plots with the training and validation loss
  - [X] train 100 epochs
  - [X] train 1000 epochs
- - [X] read more about why the loss approaches the nan value during training when using NRMSE as the loss function
-	 - [-] usually, it is either because of an exploding gradient or a vanishing gradient (in my case, I accidentally used NRMSE as a loss function instead of using it only as a metric, the number was so small that Keras displayed the loss as being "nan")
-	 - [-] relevant StackOverflow post: https://stackoverflow.com/questions/37232782/nan-loss-when-training-regression-network 
  - [X] adjust the data split to use all of the data for training/validation/testing
- - [X] increase the number of training tensors (if impossible, generate more data) and train 100 epochs
- - [ ] increase the batch size
- - [ ] try to use the RMSE as a loss function instead of the MSE
+ - [ ] Read about the n_fft parameter used in librosa's STFT implementation
+ - [ ] Finish testing/prediction script:
+	- [ ] Downsample test audio track
+	- [ ] Feed chunks of 256 samples of the audio to the model 
+	- [ ] Display spectrogram of the output
 
