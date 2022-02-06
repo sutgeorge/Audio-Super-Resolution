@@ -89,8 +89,9 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
  - [X] train 1000 epochs
  - [X] adjust the data split to use all of the data for training/validation/testing
  - [ ] Read about the n_fft parameter used in librosa's STFT implementation
- - [ ] Finish testing/prediction script:
-	- [ ] Downsample test audio track
-	- [ ] Feed chunks of 256 samples of the audio to the model 
-	- [ ] Display spectrogram of the output
+ - [X] Finish testing/prediction script:
+	- [X] Downsample test audio track
+	- [X] Feed chunks of 256 samples of the audio to the model 
+	- [X] Display spectrogram of the output
+	- [ ] Save the low-res/high-res/super-res numpy arrays as audio and compare them
 
