@@ -59,6 +59,14 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
  - improved speech recognition
  - remastering audio from old movies
 
+## Math and signal processing links 
+ - [What is convolution? This is the easiest way to understand](https://www.youtube.com/watch?v=QmcoPYUfbJ8)
+ - [Valerio Velardo's Audio Signal Processing for Machine Learning Playlist](https://www.youtube.com/watch?v=iCwMQJnKk2c&list=PL-wATfeyAMNqIee7cH3q1bh4QJFAaeNv0)
+ - [Steve Brunton's Fourier Analysis Playlist](https://www.youtube.com/watch?v=jNC0jxb0OxE&list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC)
+ - [Sampling, Aliasing & Nyquist Theorem](https://www.youtube.com/watch?v=yWqrx08UeUs)
+ - [Interpolation](https://www.youtube.com/watch?v=RpxoN9-i7Jc)
+ 
+
 ## To do:
 
 ### Implementation of "Audio Super Resolution Using Neural Networks (Kuleshov, Enam, Ermon, 2017)"
