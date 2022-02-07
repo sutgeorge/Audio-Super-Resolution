@@ -1,14 +1,12 @@
 # Audio Super-Resolution
-A project concerning the super-resolution of audio signals i.e. increasing the sample rate of an audio signal. 
+A project focused on the super-resolution of audio signals i.e improving sound quality of a digital recording, be it a vocal recording or music. 
 
 ## Dataset
-The dataset used will be VCTK, but if there's enough time to research more about super-resolution applied on music, the dataset could be either MagnaTagATune or it could be generated with the Python module [Spotipy](https://spotipy.readthedocs.io/en/2.19.0/) which works with the Spotify API.
+The datasets used will be VCTK and some music dataset, possibly MagnaTagATune or a dataset generated with the Python module [Spotipy](https://spotipy.readthedocs.io/en/2.19.0/) which works with the Spotify API.
 
-
-## Converting a spectrogram to audio
+## Converting a spectrogram to audio (might be useful later)
 The Python module [librosa](https://librosa.org/doc/latest/index.html) can transform an audio signal into a spectrogram and vice-versa
 by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/61132574/can-i-convert-spectrograms-generated-with-librosa-back-to-audio).
-
 
 ## Main references
  - [X] [Audio Super-Resolution Using Neural Nets](https://arxiv.org/pdf/1708.00853v1.pdf)
@@ -54,7 +52,7 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
  - [Using Deep-Learning to Reconstruct High-Resolution Audio](https://blog.insightdatascience.com/using-deep-learning-to-reconstruct-high-resolution-audio-29deee8b7ccd)
 
 ## Possible uses
- - increasing sample rate of music
+ - improving sound quality
  - voice-over-IP
  - improved speech recognition
  - remastering audio from old movies
@@ -93,5 +91,6 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
 	- [X] Downsample test audio track
 	- [X] Feed chunks of 256 samples of the audio to the model 
 	- [X] Display spectrogram of the output
-	- [ ] Save the low-res/high-res/super-res numpy arrays as audio and compare them
+	- [X] Save the low-res/high-res/super-res numpy arrays as audio and compare them
+ - [ ] Save not only the checkpoint, but also the whole model at the end of the training script execution
 
