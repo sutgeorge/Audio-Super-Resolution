@@ -91,7 +91,6 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 	 - relevant StackOverflow post: https://stackoverflow.com/questions/37232782/nan-loss-when-training-regression-network 
  - [X] create plots with the training and validation loss
  - [X] train 100 epochs
- - [X] train 1000 epochs
  - [X] adjust the data split to use all of the data for training/validation/testing
  - [X] Finish testing/prediction script:
 	- [X] Downsample test audio track
