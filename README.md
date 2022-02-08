@@ -2,11 +2,7 @@
 A project focused on the super-resolution of audio signals i.e improving sound quality of a digital recording, be it a vocal recording or music. 
 
 ## Dataset
-The datasets used will be VCTK and some music dataset, possibly MagnaTagATune or a dataset generated with the Python module [Spotipy](https://spotipy.readthedocs.io/en/2.19.0/) which works with the Spotify API.
-
-## Converting a spectrogram to audio (might be useful later)
-The Python module [librosa](https://librosa.org/doc/latest/index.html) can transform an audio signal into a spectrogram and vice-versa
-by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/61132574/can-i-convert-spectrograms-generated-with-librosa-back-to-audio).
+The datasets used will be VCTK and some music dataset, possibly MagnaTagATune or The Million Song dataset.
 
 ## Main references
  - [X] [Audio Super-Resolution Using Neural Nets](https://arxiv.org/pdf/1708.00853v1.pdf)
@@ -51,11 +47,18 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
 ### Articles
  - [Using Deep-Learning to Reconstruct High-Resolution Audio](https://blog.insightdatascience.com/using-deep-learning-to-reconstruct-high-resolution-audio-29deee8b7ccd)
 
+### Datasets
+ - [The Million Song Dataset](https://www.ee.columbia.edu/~dpwe/pubs/BertEWL11-msd.pdf)
+
 ## Possible uses
- - improving sound quality
+ - improving sound quality of music
  - voice-over-IP
- - improved speech recognition
+ - improving speech recognition
  - remastering audio from old movies
+
+## Converting a spectrogram to audio (might be useful later)
+The Python module [librosa](https://librosa.org/doc/latest/index.html) can transform an audio signal into a spectrogram and vice-versa
+by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/61132574/can-i-convert-spectrograms-generated-with-librosa-back-to-audio).
 
 ## Math and signal processing links 
  - [What is convolution? This is the easiest way to understand](https://www.youtube.com/watch?v=QmcoPYUfbJ8)
@@ -63,7 +66,11 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
  - [Steve Brunton's Fourier Analysis Playlist](https://www.youtube.com/watch?v=jNC0jxb0OxE&list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC)
  - [Sampling, Aliasing & Nyquist Theorem](https://www.youtube.com/watch?v=yWqrx08UeUs)
  - [Interpolation](https://www.youtube.com/watch?v=RpxoN9-i7Jc)
- 
+
+## Research advices
+ - [How to Read AI (Audio) Research Papers Like a Rockstar](https://www.youtube.com/watch?v=tBoSIzilP-Y)
+ - [How to Select AI (Audio) Papers Effectively](https://www.youtube.com/watch?v=UEdWuu8hqrg)
+ - [How to Conduct Literature Review Effectively](https://www.youtube.com/watch?v=FRdVqWquroc) 
 
 ## To do:
 
@@ -86,11 +93,9 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
  - [X] train 100 epochs
  - [X] train 1000 epochs
  - [X] adjust the data split to use all of the data for training/validation/testing
- - [ ] Read about the n_fft parameter used in librosa's STFT implementation
  - [X] Finish testing/prediction script:
 	- [X] Downsample test audio track
 	- [X] Feed chunks of 256 samples of the audio to the model 
 	- [X] Display spectrogram of the output
 	- [X] Save the low-res/high-res/super-res numpy arrays as audio and compare them
- - [ ] Save not only the checkpoint, but also the whole model at the end of the training script execution
 

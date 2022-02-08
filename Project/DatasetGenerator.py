@@ -13,7 +13,7 @@ class DatasetGenerator:
         sample_index, file_index = 0, 0
 
         for sample in dataset['train']:
-            if sample_index == 100:
+            if sample_index == LAST_VCTK_SAMPLE_INDEX_USED_IN_TRAINING + 1:
                 break
 
             sample_array = np.array(sample['speech'], dtype=np.float)
