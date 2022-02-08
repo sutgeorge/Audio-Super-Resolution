@@ -69,29 +69,50 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ## Research advices
  - [How to Read AI (Audio) Research Papers Like a Rockstar](https://www.youtube.com/watch?v=tBoSIzilP-Y)
- - [How to Select AI (Audio) Papers Effectively](https://www.youtube.com/watch?v=UEdWuu8hqrg)
+	1. Skimming
+		- read the abstract
+		- read introduction + conclusion
+		- check out figures and tables
+		- ignore details	
+
+	2. Reading the details
+		- What's the state-of-the-art?
+		- What are the tools/techniques used?
+		- How did the authors evaluate their solution?
+		- What are the results of the experiments?
+
+	3. Question everything
+		- Do I understand everything the authors say?
+		- Is the paper sound?
+		- What would I have done differently?
+		- Read referenced research papers
+		- Internalise the math
+		- Re-think the problem
+		- Explain the paper to friends/colleagues
+
+	4. Check the code
+		- Check the author's implementation
+		- Re-implement the proposed solution
+		- Run experiments
+
  - [How to Conduct Literature Review Effectively](https://www.youtube.com/watch?v=FRdVqWquroc) 
 
-## To do:
+	Select resource &rarr; Read resource &rarr; Take notes (topic, approach, results, contributions, limitations/weaknesses) &rarr; Keep track of reference &rarr; Summarise literature review findings
 
-### Implementation of "Audio Super Resolution Using Neural Networks (Kuleshov, Enam, Ermon, 2017)"
+ - [How to Select AI (Audio) Papers Effectively](https://www.youtube.com/watch?v=UEdWuu8hqrg)
+
+## A quick implementation of ["Audio Super Resolution Using Neural Networks (Kuleshov, Enam, Ermon, 2017)"](https://arxiv.org/pdf/1708.00853v1.pdf)
 
 ![Data generation, training and testing diagram](Paper/AudioSuperResolution/diagram.png)  
 
  - [X] Write the data generator scripts (obtaining the low-res/high-res pairs of audio clips)
  - [X] Write the training/testing scripts 
- - [X] train with the NRMSE normalized by the mean with more epochs --> loss approaches nan value
- - [X] try to write the NRMSE by normalizing with the range (max-min, but handle the max=min case by computing the RMSE divided by the mean of the values) --> loss approaches nan value again
- - [X] retrain with both of those versions, with LeakyReLU instead of PReLU --> loss approaches nan value again
- - [X] replace the Adam optimizer with RMSprop --> loss approaches nan value again
- - [X] reduce the number of layers in the model --> loss approaches nan value again 
- - [X] try with MSE and with both Adam and RMSprop
- - [X] read more about why the loss approaches the nan value during training when using NRMSE as the loss function
+ - [X] read more about why the loss approaches the nan value during training 
 	 -  usually, it is either because of an exploding gradient or a vanishing gradient (in my case, I accidentally used NRMSE as a loss function instead of using it only as a metric, the number was so small that Keras displayed the loss as being "nan")
 	 - relevant StackOverflow post: https://stackoverflow.com/questions/37232782/nan-loss-when-training-regression-network 
  - [X] create plots with the training and validation loss
  - [X] train 100 epochs
- - [X] adjust the data split to use all of the data for training/validation/testing
+ - [X] adjust the data split to use all of the generated data from the first 100 tracks of VCTK for training/validation/testing
  - [X] Finish testing/prediction script:
 	- [X] Downsample test audio track
 	- [X] Feed chunks of 256 samples of the audio to the model 
