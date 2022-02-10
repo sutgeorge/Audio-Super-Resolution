@@ -33,6 +33,7 @@ meets super-resolution](https://arxiv.org/pdf/2001.11263.pdf)
  - [High-quality Speech Synthesis Using Super-resolution Mel-Spectrogram ](https://arxiv.org/pdf/1912.01167.pdf)
  - [Enabling Real-time On-chip Audio Super Resolution for Bone
 Conduction Microphones](https://arxiv.org/pdf/2112.13156.pdf)
+ - [Speech bandwidth expansion based on Deep Neural Networks](https://www.researchgate.net/publication/325682935_Speech_bandwidth_expansion_based_on_Deep_Neural_Networks)
 
 
 ### Image super-resolution 
@@ -70,10 +71,14 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ## Math and signal processing links 
  - [What is convolution? This is the easiest way to understand](https://www.youtube.com/watch?v=QmcoPYUfbJ8)
+ - [Introducing Convolutions](https://www.youtube.com/watch?v=N-zd-T17uiE)
  - [Valerio Velardo's Audio Signal Processing for Machine Learning Playlist](https://www.youtube.com/watch?v=iCwMQJnKk2c&list=PL-wATfeyAMNqIee7cH3q1bh4QJFAaeNv0)
  - [Steve Brunton's Fourier Analysis Playlist](https://www.youtube.com/watch?v=jNC0jxb0OxE&list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC)
  - [Sampling, Aliasing & Nyquist Theorem](https://www.youtube.com/watch?v=yWqrx08UeUs)
  - [Interpolation](https://www.youtube.com/watch?v=RpxoN9-i7Jc)
+ - [Difference between logged-power spectrum and power spectrum](https://dsp.stackexchange.com/questions/38319/difference-between-logged-power-spectrum-and-power-spectrum)
+ - [Linear and logarithmic scales](https://www.indeed.com/career-advice/career-development/logarithmic-scale)
+ - [Decibel conversion](https://dspillustrations.com/pages/posts/misc/decibel-conversion-factor-10-or-factor-20.html?rid=so6)
 
 ## Research advices
  - [How to Read AI (Audio) Research Papers Like a Rockstar](https://www.youtube.com/watch?v=tBoSIzilP-Y)
