@@ -7,25 +7,32 @@ The datasets used will be VCTK and some music dataset, possibly MagnaTagATune or
 ## Main references
  - [X] [Audio Super-Resolution Using Neural Nets](https://arxiv.org/pdf/1708.00853v1.pdf)
  - [X] [Time-frequency Networks For Audio Super-Resolution](https://teckyianlim.me/audio-sr/res/3828.pdf)
- - [ ] [WSRGlow: A Glow-based Waveform Generative Model for Audio Super-Resolution](https://arxiv.org/abs/2106.08507)
  - [ ] [Adversarial Training for Speech Super-Resolution](https://www.researchgate.net/publication/332201260_Adversarial_Training_for_Speech_Super-Resolution)
+ - [ ] [Phase-aware music super-resolution using generative adversarial networks](https://arxiv.org/pdf/2010.04506.pdf)
  - [ ] [Bandwidth extension on raw audio via generative adversarial networks](https://arxiv.org/pdf/1903.09027.pdf)
 
 ## Related papers that could be used as references
 
 ### Audio signals
- - [Phase-aware music super-resolution using generative adversarial networks](https://arxiv.org/pdf/2010.04506.pdf)
  - [MidiNet: A Convolutional Generative Adversarial Network for Symbolic-domain Music Generation](https://arxiv.org/pdf/1703.10847.pdf)
  - [On the evaluation of generative models in music](https://musicinformatics.gatech.edu/wp-content_nondefault/uploads/2018/11/postprint.pdf)
  - [INCO-GAN: Variable-Length Music Generation Method Based
 on Inception Model-Based Conditional GAN](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj62YWr14_0AhXch_0HHf0dDckQFnoECAQQAQ&url=https%3A%2F%2Fwww.mdpi.com%2F2227-7390%2F9%2F4%2F387%2Fpdf&usg=AOvVaw1Bt1-i7aM7Fp8OmwRJ2GtX)
+ - [WSRGlow: A Glow-based Waveform Generative Model for Audio Super-Resolution](https://arxiv.org/abs/2106.08507)
  - [Self-Attention for Audio Super-Resolution](https://arxiv.org/pdf/2108.11637v1.pdf)
  - [On Filter Generalization for Music Bandwidth Extension Using Deep Neural Networks](https://arxiv.org/pdf/2011.07274v2.pdf)
  - [NU-Wave: A Diffusion Probabilistic Model for Neural Audio Upsampling](https://arxiv.org/pdf/2104.02321v2.pdf)
  - [Temporal FiLM: Capturing Long-Range Sequence Dependencies with Feature-Wise Modulation](https://arxiv.org/pdf/1909.06628v3.pdf)
  - [Learning Continuous Representation of Audio for Arbitrary Scale Super Resolution](https://arxiv.org/pdf/2111.00195.pdf)
  - [An investigation of pre-upsampling generative modelling and Generative Adversarial Networks in audio super resolution](https://arxiv.org/pdf/2109.14994.pdf)
- - [Super-Resolution for Music Signals Using Generative Adversarial Networks](https://www.researchgate.net/publication/354040914_Super-Resolution_for_Music_Signals_Using_Generative_Adversarial_Networks)
+ - [TUNet: A Block-online Bandwidth Extension Model based on Transformers and Self-supervised Pretraining](https://arxiv.org/pdf/2110.13492v3.pdf)
+ - [Vision-Infused Deep Audio Inpainting](https://arxiv.org/pdf/1910.10997.pdf)
+ - [VoiceFixer: Toward General Speech Restoration with Neural Vocoder](https://arxiv.org/pdf/2109.13731.pdf)
+ - [Sound field reconstruction in rooms: inpainting
+meets super-resolution](https://arxiv.org/pdf/2001.11263.pdf)
+ - [High-quality Speech Synthesis Using Super-resolution Mel-Spectrogram ](https://arxiv.org/pdf/1912.01167.pdf)
+ - [Enabling Real-time On-chip Audio Super Resolution for Bone
+Conduction Microphones](https://arxiv.org/pdf/2112.13156.pdf)
 
 
 ### Image super-resolution 
@@ -44,17 +51,18 @@ for Arbitrary Image Attribute Editing](https://arxiv.org/pdf/1904.09709.pdf)
  - [Audio Super-Resolution Using Analysis Dictionary
 Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015.pdf)
 
-### Articles
+### Blogs
  - [Using Deep-Learning to Reconstruct High-Resolution Audio](https://blog.insightdatascience.com/using-deep-learning-to-reconstruct-high-resolution-audio-29deee8b7ccd)
 
 ### Datasets
  - [The Million Song Dataset](https://www.ee.columbia.edu/~dpwe/pubs/BertEWL11-msd.pdf)
 
 ## Possible uses
- - improving sound quality of music
- - voice-over-IP
- - improving speech recognition
- - remastering audio from old movies
+ - Improving sound quality of music
+ - Voice-over-IP applications
+ - Improving speech recognition
+ - Remastering audio from old movies
+ - Reconstructing old phonograph recordings (This one might be a bit far-fetched, since a lot of data is needed. It might actually be impossible.)
 
 ## Converting a spectrogram to audio (might be useful later)
 The Python module [librosa](https://librosa.org/doc/latest/index.html) can transform an audio signal into a spectrogram and vice-versa
@@ -100,6 +108,8 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 	Select resource &rarr; Read resource &rarr; Take notes (topic, approach, results, contributions, limitations/weaknesses) &rarr; Keep track of reference &rarr; Summarise literature review findings
 
  - [How to Select AI (Audio) Papers Effectively](https://www.youtube.com/watch?v=UEdWuu8hqrg)
+
+ - [How to Summarize a Research Article](https://writingcenter.uconn.edu/wp-content/uploads/sites/593/2014/06/How_to_Summarize_a_Research_Article1.pdf)
 
 ## A quick implementation of ["Audio Super Resolution Using Neural Networks (Kuleshov, Enam, Ermon, 2017)"](https://arxiv.org/pdf/1708.00853v1.pdf)
 
