@@ -5,6 +5,19 @@
 \BOOKMARK [1][-]{section.5}{Convolutions of signals}{}% 5
 \BOOKMARK [1][-]{section.6}{Power}{}% 6
 \BOOKMARK [1][-]{section.7}{Power spectrum}{}% 7
-\BOOKMARK [1][-]{section.8}{Spectrogram}{}% 8
-\BOOKMARK [1][-]{section.9}{Logarithmic scale}{}% 9
-\BOOKMARK [1][-]{section.10}{Decibels}{}% 10
+\BOOKMARK [1][-]{section.8}{Sound intensity}{}% 8
+\BOOKMARK [1][-]{section.9}{Magnitude spectrum and phase spectrum}{}% 9
+\BOOKMARK [1][-]{section.10}{Spectrogram}{}% 10
+\BOOKMARK [1][-]{section.11}{Logarithmic scale}{}% 11
+\BOOKMARK [1][-]{section.12}{Decibels}{}% 12
+\BOOKMARK [1][-]{section.13}{Low-pass filter}{}% 13
+\BOOKMARK [1][-]{section.14}{Frequency domain}{}% 14
+\BOOKMARK [1][-]{section.15}{Frequency band}{}% 15
+\BOOKMARK [1][-]{section.16}{Filter}{}% 16
+\BOOKMARK [1][-]{section.17}{Passband}{}% 17
+\BOOKMARK [1][-]{section.18}{Baseband}{}% 18
+\BOOKMARK [1][-]{section.19}{Narrowband}{}% 19
+\BOOKMARK [1][-]{section.20}{Carrier wave}{}% 20
+\BOOKMARK [1][-]{section.21}{Modulation}{}% 21
+\BOOKMARK [1][-]{section.22}{Demodulation}{}% 22
+\BOOKMARK [1][-]{section.23}{Amplitude modulation}{}% 23

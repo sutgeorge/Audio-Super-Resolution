@@ -54,6 +54,7 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
 
 ### Blogs
  - [Using Deep-Learning to Reconstruct High-Resolution Audio](https://blog.insightdatascience.com/using-deep-learning-to-reconstruct-high-resolution-audio-29deee8b7ccd)
+ - [Separate Music Tracks with Deep Learning](https://towardsdatascience.com/separate-music-tracks-with-deep-learning-be4cf4a2c83)
 
 ### Datasets
  - [The Million Song Dataset](https://www.ee.columbia.edu/~dpwe/pubs/BertEWL11-msd.pdf)
@@ -76,9 +77,14 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
  - [Steve Brunton's Fourier Analysis Playlist](https://www.youtube.com/watch?v=jNC0jxb0OxE&list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC)
  - [Sampling, Aliasing & Nyquist Theorem](https://www.youtube.com/watch?v=yWqrx08UeUs)
  - [Interpolation](https://www.youtube.com/watch?v=RpxoN9-i7Jc)
+ - [Wave phase](https://www.youtube.com/watch?v=yKL6DjqAm3I)
+ - [What is phase in audio?](https://www.youtube.com/watch?v=QritRLa-Jt4)
  - [Difference between logged-power spectrum and power spectrum](https://dsp.stackexchange.com/questions/38319/difference-between-logged-power-spectrum-and-power-spectrum)
  - [Linear and logarithmic scales](https://www.indeed.com/career-advice/career-development/logarithmic-scale)
  - [Decibel conversion](https://dspillustrations.com/pages/posts/misc/decibel-conversion-factor-10-or-factor-20.html?rid=so6)
+ - [Why do we modulate signals?](https://www.quora.com/Why-must-a-signal-be-modulated-What-will-happen-if-the-signal-is-transmitted-without-modulation-How-does-a-modulator-modulate-the-signal)
+ - [Modulation vs. convolution](https://www.quora.com/What-is-the-difference-between-modulation-of-two-signals-and-convolution-of-two-signals)
+
 
 ## Research advices
  - [How to Read AI (Audio) Research Papers Like a Rockstar](https://www.youtube.com/watch?v=tBoSIzilP-Y)
