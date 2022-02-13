@@ -51,6 +51,11 @@ A convolution is a mathematical operation applied on two functions which yields 
 
 \[ (f * g)(t) = \int_{-\infty}^{\infty} f(\tau)g(t-\tau) \,d\tau \]
 
+\section{Nyquist theorem}
+This theorem states that the highest frequency component of a signal which can be represented accurately is one half of the sampling rate.
+
+\[f_{Nyquist} = \frac{sr}{2}\]
+
 \section{Power}
 In physics, power is the amount of energy transferred or converted per unit time (Joules per second).
 
@@ -58,6 +63,17 @@ In physics, power is the amount of energy transferred or converted per unit time
 
 \section{Power spectrum}
 The power spectrum \( S_{xx}(f)\) of a time series \(x(t)\) describes the distribution of power into frequency components composing that signal. According to Fourier analysis, any physical signal can be decomposed into a number of discrete frequencies, or a spectrum of frequencies over a continuous range. The statistical average of a certain signal or sort of signal (including noise) as analyzed in terms of its frequency content, is called its spectrum.
+
+\section{Harmonic series}
+A harmonic series (also overtone series) is the sequence of frequencies, musical tones, or pure tones in which each frequency is an integer multiple of a fundamental.
+
+\section{Fundamental frequency}
+The fundamental frequency, often referred to simply as the fundamental, is defined as the lowest frequency of a periodic waveform.
+
+\section{Harmonic}
+A harmonic is any member of the harmonic series. The term is employed in various disciplines, including music, physics, acoustics, electronic power transmission, radio technology, and other fields. It is typically applied to repeating signals, such as sinusoidal waves.
+
+A harmonic is a wave with a frequency that is a positive integer multiple of the frequency of the original wave, known as the fundamental frequency. The original wave is also called the 1st harmonic, the following harmonics are known as higher harmonics.
 
 \section{Sound intensity}
 
@@ -75,6 +91,39 @@ The magnitude spectrum (referring to sound intensity) specifies the magnitude of
 \includegraphics[scale=0.5]{magnitude_phase_spectra}
 \end{center}
 \end{figure}
+
+\section{Fourier series}
+In mathematics, a Fourier series is a periodic function composed of harmonically related sinusoids combined by a weighted summation. With appropriate weights, one cycle (or period) of the summation can be made to approximate an arbitrary function in that interval (or the entire function if it too is periodic). As such, the summation is a synthesis of another function. The discrete-time Fourier transform is an example of Fourier series. The process of deriving weights that describe a given function is a form of Fourier analysis. For functions on unbounded intervals, the analysis and synthesis analogies are Fourier transform and inverse transform.
+
+\[f(x) = \frac{1}{2}a_0 + \sum_{n=1}^{\infty}a_ncos(nx) + \sum_{n=1}^{\infty}b_nsin(nx)\]
+
+where
+
+\[a_0 = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x) \,dx\]
+\[a_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)cos(nx) \,dx\]
+\[b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)sin(nx) \,dx\]
+
+\section{Fourier transform}
+In mathematics, a Fourier transform (FT) is a mathematical transform that decomposes functions depending on space or time into functions depending on spatial or temporal frequency, such as the expression of a musical chord in terms of the volumes and frequencies of its constituent notes. The term Fourier transform refers to both the frequency domain representation and the mathematical operation that associates the frequency domain representation to a function of space or time.
+
+\[\hat{f}(\xi) = \int_{-\infty}^{\infty}f(x)e^{-2\pi ix\xi}dx,\ \forall \xi \in \rm I\!R \]
+
+The inverse transform: 
+
+\[f(x) = \int_{-\infty}^{\infty}\hat{f}(\xi)e^{2\pi ix\xi}d\xi,\ \forall x \in \rm I\!R \]
+
+The $e^{ix}$ part of the formulas comes from Euler's formula and $\xi$ refers to the frequency.
+
+\section{Discrete Fourier transform}
+In mathematics, the discrete Fourier transform (DFT) converts a finite sequence of equally-spaced samples of a function into a same-length sequence of equally-spaced samples of the discrete-time Fourier transform (DTFT), which is a complex-valued function of frequency represented by a specific number of "frequency bins". This is done because a computer cannot work with a continuous signal with an infinite number of values, so a number of samples need to be taken and analyzed.
+
+The discrete Fourier transform transforms a sequence of N complex numbers $x_n$ into another sequence of complex numbers $X_k$, which is defined by
+
+\[X_k = \sum_{n=0}^{N-1}x_ne^{-\frac{i2\pi}{N}kn}\]
+
+\section{Fast Fourier transform}
+A fast Fourier transform (FFT) is an algorithm that computes the discrete Fourier transform (DFT) of a sequence, or its inverse (IDFT). Fourier analysis converts a signal from its original domain (often time or space) to a representation in the frequency domain and vice versa. The DFT is obtained by decomposing a sequence of values into components of different frequencies. This operation is useful in many fields, but computing it directly from the definition is often too slow to be practical. An FFT rapidly computes such transformations by factorizing the DFT matrix into a product of sparse (mostly zero) factors. As a result, it manages to reduce the complexity of computing the DFT from $ O(N^2) $, which arises if one simply applies the definition of DFT, to $ O(N\log{N}) $.
+
 
 \section{Spectrogram}
 A spectrogram is a visual representation of the spectrum of frequencies of a signal as it varies with time. A spectrogram can be generated by an optical spectrometer, a bank of band-pass filters, by Fourier transform or by a wavelet transform (in which case it is also known as a scaleogram or scalogram).
@@ -137,7 +186,6 @@ Demodulation is extracting the original information-bearing signal from a carrie
 
 \section{Amplitude modulation}
 Amplitude modulation (AM) is a modulation technique used in electronic communication, most commonly for transmitting messages with a radio wave. In amplitude modulation, the amplitude (signal strength) of the carrier wave is varied in proportion to that of the message signal, such as an audio signal. This technique contrasts with angle modulation, in which either the frequency of the carrier wave is varied, as in frequency modulation, or its phase, as in phase modulation.
-
 
 
 \vspace{12pt}

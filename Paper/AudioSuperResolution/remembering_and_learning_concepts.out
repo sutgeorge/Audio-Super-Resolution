@@ -3,21 +3,29 @@
 \BOOKMARK [1][-]{section.3}{Phase}{}% 3
 \BOOKMARK [1][-]{section.4}{Amplitude}{}% 4
 \BOOKMARK [1][-]{section.5}{Convolutions of signals}{}% 5
-\BOOKMARK [1][-]{section.6}{Power}{}% 6
-\BOOKMARK [1][-]{section.7}{Power spectrum}{}% 7
-\BOOKMARK [1][-]{section.8}{Sound intensity}{}% 8
-\BOOKMARK [1][-]{section.9}{Magnitude spectrum and phase spectrum}{}% 9
-\BOOKMARK [1][-]{section.10}{Spectrogram}{}% 10
-\BOOKMARK [1][-]{section.11}{Logarithmic scale}{}% 11
-\BOOKMARK [1][-]{section.12}{Decibels}{}% 12
-\BOOKMARK [1][-]{section.13}{Low-pass filter}{}% 13
-\BOOKMARK [1][-]{section.14}{Frequency domain}{}% 14
-\BOOKMARK [1][-]{section.15}{Frequency band}{}% 15
-\BOOKMARK [1][-]{section.16}{Filter}{}% 16
-\BOOKMARK [1][-]{section.17}{Passband}{}% 17
-\BOOKMARK [1][-]{section.18}{Baseband}{}% 18
-\BOOKMARK [1][-]{section.19}{Narrowband}{}% 19
-\BOOKMARK [1][-]{section.20}{Carrier wave}{}% 20
-\BOOKMARK [1][-]{section.21}{Modulation}{}% 21
-\BOOKMARK [1][-]{section.22}{Demodulation}{}% 22
-\BOOKMARK [1][-]{section.23}{Amplitude modulation}{}% 23
+\BOOKMARK [1][-]{section.6}{Nyquist theorem}{}% 6
+\BOOKMARK [1][-]{section.7}{Power}{}% 7
+\BOOKMARK [1][-]{section.8}{Power spectrum}{}% 8
+\BOOKMARK [1][-]{section.9}{Harmonic series}{}% 9
+\BOOKMARK [1][-]{section.10}{Fundamental frequency}{}% 10
+\BOOKMARK [1][-]{section.11}{Harmonic}{}% 11
+\BOOKMARK [1][-]{section.12}{Sound intensity}{}% 12
+\BOOKMARK [1][-]{section.13}{Magnitude spectrum and phase spectrum}{}% 13
+\BOOKMARK [1][-]{section.14}{Fourier series}{}% 14
+\BOOKMARK [1][-]{section.15}{Fourier transform}{}% 15
+\BOOKMARK [1][-]{section.16}{Discrete Fourier transform}{}% 16
+\BOOKMARK [1][-]{section.17}{Fast Fourier transform}{}% 17
+\BOOKMARK [1][-]{section.18}{Spectrogram}{}% 18
+\BOOKMARK [1][-]{section.19}{Logarithmic scale}{}% 19
+\BOOKMARK [1][-]{section.20}{Decibels}{}% 20
+\BOOKMARK [1][-]{section.21}{Low-pass filter}{}% 21
+\BOOKMARK [1][-]{section.22}{Frequency domain}{}% 22
+\BOOKMARK [1][-]{section.23}{Frequency band}{}% 23
+\BOOKMARK [1][-]{section.24}{Filter}{}% 24
+\BOOKMARK [1][-]{section.25}{Passband}{}% 25
+\BOOKMARK [1][-]{section.26}{Baseband}{}% 26
+\BOOKMARK [1][-]{section.27}{Narrowband}{}% 27
+\BOOKMARK [1][-]{section.28}{Carrier wave}{}% 28
+\BOOKMARK [1][-]{section.29}{Modulation}{}% 29
+\BOOKMARK [1][-]{section.30}{Demodulation}{}% 30
+\BOOKMARK [1][-]{section.31}{Amplitude modulation}{}% 31

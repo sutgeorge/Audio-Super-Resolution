@@ -59,6 +59,10 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
 ### Datasets
  - [The Million Song Dataset](https://www.ee.columbia.edu/~dpwe/pubs/BertEWL11-msd.pdf)
 
+### Other
+ - [Ablation studies video](https://www.youtube.com/watch?v=4Ko-wt0aITg)
+ - [What is an ablation study?](https://stats.stackexchange.com/questions/380040/what-is-an-ablation-study-and-is-there-a-systematic-way-to-perform-it)
+
 ## Possible uses
  - Improving sound quality of music
  - Voice-over-IP applications
@@ -82,8 +86,11 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
  - [Difference between logged-power spectrum and power spectrum](https://dsp.stackexchange.com/questions/38319/difference-between-logged-power-spectrum-and-power-spectrum)
  - [Linear and logarithmic scales](https://www.indeed.com/career-advice/career-development/logarithmic-scale)
  - [Decibel conversion](https://dspillustrations.com/pages/posts/misc/decibel-conversion-factor-10-or-factor-20.html?rid=so6)
- - [Why do we modulate signals?](https://www.quora.com/Why-must-a-signal-be-modulated-What-will-happen-if-the-signal-is-transmitted-without-modulation-How-does-a-modulator-modulate-the-signal)
+ - [Why do we modulate signals?](https://www.geeksforgeeks.org/need-of-modulation-in-communication-systems/)
  - [Modulation vs. convolution](https://www.quora.com/What-is-the-difference-between-modulation-of-two-signals-and-convolution-of-two-signals)
+ - [Discrete Fourier Transform explained with example](https://www.youtube.com/watch?v=QcF9CMz8Bcc)
+ - [DC offset](https://en.wikipedia.org/wiki/DC_bias)
+ - [The FFT algorithm - simple step by step explanation](https://www.youtube.com/watch?v=htCj9exbGo0)
 
 
 ## Research advices

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.4)  11 FEB 2022 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.4)  13 FEB 2022 13:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -718,7 +718,7 @@ LaTeX Warning: No \author given.
 
 LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 25.
 
-<amplitude.jpg, id=96, 853.1875pt x 622.325pt>
+<amplitude.jpg, id=128, 853.1875pt x 622.325pt>
 File: amplitude.jpg Graphic file (type jpg)
 <use amplitude.jpg>
 Package pdftex.def Info: amplitude.jpg  used on input line 43.
@@ -731,66 +731,72 @@ s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.65 
+l.66 
       <./amplitude.jpg>]
-<magnitude_phase_spectra.png, id=114, 505.89pt x 505.89pt>
+Underfull \hbox (badness 1552) in paragraph at lines 86--86
+ \OT1/phv/b/sc/11.04124 13 Mag-ni-tude spec-trum and phase spec-
+ []
+
+<magnitude_phase_spectra.png, id=146, 505.89pt x 505.89pt>
 File: magnitude_phase_spectra.png Graphic file (type png)
 <use magnitude_phase_spectra.png>
-Package pdftex.def Info: magnitude_phase_spectra.png  used on input line 75.
+Package pdftex.def Info: magnitude_phase_spectra.png  used on input line 91.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
-<spectrogram.png, id=116, 421.575pt x 262.9825pt>
+[2 <./magnitude_phase_spectra.png>]
+<spectrogram.png, id=153, 421.575pt x 262.9825pt>
 File: spectrogram.png Graphic file (type png)
 <use spectrogram.png>
-Package pdftex.def Info: spectrogram.png  used on input line 84.
+Package pdftex.def Info: spectrogram.png  used on input line 133.
 (pdftex.def)             Requested size: 210.78697pt x 131.49092pt.
- [2pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.107 
-       <./magnitude_phase_spectra.png> <./spectrogram.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
- [3] [4
+l.156 
+       <./spectrogram.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
+ [4] [5
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
-
-(./remembering_and_learning_concepts.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+ (./remembering_and_learning_concepts.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
 Package rerunfilecheck Info: File `remembering_and_learning_concepts.out' has n
 ot changed.
-(rerunfilecheck)             Checksum: 785AA7B6D2AD546F4023EB20F5A5DF57;1134.
+(rerunfilecheck)             Checksum: 37B674C6D5A1F2AEA2416AA2EF125EB2;1568.
 Package logreq Info: Writing requests to 'remembering_and_learning_concepts.run
 .xml'.
 \openout1 = `remembering_and_learning_concepts.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14563 strings out of 481239
- 248878 string characters out of 5920377
+ 14580 strings out of 481239
+ 249060 string characters out of 5920377
  902352 words of memory out of 5000000
- 29612 multiletter control sequences out of 15000+600000
+ 29620 multiletter control sequences out of 15000+600000
  567134 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,7n,37p,859b,743s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on remembering_and_learning_concepts.pdf (4 pages, 280391 bytes)
+/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/zapfding/uzdr.pfb>
+Output written on remembering_and_learning_concepts.pdf (5 pages, 309070 bytes)
 .
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 198 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 
