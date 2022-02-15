@@ -133,6 +133,8 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ![Data generation, training and testing diagram](Paper/AudioSuperResolution/diagram.png)  
 
+### First stage
+
  - [X] Write the data generator scripts (obtaining the low-res/high-res pairs of audio clips)
  - [X] Write the training/testing scripts 
  - [X] read more about why the loss approaches the nan value during training 
@@ -146,4 +148,17 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 	- [X] Feed chunks of 256 samples of the audio to the model 
 	- [X] Display spectrogram of the output
 	- [X] Save the low-res/high-res/super-res numpy arrays as audio and compare them
+
+### Second stage
+ - [ ] Check what size a chunk could have (transform the numpy array chunk of size n to WAV and listen to the result)
+ - [ ] Display the 5-number summary / boxplot of the generated dataset
+ - [ ] Create line plot of a couple of random samples (both in time-domain and in frequency-domain)
+ - [ ] Create histogram of a single sample and of the whole dataset
+ - [ ] Try to restore the old useless [checkpoint](https://www.tensorflow.org/guide/checkpoint) to find a way of training the model with more epochs
+ - [ ] Execute experimental training runs with multiple chunk sizes (256, 512, 1024, 2048 etc.) and compare results
+ - [ ] Try different resampling factors (2x, 4x, 6x, 8x etc.)
+ - [ ] Compare the trained model with simple benchmarks (linear interpolation, cubic spline interpolation and the old 100-epochs downsampled+interpolated type of model)
+ - [ ] Reconstruct the low-resolution signal without applying interpolation (e.g a 100-sample chunk downsampled with a factor of 4 becomes a chunk of length 25, which will be fed to the network as-is without interpolation)
+ - [ ] Get evaluation metrics (NRMSE comparisons for the high-res/super-res signals and the high-res/interpolated signals)
+ - [ ] Display some scatterplots
 
