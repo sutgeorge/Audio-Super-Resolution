@@ -158,7 +158,8 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
  - [X] Create line plot of a couple of random samples (both in time-domain and in frequency-domain)
  - [X] Create histogram of a single sample 
  - [X] Check what size a chunk could have (transform the numpy array chunk of size n to WAV and listen to the result)
- - [ ] Try to restore the old useless [checkpoint](https://www.tensorflow.org/guide/checkpoint) to find a way of training the model with more epochs
+ - [ ] Try to restore the old useless [checkpoint](https://www.tensorflow.org/guide/checkpoint) to understand how to reload and train the saved model with more epochs
+ - [ ] Generate the dataset again with a larger chunk size (it would be a good idea to speed up the dataset generation with the multiprocessing or mpi4py modules - Intel i7-8750H (12) @ 4.100GHz has 6 cores and 12 threads, so perhaps the optimal number of processes would be 6, but that's just an assumption, might just go for 4 processes which will each take a separate interval of the dataset and split it in chunks saved as .npy files)
  - [ ] Execute experimental training runs with multiple chunk sizes (256, 512, 1024, 2048 etc.) and compare results
  - [ ] Try different resampling factors (2x, 4x, 6x, 8x etc.)
  - [ ] Compare the trained model with simple benchmarks (linear interpolation, cubic spline interpolation and the old 100-epochs downsampled+interpolated type of model)
