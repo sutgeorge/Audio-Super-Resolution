@@ -151,10 +151,10 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 	- [X] Save the low-res/high-res/super-res numpy arrays as audio and compare them
 
 ### Second stage
- - [ ] Check what size a chunk could have (transform the numpy array chunk of size n to WAV and listen to the result)
- - [ ] Display the 5-number summary / boxplot of the generated dataset
+ - [X] Display the 5-number summary / boxplot of the generated dataset
  - [ ] Create line plot of a couple of random samples (both in time-domain and in frequency-domain)
- - [ ] Create histogram of a single sample and of the whole dataset
+ - [X] Create histogram of a single sample 
+ - [X] Check what size a chunk could have (transform the numpy array chunk of size n to WAV and listen to the result)
  - [ ] Try to restore the old useless [checkpoint](https://www.tensorflow.org/guide/checkpoint) to find a way of training the model with more epochs
  - [ ] Execute experimental training runs with multiple chunk sizes (256, 512, 1024, 2048 etc.) and compare results
  - [ ] Try different resampling factors (2x, 4x, 6x, 8x etc.)
