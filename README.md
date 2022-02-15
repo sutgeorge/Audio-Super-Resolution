@@ -132,9 +132,9 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ## A quick implementation of ["Audio Super Resolution Using Neural Networks (Kuleshov, Enam, Ermon, 2017)"](https://arxiv.org/pdf/1708.00853v1.pdf)
 
-![Data generation, training and testing diagram](Paper/AudioSuperResolution/diagram.png)  
-
 ### First stage
+
+![Data generation, training and testing diagram in stage 1](Paper/AudioSuperResolution/diagram_stage_1.png)  
 
  - [X] Write the data generator scripts (obtaining the low-res/high-res pairs of audio clips)
  - [X] Write the training/testing scripts 
@@ -151,6 +151,9 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 	- [X] Save the low-res/high-res/super-res numpy arrays as audio and compare them
 
 ### Second stage
+
+![Data generation, training and testing diagram in stage 2](Paper/AudioSuperResolution/diagram_stage_2.png)  
+
  - [X] Display the 5-number summary / boxplot of the generated dataset
  - [X] Create line plot of a couple of random samples (both in time-domain and in frequency-domain)
  - [X] Create histogram of a single sample 
