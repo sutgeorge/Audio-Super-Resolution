@@ -65,6 +65,7 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
 
 ## Possible uses
  - Improving sound quality of music
+	- insanely experimental and slightly unrealistic idea: use [Deezer's model for separating tracks of a song](https://towardsdatascience.com/separate-music-tracks-with-deep-learning-be4cf4a2c83) and apply transfer learning to upsample each track separately (train a model with low-res/high-res guitar tracks, one with bass tracks, one for drums and another for voice tracks)  
  - Voice-over-IP applications
  - Improving speech recognition
  - Remastering audio from old movies
