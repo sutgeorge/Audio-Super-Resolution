@@ -152,7 +152,7 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ### Second stage
  - [X] Display the 5-number summary / boxplot of the generated dataset
- - [ ] Create line plot of a couple of random samples (both in time-domain and in frequency-domain)
+ - [X] Create line plot of a couple of random samples (both in time-domain and in frequency-domain)
  - [X] Create histogram of a single sample 
  - [X] Check what size a chunk could have (transform the numpy array chunk of size n to WAV and listen to the result)
  - [ ] Try to restore the old useless [checkpoint](https://www.tensorflow.org/guide/checkpoint) to find a way of training the model with more epochs
