@@ -23,24 +23,6 @@ print("Loading the sample vocal recording from the VCTK dataset...")
 dataset = tfds.load("vctk", with_info=False)
 sample_array = None
 transcript = None
-
-"""
-    The data from VCTK will have to be properly split, downsampled and saved as .npy files in a folder structure
-    like... 
-    
-         -- training
-        |   |
-        |    -- low_res 
-        |    -- high_res 
-         -- testing
-        |   ...
-         -- validation    
-        |   ... 
-        .
-    ...but currently, the 'train' key from the Tensorflow dataset is used, without splitting it with the data split
-    feature implemented in the tensorflow_datasets module. 
-"""
-
 recording_index = 0
 
 """

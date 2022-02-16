@@ -1,42 +1,68 @@
-import tensorflow as tf
+from multiprocessing import Process
 import tensorflow_datasets as tfds
-import numpy as np
 from scipy import interpolate
-import os
 from constants import *
+import tensorflow as tf
+import numpy as np
+import datetime
+import os
 
 
 class DatasetGenerator:
-    @staticmethod
-    def generate_dataset(sample_dimension=SAMPLE_DIMENSION):
-        dataset = tfds.load("vctk", with_info=False)
-        sample_index, file_index = 0, 0
+    def __init__(self):
+        self.__data = []
+        self.__process_list = []
+        self.__start_time, self.__end_time = None, None
 
-        for sample in dataset['train']:
-            if sample_index == LAST_VCTK_SAMPLE_INDEX_USED_IN_TRAINING + 1:
-                break
-
-            sample_array = np.array(sample['speech'], dtype=np.float)
+    def run_generation_task(self, start_index, end_index, process_index):
+        for recording_index in range(start_index, end_index):
+            file_index = 0
+            sample_array = self.__data[recording_index]
             sample_array_length = len(sample_array)
             sample_array = sample_array[:sample_array_length - (sample_array_length % RESAMPLING_FACTOR)]
 
-            downsampled_array = np.array(sample_array[0::RESAMPLING_FACTOR])
-            downsampled_array = DatasetGenerator.upsample(downsampled_array, RESAMPLING_FACTOR)
-
-            downsampled_array = np.reshape(downsampled_array, (len(downsampled_array), 1))
-            sample_array = np.reshape(sample_array, (len(sample_array), 1))
-
-            for index in range(0, len(sample_array) - sample_dimension, OVERLAP):
-                low_resolution_chunk = downsampled_array[index:index + sample_dimension]
-                high_resolution_chunk = sample_array[index:index + sample_dimension]
-                filename = "sample_index_{}_chunk_index_{}_length_{}" \
-                    .format(sample_index, index, sample_dimension)
-                print("File {} generated - sample {}.".format(file_index, sample_index))
+            for sample_index in range(0, len(sample_array) - SAMPLE_DIMENSION, OVERLAP):
+                high_resolution_chunk = sample_array[sample_index:sample_index + SAMPLE_DIMENSION]
+                low_resolution_chunk = high_resolution_chunk[0::RESAMPLING_FACTOR]
+                high_resolution_chunk = np.reshape(high_resolution_chunk, (len(high_resolution_chunk), 1))
+                low_resolution_chunk = np.reshape(low_resolution_chunk, (len(low_resolution_chunk), 1))
+                filename = "recording_index_{}_sample_index_{}_length_{}" \
+                    .format(recording_index, sample_index, SAMPLE_DIMENSION)
+                print("Process {} generated the filepair no. {} from recording {}".format(
+                    process_index, file_index, recording_index))
                 np.save("preprocessed_dataset/low_res/lr_" + filename, low_resolution_chunk)
                 np.save("preprocessed_dataset/high_res/hr_" + filename, high_resolution_chunk)
                 file_index += 1
 
+    def find_workload_interval(self, process_index):
+        return ((process_index * len(self.__data)) // NUMBER_OF_PROCESSES,
+                ((process_index + 1) * len(self.__data)) // NUMBER_OF_PROCESSES)
+
+    def generate_dataset(self):
+        dataset = tfds.load("vctk", with_info=False)
+        dataset = dataset['train'].take(AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION)
+        sample_index, file_index = 0, 0
+        for sample in dataset:
+            print("Adding sample no. {} to the list...".format(sample_index))
+            self.__data.append(np.array(sample['speech'], dtype=np.float))
             sample_index += 1
+
+        self.__start_time = datetime.datetime.now()
+        print("Data generation started at {}".format(self.__start_time.strftime("%Y-%m-%d %H:%M:%S")))
+
+        for process_index in range(0, NUMBER_OF_PROCESSES):
+            workload_interval = self.find_workload_interval(process_index)
+            process = Process(target=self.run_generation_task,
+                              args=(workload_interval[0], workload_interval[1], process_index))
+            process.start()
+            self.__process_list.append(process)
+
+        for process in self.__process_list:
+            process.join()
+
+        self.__end_time = datetime.datetime.now()
+        print("Data generation started at {}".format(self.__start_time.strftime("%Y-%m-%d %H:%M:%S")))
+        print("Data generation ended at {}".format(self.__end_time.strftime("%Y-%m-%d %H:%M:%S")))
 
     @staticmethod
     def split_list_of_files():
