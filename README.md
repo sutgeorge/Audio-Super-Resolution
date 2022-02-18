@@ -154,6 +154,8 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ![Data generation, training and testing diagram in stage 2](Paper/AudioSuperResolution/diagram_stage_2.png)  
 
+![Stage 2 model diagram](Project/model_stage_2.png)  
+
  - [X] Display the 5-number summary / boxplot of the generated dataset
  - [X] Create line plot of a couple of random samples (both in time-domain and in frequency-domain)
  - [X] Create histogram of a single sample 

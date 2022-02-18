@@ -2,10 +2,10 @@ import os
 VCTK_DATASET_SAMPLING_RATE = 48000
 RESAMPLING_FACTOR = 4
 DOWNSAMPLED_RATE = int(VCTK_DATASET_SAMPLING_RATE / RESAMPLING_FACTOR)
-OVERLAP = 2400           # 50  milliseconds overlap size
-SAMPLE_DIMENSION = 4800  # 100 milliseconds for a sample rate of 48 kHz
+OVERLAP = 2400           # ~42.6 ms
+SAMPLE_DIMENSION = 4800  # sample_rate / chunk_size = 48000 / 4096 ~ 11.71 => a chunk is 1/11.71 out of a second, so ~85.33 ms
 NUMBER_OF_EPOCHS = 100
-NUMBER_OF_FILES = len(os.listdir("preprocessed_dataset/low_res/"))
+NUMBER_OF_FILES = 30000  # len(os.listdir("preprocessed_dataset/low_res/"))
 AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION = 1000
 NUMBER_OF_TRAINING_TENSORS = int(0.9 * NUMBER_OF_FILES)
 NUMBER_OF_VALIDATION_TENSORS = int(0.05 * NUMBER_OF_FILES)

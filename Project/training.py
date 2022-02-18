@@ -6,16 +6,16 @@ import numpy as np
 from metrics import signal_to_noise_ratio, normalised_root_mean_squared_error
 from tensorflow.keras.callbacks import ModelCheckpoint
 import matplotlib.pyplot as plt
+import datetime
 
 model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
 model.summary()
 
-"""
-model.compile(loss=normalised_root_mean_squared_error, optimizer='RMSprop',
-              metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
-"""
 model.compile(loss="mean_squared_error", optimizer='Adam',
               metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
+
+exit(1)
+
 (input_data_files, target_data_files), (input_validation_files, target_validation_files), _ \
     = DatasetGenerator.split_list_of_files()
 input_data, target_data, input_validation_data, target_validation_data = [], [], [], []
@@ -36,10 +36,12 @@ for index in range(0, number_of_validation_batches*BATCH_SIZE):
     target_validation_data.append(np.load("preprocessed_dataset/high_res/" + target_validation_files[index]))
     print("Loaded validation sample {}".format(index))
 
+print("Converting Python list to numpy array...")
 input_data = np.array(input_data)
 target_data = np.array(target_data)
 input_validation_data = np.array(input_validation_data)
 target_validation_data = np.array(target_validation_data)
+print("Done.")
 
 print("Some input tensor shape: {}".format(input_data[0].shape))
 print("Some target tensor shape: {}".format(target_data[0].shape))
@@ -53,6 +55,7 @@ print("Number of input data files: {}".format(len(input_data_files)))
 print("Number of validation data files: {}".format(len(input_validation_files)))
 print("Training started...")
 
+start_time = datetime.datetime.now()
 checkpoint_callback = ModelCheckpoint(filepath=CHECKPOINT_PATH,
                                       save_weights_only=True,
                                       verbose=True)
@@ -63,6 +66,8 @@ history = model.fit(input_data, target_data,
                     validation_data=(input_validation_data, target_validation_data),
                     callbacks=[checkpoint_callback],
                     verbose=True)
+
+end_time = datetime.datetime.now()
 
 print("model.fit history:")
 print(list(history.history.keys()))
@@ -103,3 +108,8 @@ plot_filename = plot_title.replace(" ", "_").replace(":", "").replace(";", "").r
 fig.suptitle(plot_title, fontsize="medium")
 plt.savefig("training_validation_plot_" + plot_filename.lower() + ".png")
 plt.show()
+
+model.save("models/model_" + plot_filename + ".h5")
+
+print("Data generation started at {}".format(start_time.strftime("%Y-%m-%d %H:%M:%S")))
+print("Data generation ended at {}".format(end_time.strftime("%Y-%m-%d %H:%M:%S")))
