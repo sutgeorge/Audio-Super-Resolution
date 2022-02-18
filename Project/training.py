@@ -14,8 +14,6 @@ model.summary()
 model.compile(loss="mean_squared_error", optimizer='Adam',
               metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
 
-exit(1)
-
 (input_data_files, target_data_files), (input_validation_files, target_validation_files), _ \
     = DatasetGenerator.split_list_of_files()
 input_data, target_data, input_validation_data, target_validation_data = [], [], [], []
@@ -109,7 +107,7 @@ fig.suptitle(plot_title, fontsize="medium")
 plt.savefig("training_validation_plot_" + plot_filename.lower() + ".png")
 plt.show()
 
-model.save("models/model_" + plot_filename + ".h5")
+model.save("models/model_stage_{}_".format(STAGE) + plot_filename + ".h5")
 
 print("Data generation started at {}".format(start_time.strftime("%Y-%m-%d %H:%M:%S")))
 print("Data generation ended at {}".format(end_time.strftime("%Y-%m-%d %H:%M:%S")))

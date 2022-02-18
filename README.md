@@ -136,6 +136,8 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ![Data generation, training and testing diagram in stage 1](Paper/AudioSuperResolution/diagram_stage_1.png)  
 
+<img src="Project/model_stage_1.png" alt="model_stage_1" align="center" width="50%"/>
+
  - [X] Write the data generator scripts (obtaining the low-res/high-res pairs of audio clips)
  - [X] Write the training/testing scripts 
  - [X] read more about why the loss approaches the nan value during training 
@@ -154,7 +156,7 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ![Data generation, training and testing diagram in stage 2](Paper/AudioSuperResolution/diagram_stage_2.png)  
 
-![Stage 2 model diagram](Project/model_stage_2.png)  
+<img src="Project/model_stage_2.png" alt="model_stage_2" align="center" width="50%"/>
 
  - [X] Display the 5-number summary / boxplot of the generated dataset
  - [X] Create line plot of a couple of random samples (both in time-domain and in frequency-domain)
