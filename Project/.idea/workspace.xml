@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6d36769a-56cc-4b90-8e7a-9ff63c68819a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_stage_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/model_stage_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_stage_2_version_1_resampling_factor_4_overlap_2400_sample_dimension_4800_epochs_1_batch_size_16_data_split_27000_1500_1500.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_stage_2_version_2_resampling_factor_4_overlap_2400_sample_dimension_4800_epochs_1_batch_size_16_data_split_27000_1500_1500.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/training.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +221,7 @@
       <workItem from="1645191346516" duration="4661000" />
       <workItem from="1645267403756" duration="2173000" />
       <workItem from="1645270246789" duration="2564000" />
-      <workItem from="1645276013460" duration="8333000" />
+      <workItem from="1645276013460" duration="8665000" />
     </task>
     <servers />
   </component>
@@ -250,7 +245,7 @@
     <SUITE FILE_PATH="coverage/Project$testing.coverage" NAME="testing Coverage Results" MODIFIED="1642406324084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$playing_with_multiprocessing.coverage" NAME="playing_with_multiprocessing Coverage Results" MODIFIED="1644987085373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$playing_with_tensorflow_datasets.coverage" NAME="playing_with_tensorflow_datasets Coverage Results" MODIFIED="1644989244386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Project$training.coverage" NAME="training Coverage Results" MODIFIED="1645288099710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$training.coverage" NAME="training Coverage Results" MODIFIED="1645288310225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$main.coverage" NAME="main Coverage Results" MODIFIED="1639743631982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$predict.coverage" NAME="predict Coverage Results" MODIFIED="1644928833487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

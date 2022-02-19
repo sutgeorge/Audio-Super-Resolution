@@ -167,6 +167,7 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 	- [X] Use 4 processes to speed up the data generation 
  - [X] Add 3 more upsampling blocks (a subpixel layer is not enough to upsample a 1200-sample tensor to 4800 samples and has no parameters)
  - [ ] Execute experimental training runs with multiple chunk sizes (100ms, 200ms, 300ms etc.) and compare results
+ - [ ] Replace the normal convolutions with depthwise separable 1D convolutions as an experiment
  - [ ] Try different resampling factors (2x, 4x, 6x, 8x etc.)
  - [ ] Compare the trained model with simple benchmarks (linear interpolation, cubic spline interpolation and the old 100-epochs downsampled+interpolated type of model)
  - [ ] Reconstruct the low-resolution signal without applying interpolation (e.g a 100-sample chunk downsampled with a factor of 4 becomes a chunk of length 25, which will be fed to the network as-is without interpolation)
