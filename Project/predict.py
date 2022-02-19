@@ -25,11 +25,6 @@ sample_array = None
 transcript = None
 recording_index = 0
 
-"""
-    Only the recordings up to index 99 have been used for training, hence why the chosen recordings for the prediction
-    are the ones with an index outside of the 0-99 range
-"""
-
 chosen_recording = random.randint(100, 200)
 
 for sample in dataset['train']:

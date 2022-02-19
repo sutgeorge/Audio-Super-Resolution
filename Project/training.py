@@ -11,9 +11,6 @@ import datetime
 model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
 model.summary()
 
-model.compile(loss="mean_squared_error", optimizer='Adam',
-              metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
-
 (input_data_files, target_data_files), (input_validation_files, target_validation_files), _ \
     = DatasetGenerator.split_list_of_files()
 input_data, target_data, input_validation_data, target_validation_data = [], [], [], []
@@ -54,15 +51,33 @@ print("Number of validation data files: {}".format(len(input_validation_files)))
 print("Training started...")
 
 start_time = datetime.datetime.now()
+
+model.compile(loss="mean_squared_error", optimizer='Adam',
+              metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
+
+checkpoint_callback = None
+
+if len(os.listdir("./checkpoints")) != 0:
+    print("Loading saved checkpoint...")
+    latest_checkpoint_path = tf.train.latest_checkpoint(checkpoint_dir=CHECKPOINT_DIRECTORY)
+    print("Latest saved checkpoint: {}".format(latest_checkpoint_path))
+else:
+    print("Initializing checkpoint...")
+
 checkpoint_callback = ModelCheckpoint(filepath=CHECKPOINT_PATH,
                                       save_weights_only=True,
-                                      verbose=True)
+                                      save_best_only=True,
+                                      verbose=True,
+                                      monitor='val_loss')
+
+early_stopper = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=10)
 
 history = model.fit(input_data, target_data,
                     batch_size=BATCH_SIZE,
                     epochs=NUMBER_OF_EPOCHS,
                     validation_data=(input_validation_data, target_validation_data),
-                    callbacks=[checkpoint_callback],
+                    validation_steps=30,
+                    callbacks=[checkpoint_callback, early_stopper],
                     verbose=True)
 
 end_time = datetime.datetime.now()
@@ -71,30 +86,14 @@ print("model.fit history:")
 print(list(history.history.keys()))
 print(history.history)
 
-fig, axes = plt.subplots(nrows=2, ncols=3, figsize=(24, 16), sharex=True)
+fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(16, 16), sharex=True)
 # fig.tight_layout(pad=2.0)
-axes[0, 0].plot(history.history['loss'], color=(255/255.0, 0/255.0, 0/255.0))
-axes[0, 0].set_xlabel("Epoch")
-axes[0, 0].set_ylabel("Loss (MSE)")
-axes[1, 0].plot(history.history['val_loss'], color=(125/255.0, 0/255.0, 0/255.0))
-axes[1, 0].set_xlabel("Epoch")
-axes[1, 0].set_ylabel("Loss (MSE)")
-
-axes[0, 1].plot(history.history['normalised_root_mean_squared_error'], color=(0/255.0, 255/255.0, 0/255.0))
-axes[0, 1].set_title("Training")
-axes[0, 1].set_xlabel("Epoch")
-axes[0, 1].set_ylabel("NRMSE")
-axes[1, 1].plot(history.history['val_normalised_root_mean_squared_error'], color=(0/255.0, 125/255.0, 0/255.0))
-axes[1, 1].set_title("Validation")
-axes[1, 1].set_xlabel("Epoch")
-axes[1, 1].set_ylabel("NRMSE")
-
-axes[0, 2].plot(history.history['signal_to_noise_ratio'], color=(0/255.0, 0/255.0, 255/255.0))
-axes[0, 2].set_xlabel("Epoch")
-axes[0, 2].set_ylabel("SNR")
-axes[1, 2].plot(history.history['val_signal_to_noise_ratio'], color=(0/255.0, 0/255.0, 125/255.0))
-axes[1, 2].set_xlabel("Epoch")
-axes[1, 2].set_ylabel("SNR")
+axes[0].plot(history.history['loss'], color=(255/255.0, 0/255.0, 0/255.0))
+axes[0].set_xlabel("Epoch")
+axes[0].set_ylabel("Loss (MSE)")
+axes[1].plot(history.history['val_loss'], color=(125/255.0, 0/255.0, 0/255.0))
+axes[1].set_xlabel("Epoch")
+axes[1].set_ylabel("Loss (MSE)")
 
 plot_title = "Resampling factor: " + str(RESAMPLING_FACTOR) \
                       + "; Overlap: " + str(OVERLAP) \
@@ -104,10 +103,14 @@ plot_title = "Resampling factor: " + str(RESAMPLING_FACTOR) \
                       + "; Data split: " + str(NUMBER_OF_TRAINING_TENSORS) + "/" + str(NUMBER_OF_VALIDATION_TENSORS) + "/" + str(NUMBER_OF_TESTING_TENSORS)
 plot_filename = plot_title.replace(" ", "_").replace(":", "").replace(";", "").replace("/", "_")
 fig.suptitle(plot_title, fontsize="medium")
-plt.savefig("training_validation_plot_" + plot_filename.lower() + ".png")
+plt.savefig("training_validation_plot_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".png")
 plt.show()
 
-model.save("models/model_stage_{}_".format(STAGE) + plot_filename + ".h5")
+model_filenames = os.listdir("models/")
+model_filenames.sort()
+if len(model_filenames) > 0:
+    VERSION = int(model_filenames[-1].split('_')[4]) + 1
+model.save("models/model_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".h5")
 
 print("Data generation started at {}".format(start_time.strftime("%Y-%m-%d %H:%M:%S")))
 print("Data generation ended at {}".format(end_time.strftime("%Y-%m-%d %H:%M:%S")))
