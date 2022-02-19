@@ -11,6 +11,8 @@ import datetime
 model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
 model.summary()
 
+exit(1)
+
 (input_data_files, target_data_files), (input_validation_files, target_validation_files), _ \
     = DatasetGenerator.split_list_of_files()
 input_data, target_data, input_validation_data, target_validation_data = [], [], [], []

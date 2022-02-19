@@ -1,6 +1,6 @@
 import tensorflow as tf
 from tensorlayer.layers import SubpixelConv1d
-from tensorflow.keras.layers import Conv1D, LeakyReLU, Dropout, Lambda, concatenate, Input, add, Activation
+from tensorflow.keras.layers import Conv1D, LeakyReLU, Dropout, Lambda, concatenate, Input, add, Activation, SeparableConv1D
 from tensorflow.keras.models import Model
 from tensorflow.keras.utils import plot_model
 from constants import *
@@ -48,23 +48,26 @@ def create_model(number_of_blocks, batch_size=BATCH_SIZE, input_size=SAMPLE_DIME
     x_input = x
     downsampling_blocks = []
 
-    x = create_downsampling_block(x, filters=4, kernel_size=32, stride=2)
+    x = create_downsampling_block(x, filters=64, kernel_size=32, stride=2)
     downsampling_blocks.append(x)
-    x = create_downsampling_block(x, filters=8, kernel_size=32, stride=2)
+    x = create_downsampling_block(x, filters=128, kernel_size=32, stride=2)
     downsampling_blocks.append(x)
-    x = create_downsampling_block(x, filters=16, kernel_size=32, stride=2)
+    x = create_downsampling_block(x, filters=256, kernel_size=64, stride=2)
     downsampling_blocks.append(x)
 
-    x = Conv1D(padding='same', filters=32, kernel_size=32, strides=2)(x)
+    x = Conv1D(padding='same', filters=256, kernel_size=32, strides=2)(x)
     x = LeakyReLU()(x)
 
-    x = create_upsampling_block(x, filters=32, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
+    x = create_upsampling_block(x, filters=256, kernel_size=64, corresponding_downsample_block=downsampling_blocks[-1])
     downsampling_blocks.pop()
-    x = create_upsampling_block(x, filters=16, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
+    x = create_upsampling_block(x, filters=128, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
     downsampling_blocks.pop()
-    x = create_upsampling_block(x, filters=8, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
+    x = create_upsampling_block(x, filters=64, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
     downsampling_blocks.pop()
-    x = subpixel1d(x.shape, r=8)(x)
+    x = create_upsampling_block(x, filters=32, kernel_size=32)
+    x = create_upsampling_block(x, filters=32, kernel_size=32)
+    x = create_upsampling_block(x, filters=32, kernel_size=32)
+    x = Conv1D(filters=1, kernel_size=1)(x)
 
     model = Model(x_input, x)
     plot_model(model, to_file="model_stage_2.png", show_shapes=True, show_layer_names=True)
