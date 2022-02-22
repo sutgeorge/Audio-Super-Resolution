@@ -8,10 +8,9 @@ from tensorflow.keras.callbacks import ModelCheckpoint
 import matplotlib.pyplot as plt
 import datetime
 
+
 model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
 model.summary()
-
-exit(1)
 
 (input_data_files, target_data_files), (input_validation_files, target_validation_files), _ \
     = DatasetGenerator.split_list_of_files()
@@ -54,7 +53,8 @@ print("Training started...")
 
 start_time = datetime.datetime.now()
 
-model.compile(loss="mean_squared_error", optimizer='Adam',
+adam_optimizer = tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE)
+model.compile(loss="mean_squared_error", optimizer=adam_optimizer,
               metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
 
 checkpoint_callback = None
@@ -72,14 +72,14 @@ checkpoint_callback = ModelCheckpoint(filepath=CHECKPOINT_PATH,
                                       verbose=True,
                                       monitor='val_loss')
 
-early_stopper = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=10)
+# early_stopper = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=15)
 
 history = model.fit(input_data, target_data,
                     batch_size=BATCH_SIZE,
                     epochs=NUMBER_OF_EPOCHS,
                     validation_data=(input_validation_data, target_validation_data),
                     validation_steps=30,
-                    callbacks=[checkpoint_callback, early_stopper],
+                    callbacks=[checkpoint_callback],
                     verbose=True)
 
 end_time = datetime.datetime.now()

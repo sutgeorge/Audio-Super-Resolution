@@ -62,6 +62,7 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
 ### Other
  - [Ablation studies video](https://www.youtube.com/watch?v=4Ko-wt0aITg)
  - [What is an ablation study?](https://stats.stackexchange.com/questions/380040/what-is-an-ablation-study-and-is-there-a-systematic-way-to-perform-it)
+ - [Steps to start training your custom Tensorflow model in AWS SageMaker](https://towardsdatascience.com/steps-to-start-training-your-custom-tensorflow-model-in-aws-sagemaker-ae9cf7a205b9)
 
 ## Possible uses
  - Improving sound quality of music
