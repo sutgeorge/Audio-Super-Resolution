@@ -96,22 +96,22 @@ axes.set_ylabel("Loss")
 plt.legend()
 
 plot_title = "Resampling factor: " + str(RESAMPLING_FACTOR) \
-                      + "; Overlap: " + str(OVERLAP) \
-                      + "; Sample dimension: " + str(SAMPLE_DIMENSION) \
-                      + "; Epochs: " + str(NUMBER_OF_EPOCHS) \
-                      + "; Batch size: " + str(BATCH_SIZE) \
+             + "; Overlap: " + str(OVERLAP) \
+             + "; Sample dimension: " + str(SAMPLE_DIMENSION) \
+             + "; Epochs: " + str(NUMBER_OF_EPOCHS) \
+             + "; Batch size: " + str(BATCH_SIZE) \
              + "; Learning rate: " + str(LEARNING_RATE) \
              + "; Data split: " + str(NUMBER_OF_TRAINING_TENSORS) + "/" + str(NUMBER_OF_VALIDATION_TENSORS) + "/" + str(NUMBER_OF_TESTING_TENSORS)
 plot_filename = plot_title.replace(" ", "_").replace(":", "").replace(";", "").replace("/", "_")
-fig.suptitle(plot_title, fontsize="medium")
-plt.savefig("training_validation_plot_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".png")
-plt.show()
-
 model_filenames = os.listdir("models/")
 model_filenames.sort()
 if len(model_filenames) > 0:
     VERSION = int(model_filenames[-1].split('_')[4]) + 1
 model.save("models/model_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".h5")
+
+fig.suptitle(plot_title, fontsize="medium")
+plt.savefig("training_validation_plot_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".png")
+plt.show()
 
 print("Data generation started at {}".format(start_time.strftime("%Y-%m-%d %H:%M:%S")))
 print("Data generation ended at {}".format(end_time.strftime("%Y-%m-%d %H:%M:%S")))
