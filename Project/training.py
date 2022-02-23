@@ -78,7 +78,6 @@ history = model.fit(input_data, target_data,
                     batch_size=BATCH_SIZE,
                     epochs=NUMBER_OF_EPOCHS,
                     validation_data=(input_validation_data, target_validation_data),
-                    validation_steps=30,
                     callbacks=[checkpoint_callback],
                     verbose=True)
 
@@ -88,21 +87,21 @@ print("model.fit history:")
 print(list(history.history.keys()))
 print(history.history)
 
-fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(16, 16), sharex=True)
+fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(16, 16))
 # fig.tight_layout(pad=2.0)
-axes[0].plot(history.history['loss'], color=(255/255.0, 0/255.0, 0/255.0))
-axes[0].set_xlabel("Epoch")
-axes[0].set_ylabel("Loss (MSE)")
-axes[1].plot(history.history['val_loss'], color=(125/255.0, 0/255.0, 0/255.0))
-axes[1].set_xlabel("Epoch")
-axes[1].set_ylabel("Loss (MSE)")
+axes.plot(history.history['loss'], label="Training loss", color=(255/255.0, 0/255.0, 0/255.0))
+axes.plot(history.history['val_loss'], label="Validation loss", color=(0/255.0, 255/255.0, 0/255.0))
+axes.set_xlabel("Epoch")
+axes.set_ylabel("Loss")
+plt.legend()
 
 plot_title = "Resampling factor: " + str(RESAMPLING_FACTOR) \
                       + "; Overlap: " + str(OVERLAP) \
                       + "; Sample dimension: " + str(SAMPLE_DIMENSION) \
                       + "; Epochs: " + str(NUMBER_OF_EPOCHS) \
                       + "; Batch size: " + str(BATCH_SIZE) \
-                      + "; Data split: " + str(NUMBER_OF_TRAINING_TENSORS) + "/" + str(NUMBER_OF_VALIDATION_TENSORS) + "/" + str(NUMBER_OF_TESTING_TENSORS)
+             + "; Learning rate: " + str(LEARNING_RATE) \
+             + "; Data split: " + str(NUMBER_OF_TRAINING_TENSORS) + "/" + str(NUMBER_OF_VALIDATION_TENSORS) + "/" + str(NUMBER_OF_TESTING_TENSORS)
 plot_filename = plot_title.replace(" ", "_").replace(":", "").replace(";", "").replace("/", "_")
 fig.suptitle(plot_title, fontsize="medium")
 plt.savefig("training_validation_plot_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".png")
