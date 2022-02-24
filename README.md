@@ -34,6 +34,7 @@ meets super-resolution](https://arxiv.org/pdf/2001.11263.pdf)
  - [Enabling Real-time On-chip Audio Super Resolution for Bone
 Conduction Microphones](https://arxiv.org/pdf/2112.13156.pdf)
  - [Speech bandwidth expansion based on Deep Neural Networks](https://www.researchgate.net/publication/325682935_Speech_bandwidth_expansion_based_on_Deep_Neural_Networks)
+ - [Speech Audio Super-Resolution For Speech Recognition](https://www.researchgate.net/publication/334559270_Speech_Audio_Super-Resolution_For_Speech_Recognition)
 
 
 ### Image super-resolution 
