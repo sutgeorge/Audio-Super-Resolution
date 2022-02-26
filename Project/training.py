@@ -107,7 +107,7 @@ model_filenames = os.listdir("models/")
 model_filenames.sort()
 if len(model_filenames) > 0:
     VERSION = int(model_filenames[-1].split('_')[4]) + 1
-model.save("models/model_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".h5")
+model.save_weights("models/model_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".h5")
 
 fig.suptitle(plot_title, fontsize="medium")
 plt.savefig("training_validation_plot_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".png")
