@@ -42,7 +42,6 @@ sample_array_length = len(sample_array)
 sample_array = sample_array[:sample_array_length - (sample_array_length % RESAMPLING_FACTOR)]
 
 downsampled_array = np.array(sample_array[0::RESAMPLING_FACTOR])
-downsampled_array = DatasetGenerator.upsample(downsampled_array, RESAMPLING_FACTOR)
 
 downsampled_array = np.reshape(downsampled_array, (len(downsampled_array), 1))
 sample_array = np.reshape(sample_array, (len(sample_array), 1))
