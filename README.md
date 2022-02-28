@@ -69,6 +69,7 @@ Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015
  - [Gradient clipping in Keras](https://stackoverflow.com/questions/47778292/gradient-clipping-in-keras)
  - [How to use Learning Curves to Diagnose Machine Learning Model Performance](https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/)
  - [Validation Error less than training error](https://stats.stackexchange.com/questions/187335/validation-error-less-than-training-error)
+ - [How to successfully add large data sets to Google Drive](https://towardsdatascience.com/how-to-successfully-add-large-data-sets-to-google-drive-130beb320f1a)
 
 ## Possible uses
  - Improving sound quality of music
