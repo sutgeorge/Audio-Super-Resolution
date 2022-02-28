@@ -138,6 +138,17 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
  - [How to Summarize a Research Article](https://writingcenter.uconn.edu/wp-content/uploads/sites/593/2014/06/How_to_Summarize_a_Research_Article1.pdf)
 
+## Possible outline
+ - Introduction (goal of hte project)
+ - Literature review
+ - Basic concepts (Fourier series, Fourier transforms, spectrograms)
+ - AudioUNet experiments
+ - Time-Frequency Network experiments
+ - Time-Frequency Network experiments with GAN-generated spectrograms on the frequency domain branch instead of the slim AudioUNet
+ - Comparisons
+ - Spring/Angular project + diagrams?
+ - ???
+
 ## A quick implementation of ["Audio Super Resolution Using Neural Networks (Kuleshov, Enam, Ermon, 2017)"](https://arxiv.org/pdf/1708.00853v1.pdf)
 
 ### First stage

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d36769a-56cc-4b90-8e7a-9ff63c68819a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +49,11 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.plots">
     <configuration name="plots" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -237,7 +243,7 @@
       <workItem from="1645948324718" duration="1667000" />
       <workItem from="1645952460535" duration="3478000" />
       <workItem from="1645968998749" duration="7582000" />
-      <workItem from="1646030599596" duration="1610000" />
+      <workItem from="1646030599596" duration="6309000" />
     </task>
     <servers />
   </component>
