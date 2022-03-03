@@ -1,2 +1,0 @@
-model_checkpoint_path: "checkpoint-epoch-0088-mse_validation_loss-68119.898438-nrmse_val-  0.005593.ckpt"
-all_model_checkpoint_paths: "checkpoint-epoch-0088-mse_validation_loss-68119.898438-nrmse_val-  0.005593.ckpt"

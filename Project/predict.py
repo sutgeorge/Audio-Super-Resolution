@@ -14,7 +14,7 @@ import random
 import re
 
 print("Loading and compiling model...")
-model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
+model = create_model()
 model.compile(loss="mean_squared_error", optimizer='Adam',
               metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error],
               run_eagerly=True)

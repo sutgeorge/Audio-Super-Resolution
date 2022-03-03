@@ -16,7 +16,7 @@ from tensorflow.python.ops.numpy_ops import np_config
 np_config.enable_numpy_behavior()
 
 print("Loading and compiling model...")
-model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
+model = create_model()
 model.compile(loss="mean_squared_error", optimizer='Adam',
               metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
 # model.load_weights(CHECKPOINT_PATH).expect_partial()

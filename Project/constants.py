@@ -1,7 +1,7 @@
 import os
 VCTK_DATASET_SAMPLING_RATE = 48000
 RESAMPLING_FACTOR = 4
-STAGE = 2
+STAGE = 3
 VERSION = 1
 DOWNSAMPLED_RATE = int(VCTK_DATASET_SAMPLING_RATE / RESAMPLING_FACTOR)
 OVERLAP = 2400           # 50 ms
@@ -15,7 +15,6 @@ NUMBER_OF_TRAINING_TENSORS = int(0.9 * NUMBER_OF_FILES)
 NUMBER_OF_VALIDATION_TENSORS = int(0.05 * NUMBER_OF_FILES)
 NUMBER_OF_TESTING_TENSORS = int(0.05 * NUMBER_OF_FILES)
 BATCH_SIZE = 16  # The number of input tensors should be divisible by the batch size
-NUMBER_OF_RESIDUAL_BLOCKS = 6
 CHECKPOINT_PATH = "checkpoints/checkpoint-epoch-{epoch:04d}-mse_validation_loss-{val_loss:10f}-nrmse_val-{val_normalised_root_mean_squared_error:10f}.ckpt"
 CHECKPOINT_DIRECTORY = os.path.dirname(CHECKPOINT_PATH)
 NUMBER_OF_PROCESSES = 4

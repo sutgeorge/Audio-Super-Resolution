@@ -43,34 +43,34 @@ def create_upsampling_block(x, filters, kernel_size, padding='same', stride=1, c
     return x
 
 
-def create_model(number_of_blocks, batch_size=BATCH_SIZE, input_size=SAMPLE_DIMENSION // RESAMPLING_FACTOR):
+def create_model(batch_size=BATCH_SIZE, input_size=SAMPLE_DIMENSION // RESAMPLING_FACTOR):
     x = Input((input_size, 1), batch_size=batch_size)
     x_input = x
     downsampling_blocks = []
 
-    x = create_downsampling_block(x, filters=32, kernel_size=32, stride=2)
+    x = create_downsampling_block(x, filters=64, kernel_size=32, stride=2)
     downsampling_blocks.append(x)
-    x = create_downsampling_block(x, filters=32, kernel_size=32, stride=2)
+    x = create_downsampling_block(x, filters=64, kernel_size=32, stride=2)
     downsampling_blocks.append(x)
-    x = create_downsampling_block(x, filters=32, kernel_size=32, stride=2)
+    x = create_downsampling_block(x, filters=64, kernel_size=32, stride=2)
     downsampling_blocks.append(x)
 
-    x = Conv1D(padding='same', kernel_initializer='Orthogonal', filters=32, kernel_size=32, strides=2)(x)
+    x = Conv1D(padding='same', kernel_initializer='Orthogonal', filters=64, kernel_size=32, strides=2)(x)
     x = LeakyReLU()(x)
 
-    x = create_upsampling_block(x, filters=32, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
+    x = create_upsampling_block(x, filters=64, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
     downsampling_blocks.pop()
-    x = create_upsampling_block(x, filters=32, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
+    x = create_upsampling_block(x, filters=64, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
     downsampling_blocks.pop()
-    x = create_upsampling_block(x, filters=32, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
+    x = create_upsampling_block(x, filters=64, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
     downsampling_blocks.pop()
-    x = create_upsampling_block(x, filters=32, kernel_size=32)
+    x = create_upsampling_block(x, filters=64, kernel_size=32)
     x = add([x, x_input])
-    x = create_upsampling_block(x, filters=32, kernel_size=32)
-    x = create_upsampling_block(x, filters=32, kernel_size=32)
+    x = create_upsampling_block(x, filters=64, kernel_size=32)
+    x = create_upsampling_block(x, filters=64, kernel_size=32)
     x = Conv1D(filters=1, kernel_initializer='Orthogonal', kernel_size=1)(x)
 
     model = Model(x_input, x)
-    plot_model(model, to_file="model_stage_2.png", show_shapes=True, show_layer_names=True)
+    plot_model(model, to_file="model_stage_" + str(STAGE) + ".png", show_shapes=True, show_layer_names=True)
     return model
 

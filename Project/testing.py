@@ -15,7 +15,7 @@ for index in range(0, number_of_testing_batches*BATCH_SIZE):
     target_test_data.append(np.load("preprocessed_dataset/high_res/" + target_test_files[index]))
     print("Loaded testing sample {}".format(index))
 
-model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
+model = create_model()
 model.load_weights(MODEL_PATH)
 
 adam_optimizer = tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE)

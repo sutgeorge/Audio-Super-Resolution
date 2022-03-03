@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import datetime
 
 
-model = create_model(NUMBER_OF_RESIDUAL_BLOCKS)
+model = create_model()
 model.summary()
 
 (input_data_files, target_data_files), (input_validation_files, target_validation_files), _ \
