@@ -19,4 +19,4 @@ NUMBER_OF_RESIDUAL_BLOCKS = 6
 CHECKPOINT_PATH = "checkpoints/checkpoint-epoch-{epoch:04d}-mse_validation_loss-{val_loss:10f}-nrmse_val-{val_normalised_root_mean_squared_error:10f}.ckpt"
 CHECKPOINT_DIRECTORY = os.path.dirname(CHECKPOINT_PATH)
 NUMBER_OF_PROCESSES = 4
-MODEL_PATH = "models/model_stage_2_version_3_resampling_factor_4_overlap_2400_sample_dimension_4800_epochs_100_batch_size_16_learning_rate_0.0005_data_split_27000_1500_1500.h5"
+MODEL_PATH = "models/model_stage_2_version_4_resampling_factor_4_overlap_2400_sample_dimension_4800_epochs_100_batch_size_16_learning_rate_0.0001_data_split_27000_1500_1500.h5"
