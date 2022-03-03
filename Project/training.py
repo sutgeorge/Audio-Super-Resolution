@@ -8,7 +8,6 @@ from tensorflow.keras.callbacks import ModelCheckpoint
 import matplotlib.pyplot as plt
 import datetime
 
-
 model = create_model()
 model.summary()
 
@@ -110,7 +109,7 @@ if len(model_filenames) > 0:
 model.save_weights("models/model_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".h5")
 
 fig.suptitle(plot_title, fontsize="medium")
-plt.savefig("training_validation_plot_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".png")
+plt.savefig("outputs/training-plots/training_validation_plot_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".png")
 plt.show()
 
 print("Data generation started at {}".format(start_time.strftime("%Y-%m-%d %H:%M:%S")))
