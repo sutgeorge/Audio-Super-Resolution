@@ -194,9 +194,16 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 <img src="Project/model_stage_3.png" alt="model_stage_3" align="center" width="50%"/>
 
- - [X] Add more filters to the convolutional layers and train
+ - [X] Increase the number of filters in the Conv1D layers from 32 to 64 and train
+
+### 4th stage
+
+<img src="Project/model_stage_4.png" alt="model_stage_3" align="center" width="50%"/>
+ 
+ - [X] Set the filter no. configuration to 64-128-256-256-256-128-64, with the last 2 upsampling blocks retaining the 64-64 arrangement
+ - [ ] Perform an ablation study to analyze how much each residual block contributes to the noise found in the model output
+ - [ ] Try different resampling factors (2x, 4x, 6x, 8x etc.)
  - [ ] Execute experimental training runs with multiple chunk sizes (100ms, 200ms, 300ms etc.) and compare results
  - [ ] Replace the normal convolutions with depthwise separable 1D convolutions as an experiment
- - [ ] Try different resampling factors (2x, 4x, 6x, 8x etc.)
- - [ ] Compare the trained model with simple benchmarks (linear interpolation, cubic spline interpolation and the old 100-epochs downsampled+interpolated type of model)
+ - [ ] Compare the trained model with simple baselines (linear interpolation, cubic spline interpolation etc.)
 
