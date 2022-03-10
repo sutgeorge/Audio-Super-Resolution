@@ -2186,22 +2186,12 @@
     <bcf:citekey order="2">ledig2017photorealistic</bcf:citekey>
     <bcf:citekey order="3">kuleshov2017audio</bcf:citekey>
     <bcf:citekey order="4">kuleshov2017audio</bcf:citekey>
-    <bcf:citekey order="5">ronneberger2015unet</bcf:citekey>
-    <bcf:citekey order="6">ronneberger2015unet</bcf:citekey>
-    <bcf:citekey order="7">kuleshov2017audio</bcf:citekey>
-    <bcf:citekey order="8">kuleshov2017audio</bcf:citekey>
-    <bcf:citekey order="9">lietal2015</bcf:citekey>
-    <bcf:citekey order="10">lietal2015</bcf:citekey>
-    <bcf:citekey order="11">kuleshov2017audio</bcf:citekey>
-    <bcf:citekey order="12">kuleshov2017audio</bcf:citekey>
-    <bcf:citekey order="13">timefrequencynetworks2018</bcf:citekey>
-    <bcf:citekey order="14">timefrequencynetworks2018</bcf:citekey>
-    <bcf:citekey order="15">kuleshov2017audio</bcf:citekey>
-    <bcf:citekey order="16">kuleshov2017audio</bcf:citekey>
-    <bcf:citekey order="17">kuleshov2017audio</bcf:citekey>
-    <bcf:citekey order="18">kuleshov2017audio</bcf:citekey>
-    <bcf:citekey order="19">kuleshov2017audio</bcf:citekey>
-    <bcf:citekey order="20">kuleshov2017audio</bcf:citekey>
+    <bcf:citekey order="5">resnet2015</bcf:citekey>
+    <bcf:citekey order="6">resnet2015</bcf:citekey>
+    <bcf:citekey order="7">timefrequencynetworks2018</bcf:citekey>
+    <bcf:citekey order="8">timefrequencynetworks2018</bcf:citekey>
+    <bcf:citekey order="9">kuleshov2017audio</bcf:citekey>
+    <bcf:citekey order="10">kuleshov2017audio</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

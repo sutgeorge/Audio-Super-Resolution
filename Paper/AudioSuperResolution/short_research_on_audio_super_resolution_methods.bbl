@@ -19,6 +19,48 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{resnet2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5e72bc22dbcf0984c6d113d280e36990}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiangyu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Shaoqing},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{bibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorbibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Deep Residual Learning for Image Recognition}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/1512.03385.pdf
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/1512.03385.pdf
+      \endverb
+    \endentry
     \entry{kuleshov2017audio}{misc}{}
       \name{author}{3}{}{%
         {{hash=2e7fab79c30ca590cb9a99af964a32c9}{%
@@ -131,42 +173,6 @@
       \verb 1609.04802
       \endverb
     \endentry
-    \entry{lietal2015}{article}{}
-      \name{author}{4}{}{%
-        {{hash=f8507f682a2ae766e90753979edd2b66}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Kehuang},
-           giveni={K\bibinitperiod}}}%
-        {{hash=1a0371e0a62b44d30cc131417169cf7c}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Zhen},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=90812e2aac1e3fb393dfd7663b4eefe1}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Yong},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=26883d806fdb5a0cdc88e4154acb0773}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Chin-Hui},
-           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
-      \strng{fullhash}{28cf2989feaea6e0c4ef47aec80c1f43}
-      \strng{bibnamehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
-      \strng{authorbibnamehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
-      \strng{authornamehash}{4dbf4f259cbe7b0b6b5391f70de8b7ab}
-      \strng{authorfullhash}{28cf2989feaea6e0c4ef47aec80c1f43}
-      \field{sortinit}{L}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Dnn-based speech bandwidth expansion and its application to adding high-frequency missing features for automatic speech recognition of narrowband speech}
-      \field{year}{2015}
-    \endentry
     \entry{timefrequencynetworks2018}{article}{}
       \name{author}{5}{}{%
         {{hash=2352a9b7fc97a1cfc91d6dfd8539c218}{%
@@ -218,42 +224,6 @@
       \endverb
       \verb{url}
       \verb https://teckyianlim.me/audio-sr/res/3828.pdf
-      \endverb
-    \endentry
-    \entry{ronneberger2015unet}{misc}{}
-      \name{author}{3}{}{%
-        {{hash=8e46da9de9e53ea5d37089897d69cdd9}{%
-           family={Ronneberger},
-           familyi={R\bibinitperiod},
-           given={Olaf},
-           giveni={O\bibinitperiod}}}%
-        {{hash=168e84ce3582cbc6bac5e2ebc3ef8442}{%
-           family={Fischer},
-           familyi={F\bibinitperiod},
-           given={Philipp},
-           giveni={P\bibinitperiod}}}%
-        {{hash=b452a32296958371572717940f900884}{%
-           family={Brox},
-           familyi={B\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{f23ccc5160c62c7866172335b2c76e11}
-      \strng{fullhash}{f23ccc5160c62c7866172335b2c76e11}
-      \strng{bibnamehash}{f23ccc5160c62c7866172335b2c76e11}
-      \strng{authorbibnamehash}{f23ccc5160c62c7866172335b2c76e11}
-      \strng{authornamehash}{f23ccc5160c62c7866172335b2c76e11}
-      \strng{authorfullhash}{f23ccc5160c62c7866172335b2c76e11}
-      \field{sortinit}{R}
-      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{cs.CV}
-      \field{eprinttype}{arXiv}
-      \field{title}{U-Net: Convolutional Networks for Biomedical Image Segmentation}
-      \field{year}{2015}
-      \verb{eprint}
-      \verb 1505.04597
       \endverb
     \endentry
   \enddatalist
