@@ -2192,6 +2192,12 @@
     <bcf:citekey order="8">timefrequencynetworks2018</bcf:citekey>
     <bcf:citekey order="9">kuleshov2017audio</bcf:citekey>
     <bcf:citekey order="10">kuleshov2017audio</bcf:citekey>
+    <bcf:citekey order="11">bandwidthextension2019</bcf:citekey>
+    <bcf:citekey order="12">bandwidthextension2019</bcf:citekey>
+    <bcf:citekey order="13">goodfellow2014</bcf:citekey>
+    <bcf:citekey order="14">goodfellow2014</bcf:citekey>
+    <bcf:citekey order="15">kuleshov2017audio</bcf:citekey>
+    <bcf:citekey order="16">kuleshov2017audio</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

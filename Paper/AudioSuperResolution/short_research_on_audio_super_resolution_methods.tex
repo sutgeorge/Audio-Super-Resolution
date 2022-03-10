@@ -63,7 +63,13 @@ Audio super-resolution refers to the task of improving the sound quality of a re
 
 \section{Bandwidth extension on raw audio via generative adversarial networks}
 
+A compelling approach to audio super-resolution is presented in \textcite{bandwidthextension2019}, where a generative adversarial network is compared with the previously known architectures. One of the most significant differences between the proposed model and the previous ones is the perceptual loss which is unsupervised, computing the difference between the feature maps resulting from the low and high-resolution samples fed to the model.
 
+As underlined in \textcite{goodfellow2014}, a generative adversarial network is formed from two models, the generator and the discriminator, both of which learn in tandem. The generator's task is to create fake instances of samples similar to the ones from the distribution of a dataset, whereas the discriminator classifies the generator's outputs as real or fake. 
+
+The MU-GAN architecture introduced in this paper implements a similar technique with an additional autoencoder model similar to AudioUNet (\textcite{kuleshov2017audio}) which expresses the feature loss computed from both the real and the generated samples. From experiments, it has been discovered that incorporating the autoencoder improves the stability of the training process. A particular characteristic of the model is its use of multiscale convolutional layers and superpixel layers. Multiscale convolutional layers acquire information with multiple filters of different sizes, therefore solving the issue of needing large kernels. Superpixel layers are a variant of pooling layers and strided convolutions where the layer exchanges size in the time dimension for size in the number of channels. The reason for its usage is related to performance, previous papers showing in comparison that there are various artifacts arising from the implementation of pooling and strided convolution layers. Furthermore, the superpixel layers bring improvements in the training time of the network.
+
+As for the other articles, numerous subsets of the VCTK dataset are included in the experiments and the metrics are the signal-to-noise ratio, log-spectral distance which measures the difference between two spectra of frequencies and the mean-opinion score. In general, the model's performance in terms of the SNR metric compared to the UNet baselines is not superior, but the greater values for the log-spectral distance and mean-opinion score reveal that the architecture is capable of outputting finer details of the frequency spectrum. 
 
 	
 \printbibliography

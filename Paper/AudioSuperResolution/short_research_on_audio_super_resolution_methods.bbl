@@ -19,6 +19,68 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{goodfellow2014}{article}{}
+      \name{author}{8}{}{%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=a341d25f80a8118cdbb90b272adc8b4f}{%
+           family={Pouget-Abadie},
+           familyi={P\bibinithyphendelim A\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9e80f4779b032f68a6106e1424345450}{%
+           family={Mirza},
+           familyi={M\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=743dd6cdaa6639320289d219d351d7b7}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e8151f1b8f85a048cacb34f374ec922b}{%
+           family={Warde-Farley},
+           familyi={W\bibinithyphendelim F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9ca00ffd7cc35f7cfb8f698aa9239c76}{%
+           family={Ozair},
+           familyi={O\bibinitperiod},
+           given={Sherjil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{fullhash}{fa2b4fb373e75fcf07b4b987e4507545}
+      \strng{bibnamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authorbibnamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authorfullhash}{fa2b4fb373e75fcf07b4b987e4507545}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Generative Adversarial Networks}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/1406.2661.pdf
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/1406.2661.pdf
+      \endverb
+    \endentry
     \entry{resnet2015}{article}{}
       \name{author}{4}{}{%
         {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
@@ -59,6 +121,38 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/pdf/1512.03385.pdf
+      \endverb
+    \endentry
+    \entry{bandwidthextension2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bdee978cee611a58ab97517483410520}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Sung},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6c378133de1d85c52678c6e6297e4d00}{%
+           family={Sathe},
+           familyi={S\bibinitperiod},
+           given={Visvesh},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{b177f0370f8c0c71433412a77c7a4c41}
+      \strng{fullhash}{b177f0370f8c0c71433412a77c7a4c41}
+      \strng{bibnamehash}{b177f0370f8c0c71433412a77c7a4c41}
+      \strng{authorbibnamehash}{b177f0370f8c0c71433412a77c7a4c41}
+      \strng{authornamehash}{b177f0370f8c0c71433412a77c7a4c41}
+      \strng{authorfullhash}{b177f0370f8c0c71433412a77c7a4c41}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bandwidth Extension on Raw Audio via Generative Adversarial Networks}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/1903.09027.pdf
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/1903.09027.pdf
       \endverb
     \endentry
     \entry{kuleshov2017audio}{misc}{}
