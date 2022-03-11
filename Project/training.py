@@ -56,14 +56,18 @@ adam_optimizer = tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE)
 model.compile(loss="mean_squared_error", optimizer=adam_optimizer,
               metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
 
-checkpoint_callback = None
-
-if len(os.listdir("./checkpoints")) != 0:
+model_filenames = os.listdir("models/")
+model_filenames.sort()
+latest_epoch = 0
+if len(model_filenames) > 0:
+    VERSION = int(model_filenames[-1].split('_')[4]) + 1
+    latest_epoch = int(model_filenames[-1].split('_')[14])
+    NUMBER_OF_EPOCHS += latest_epoch
+    model.load_weights(MODEL_PATH)
+elif len(os.listdir("./checkpoints")) != 0:
     print("Loading saved checkpoint...")
     latest_checkpoint_path = tf.train.latest_checkpoint(checkpoint_dir=CHECKPOINT_DIRECTORY)
     print("Latest saved checkpoint: {}".format(latest_checkpoint_path))
-else:
-    print("Initializing checkpoint...")
 
 checkpoint_callback = ModelCheckpoint(filepath=CHECKPOINT_PATH,
                                       save_weights_only=True,
@@ -71,13 +75,12 @@ checkpoint_callback = ModelCheckpoint(filepath=CHECKPOINT_PATH,
                                       verbose=True,
                                       monitor='val_loss')
 
-# early_stopper = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=15)
-
 history = model.fit(input_data, target_data,
                     batch_size=BATCH_SIZE,
                     epochs=NUMBER_OF_EPOCHS,
                     validation_data=(input_validation_data, target_validation_data),
                     callbacks=[checkpoint_callback],
+                    initial_epoch = latest_epoch,
                     verbose=True)
 
 end_time = datetime.datetime.now()
@@ -102,10 +105,6 @@ plot_title = "Resampling factor: " + str(RESAMPLING_FACTOR) \
              + "; Learning rate: " + str(LEARNING_RATE) \
              + "; Data split: " + str(NUMBER_OF_TRAINING_TENSORS) + "/" + str(NUMBER_OF_VALIDATION_TENSORS) + "/" + str(NUMBER_OF_TESTING_TENSORS)
 plot_filename = plot_title.replace(" ", "_").replace(":", "").replace(";", "").replace("/", "_")
-model_filenames = os.listdir("models/")
-model_filenames.sort()
-if len(model_filenames) > 0:
-    VERSION = int(model_filenames[-1].split('_')[4]) + 1
 model.save_weights("models/model_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".h5")
 
 fig.suptitle(plot_title, fontsize="medium")
