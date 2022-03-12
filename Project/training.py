@@ -89,14 +89,6 @@ print("model.fit history:")
 print(list(history.history.keys()))
 print(history.history)
 
-fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(16, 16))
-# fig.tight_layout(pad=2.0)
-axes.plot(history.history['loss'], label="Training loss", color=(255/255.0, 0/255.0, 0/255.0))
-axes.plot(history.history['val_loss'], label="Validation loss", color=(0/255.0, 255/255.0, 0/255.0))
-axes.set_xlabel("Epoch")
-axes.set_ylabel("Loss")
-plt.legend()
-
 plot_title = "Resampling factor: " + str(RESAMPLING_FACTOR) \
              + "; Overlap: " + str(OVERLAP) \
              + "; Sample dimension: " + str(SAMPLE_DIMENSION) \
@@ -105,11 +97,30 @@ plot_title = "Resampling factor: " + str(RESAMPLING_FACTOR) \
              + "; Learning rate: " + str(LEARNING_RATE) \
              + "; Data split: " + str(NUMBER_OF_TRAINING_TENSORS) + "/" + str(NUMBER_OF_VALIDATION_TENSORS) + "/" + str(NUMBER_OF_TESTING_TENSORS)
 plot_filename = plot_title.replace(" ", "_").replace(":", "").replace(";", "").replace("/", "_")
+
+loss_files = os.listdir("outputs/losses-as-numpy-arrays")
+if len(loss_files) > 0:
+    loss_values = np.load("outputs/losses-as-numpy-arrays/loss_values.npy").tolist()
+    validation_loss_values = np.load("outputs/losses-as-numpy-arrays/validation_loss_values.npy").tolist()
+    history.history['loss'] = loss_values + history.history['loss'] 
+    history.history['val_loss'] = validation_loss_values + history.history['val_loss'] 
+    
+fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(16, 16))
+# fig.tight_layout(pad=2.0)
+axes.plot(history.history['loss'], label="Training loss", color=(255/255.0, 0/255.0, 0/255.0))
+axes.plot(history.history['val_loss'], label="Validation loss", color=(0/255.0, 255/255.0, 0/255.0))
+axes.set_xlabel("Epoch")
+axes.set_ylabel("Loss")
+plt.legend()
+
 model.save_weights("models/model_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".h5")
 
 fig.suptitle(plot_title, fontsize="medium")
 plt.savefig("outputs/training-plots/training_validation_plot_stage_{}_version_{}_".format(STAGE, VERSION) + plot_filename.lower() + ".png")
 plt.show()
+
+np.save("outputs/losses-as-numpy-arrays/loss_values.npy", history.history['loss'])
+np.save("outputs/losses-as-numpy-arrays/validation_loss_values.npy", history.history['val_loss'])
 
 print("Data generation started at {}".format(start_time.strftime("%Y-%m-%d %H:%M:%S")))
 print("Data generation ended at {}".format(end_time.strftime("%Y-%m-%d %H:%M:%S")))

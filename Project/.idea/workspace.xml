@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d36769a-56cc-4b90-8e7a-9ff63c68819a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_stage_3_version_1_resampling_factor_4_overlap_2400_sample_dimension_4800_epochs_100_batch_size_16_learning_rate_0.0001_data_split_52540_6567_6567.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/plots.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training-audiounet.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/training-audiounet.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,6 +256,7 @@
       <workItem from="1646296690512" duration="2777000" />
       <workItem from="1646304900669" duration="817000" />
       <workItem from="1646468345573" duration="138000" />
+      <workItem from="1647067471993" duration="103000" />
     </task>
     <servers />
   </component>

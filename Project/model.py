@@ -1,6 +1,6 @@
 import tensorflow as tf
 from tensorlayer.layers import SubpixelConv1d
-from tensorflow.keras.layers import Conv1D, LeakyReLU, Dropout, Lambda, concatenate, Input, add, Activation, SeparableConv1D
+from tensorflow.keras.layers import Conv1D, LeakyReLU, Dropout, Lambda, concatenate, Input, add, Activation, SeparableConv1D, BatchNormalization
 from tensorflow.keras.models import Model
 from tensorflow.keras.utils import plot_model
 from constants import *
@@ -29,6 +29,7 @@ def subpixel1d(input_shape, r):
 
 def create_downsampling_block(x, filters, kernel_size, stride=2):
     x = Conv1D(filters, kernel_size, kernel_initializer='Orthogonal', strides=stride, padding='same')(x)
+    x = BatchNormalization()(x)
     x = LeakyReLU()(x)
     return x
 

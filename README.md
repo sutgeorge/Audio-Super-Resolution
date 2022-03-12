@@ -49,6 +49,10 @@ Network](https://arxiv.org/pdf/1609.04802.pdf)
  - [STGAN: A Unified Selective Transfer Network
 for Arbitrary Image Attribute Editing](https://arxiv.org/pdf/1904.09709.pdf)
 
+### Deep Learning
+ - [Understanding the Disharmony between Dropout and Batch Normalization by
+Variance Shift](https://arxiv.org/pdf/1801.05134.pdf)
+
 ### Possibly useful
  - [Audio Super-Resolution Using Analysis Dictionary
 Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015.pdf)
@@ -201,6 +205,10 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 <img src="Project/model_stage_4.png" alt="model_stage_3" align="center" width="50%"/>
  
  - [X] Set the filter no. configuration to 64-128-256-256-256-128-64, with the last 2 upsampling blocks retaining the 64-64 arrangement
+
+### 5th stage
+ - [X] Add BatchNorm to the downsampling blocks
+ - [ ] Experiment with adding/removing BatchNorm and Dropout layers
  - [ ] Perform an ablation study to analyze how much each residual block contributes to the noise found in the model output
  - [ ] Try different resampling factors (2x, 4x, 6x, 8x etc.)
  - [ ] Execute experimental training runs with multiple chunk sizes (100ms, 200ms, 300ms etc.) and compare results
