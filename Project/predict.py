@@ -18,7 +18,6 @@ model = create_model()
 model.compile(loss="mean_squared_error", optimizer='Adam',
               metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error],
               run_eagerly=True)
-# model.load_weights(CHECKPOINT_PATH).expect_partial()
 model.load_weights(MODEL_PATH)
 
 print("Loading the sample vocal recording from the VCTK dataset...")
