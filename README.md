@@ -38,11 +38,17 @@ Conduction Microphones](https://arxiv.org/pdf/2112.13156.pdf)
 
 
 ### Image super-resolution 
- - [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial
-Network](https://arxiv.org/pdf/1609.04802.pdf)
+ - [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/pdf/1609.04802.pdf)
+ - [Multi-Scale Inception Based Super-Resolution Using
+Deep Learning Approach](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjmhZCKx8D2AhWVuaQKHW1qCe8QFnoECC0QAQ&url=https%3A%2F%2Fwww.mdpi.com%2F2079-9292%2F8%2F8%2F892%2Fpdf&usg=AOvVaw2WyUhO-sgVVwr-2nGleuwj)
 
 ### Time-series
  - [Imaging Time-Series to Improve Classification and Imputation](https://arxiv.org/pdf/1506.00327.pdf)
+ - [Use of recurrence plots for identification and extraction of patterns
+in humpback whale song recordings](https://hal.archives-ouvertes.fr/hal-03008908/document)
+ - [A Brief Introduction to Nonlinear Time Series
+Analysis and Recurrence Plots](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiurbSOzMD2AhWZwQIHHVfXAv0QFnoECB8QAQ&url=https%3A%2F%2Fwww.mdpi.com%2F2571-631X%2F2%2F4%2F21%2Fpdf&usg=AOvVaw3MZO9ulox-jpl4vyifUFRy)
+
 
 ### Generative models
  - [Wasserstein GANs](https://arxiv.org/pdf/1701.07875.pdf)
@@ -202,11 +208,14 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ### 4th stage
 
-<img src="Project/model_stage_4.png" alt="model_stage_3" align="center" width="50%"/>
+<img src="Project/model_stage_4.png" alt="model_stage_4" align="center" width="50%"/>
  
  - [X] Set the filter no. configuration to 64-128-256-256-256-128-64, with the last 2 upsampling blocks retaining the 64-64 arrangement
 
 ### 5th stage
+
+<img src="Project/model_stage_5.png" alt="model_stage_5" align="center" width="50%"/>
+
  - [X] Add BatchNorm to the downsampling blocks
  - [ ] Experiment with adding/removing BatchNorm and Dropout layers
  - [ ] Perform an ablation study to analyze how much each residual block contributes to the noise found in the model output
