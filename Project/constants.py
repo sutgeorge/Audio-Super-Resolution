@@ -22,4 +22,4 @@ CHECKPOINT_PATH = "checkpoints/checkpoint-epoch-{epoch:04d}-mse_validation_loss-
 CHECKPOINT_DIRECTORY = os.path.dirname(CHECKPOINT_PATH)
 NUMBER_OF_PROCESSES = 4
 AMOUNT_OF_TRACKS_IN_A_DATA_GENERATION_BATCH = 1000
-MODEL_PATH = "models/model_stage_5_version_1_resampling_factor_4_overlap_2400_sample_dimension_4800_epochs_100_batch_size_16_learning_rate_0.0001_data_split_52540_6567_6567.h5"
+MODEL_PATH = "models/model_stage_5_version_2_resampling_factor_4_overlap_2400_sample_dimension_4800_epochs_200_batch_size_16_learning_rate_0.0001_data_split_52540_6567_6567.h5"
