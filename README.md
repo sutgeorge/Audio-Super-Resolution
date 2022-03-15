@@ -58,6 +58,7 @@ for Arbitrary Image Attribute Editing](https://arxiv.org/pdf/1904.09709.pdf)
 ### Deep Learning
  - [Understanding the Disharmony between Dropout and Batch Normalization by
 Variance Shift](https://arxiv.org/pdf/1801.05134.pdf)
+ - [Fast Fourier Convolutions in CNNs](https://analyticsindiamag.com/how-fast-fourier-convolution-can-replace-the-convolutional-layer-of-cnn/)
 
 ### Possibly useful
  - [Audio Super-Resolution Using Analysis Dictionary
