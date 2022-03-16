@@ -35,6 +35,8 @@ meets super-resolution](https://arxiv.org/pdf/2001.11263.pdf)
 Conduction Microphones](https://arxiv.org/pdf/2112.13156.pdf)
  - [Speech bandwidth expansion based on Deep Neural Networks](https://www.researchgate.net/publication/325682935_Speech_bandwidth_expansion_based_on_Deep_Neural_Networks)
  - [Speech Audio Super-Resolution For Speech Recognition](https://www.researchgate.net/publication/334559270_Speech_Audio_Super-Resolution_For_Speech_Recognition)
+ - [WaveNet: A Generative Model for Raw Audio](https://arxiv.org/pdf/1609.03499.pdf)
+ - []()
 
 
 ### Image super-resolution 
@@ -54,6 +56,7 @@ Analysis and Recurrence Plots](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&s
  - [Wasserstein GANs](https://arxiv.org/pdf/1701.07875.pdf)
  - [STGAN: A Unified Selective Transfer Network
 for Arbitrary Image Attribute Editing](https://arxiv.org/pdf/1904.09709.pdf)
+ - [Neural Photo Editing with Introspective Adversarial Networks](https://arxiv.org/pdf/1609.07093v3.pdf)
 
 ### Deep Learning
  - [Understanding the Disharmony between Dropout and Batch Normalization by
