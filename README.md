@@ -36,8 +36,6 @@ Conduction Microphones](https://arxiv.org/pdf/2112.13156.pdf)
  - [Speech bandwidth expansion based on Deep Neural Networks](https://www.researchgate.net/publication/325682935_Speech_bandwidth_expansion_based_on_Deep_Neural_Networks)
  - [Speech Audio Super-Resolution For Speech Recognition](https://www.researchgate.net/publication/334559270_Speech_Audio_Super-Resolution_For_Speech_Recognition)
  - [WaveNet: A Generative Model for Raw Audio](https://arxiv.org/pdf/1609.03499.pdf)
- - []()
-
 
 ### Image super-resolution 
  - [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/pdf/1609.04802.pdf)
@@ -54,22 +52,24 @@ Analysis and Recurrence Plots](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&s
 
 ### Generative models
  - [Wasserstein GANs](https://arxiv.org/pdf/1701.07875.pdf)
- - [STGAN: A Unified Selective Transfer Network
-for Arbitrary Image Attribute Editing](https://arxiv.org/pdf/1904.09709.pdf)
  - [Neural Photo Editing with Introspective Adversarial Networks](https://arxiv.org/pdf/1609.07093v3.pdf)
 
 ### Deep Learning
  - [Understanding the Disharmony between Dropout and Batch Normalization by
 Variance Shift](https://arxiv.org/pdf/1801.05134.pdf)
- - [Fast Fourier Convolutions in CNNs](https://analyticsindiamag.com/how-fast-fourier-convolution-can-replace-the-convolutional-layer-of-cnn/)
-
-### Possibly useful
- - [Audio Super-Resolution Using Analysis Dictionary
-Learning](http://personal.ee.surrey.ac.uk/Personal/W.Wang/papers/DongWC_DSP_2015.pdf)
+ - [Fast Fourier Convolution](https://proceedings.neurips.cc/paper/2020/file/2fd5d41ec6cfab47e32164d5624269b1-Paper.pdf)
+ - [Competitive Multi-scale Convolution](https://arxiv.org/pdf/1511.05635.pdf)
+ - [Efficient and Generic 1D Dilated Convolution Layer for Deep
+Learning](https://arxiv.org/pdf/2104.08002.pdf)
+ - [Multi-Scale Convolutional Neural Networks for Time Series
+Classification](https://arxiv.org/pdf/1603.06995.pdf)
+ - [Inception-v4, Inception-ResNet and
+the Impact of Residual Connections on Learning](https://arxiv.org/pdf/1602.07261v2.pdf)
 
 ### Blogs
  - [Using Deep-Learning to Reconstruct High-Resolution Audio](https://blog.insightdatascience.com/using-deep-learning-to-reconstruct-high-resolution-audio-29deee8b7ccd)
  - [Separate Music Tracks with Deep Learning](https://towardsdatascience.com/separate-music-tracks-with-deep-learning-be4cf4a2c83)
+ - [A Simple Guide to the Versions of the Inception Network](https://towardsdatascience.com/a-simple-guide-to-the-versions-of-the-inception-network-7fc52b863202)
 
 ### Datasets
  - [The Million Song Dataset](https://www.ee.columbia.edu/~dpwe/pubs/BertEWL11-msd.pdf)
@@ -151,17 +151,6 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
  - [How to Select AI (Audio) Papers Effectively](https://www.youtube.com/watch?v=UEdWuu8hqrg)
 
  - [How to Summarize a Research Article](https://writingcenter.uconn.edu/wp-content/uploads/sites/593/2014/06/How_to_Summarize_a_Research_Article1.pdf)
-
-## Possible outline
- - Introduction (goal of hte project)
- - Literature review
- - Basic concepts (Fourier series, Fourier transforms, spectrograms)
- - AudioUNet experiments
- - Time-Frequency Network experiments
- - Time-Frequency Network experiments with GAN-generated spectrograms on the frequency domain branch instead of the slim AudioUNet
- - Comparisons
- - Spring/Angular project + diagrams?
- - ???
 
 ## A quick implementation of ["Audio Super Resolution Using Neural Networks (Kuleshov, Enam, Ermon, 2017)"](https://arxiv.org/pdf/1708.00853v1.pdf)
 

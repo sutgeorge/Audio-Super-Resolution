@@ -55,7 +55,7 @@ zeroes = np.zeros(remaining_amount_of_zeroes).tolist()
 z_low_res = zeroes + z_low_res + zeroes
 z_high_res = high_resolution_chunk
 
-pl.figure()
+pl.figure(figsize=(20,20))
 ax = pl.subplot(projection='3d')
 ax.plot(x, y, z_high_res, color='r')
 ax.plot(x, y2, z_low_res, color='g')
@@ -63,5 +63,6 @@ ax.plot(x, y2, z_low_res, color='g')
 ax.set_xlabel('Time')
 ax.set_zlabel('Amplitude')
 
+plt.savefig("outputs/intermediate-layer-outputs/layer-outputs.png")
 plt.show()
 
