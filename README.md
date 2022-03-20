@@ -152,6 +152,29 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
  - [How to Summarize a Research Article](https://writingcenter.uconn.edu/wp-content/uploads/sites/593/2014/06/How_to_Summarize_a_Research_Article1.pdf)
 
+## Outline idea
+- Introduction
+	- Problem statement (what, why, how)
+
+- Theory
+	- Neural nets/CNNs
+	- Image super-resolution
+	- Time series super-resolution
+	- Autoencoders and U-Nets (state-of-the-art) - Audio super-resolution - literature review
+	- Time-series analysis - basic concepts (frequency spectrum, Fourier transform, spectrograms, sample rate)
+
+- My contributions 
+	- Multiscale convolutions 
+		or
+	- Encoding the time-domain representation as images (GAFs, MTFs, recurrence plots or some other time-series imaging technique)
+
+- Experiments and results evaluation (metrics, tables etc.)
+	-> dataset details (exploratory data analysis: histograms, spectrograms etc.)
+
+- Spring/Angular project description
+- Conclusion
+
+
 ## A quick implementation of ["Audio Super Resolution Using Neural Networks (Kuleshov, Enam, Ermon, 2017)"](https://arxiv.org/pdf/1708.00853v1.pdf)
 
 ### First stage
