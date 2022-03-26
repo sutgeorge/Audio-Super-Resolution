@@ -1,16 +1,17 @@
 from model import create_model
 from constants import *
 import tensorflow_datasets as tfds
+import tensorflow.keras.backend as K
 import numpy as np
 from metrics import *
 from tensorflow.keras.models import Model
-import librosa.display
 import soundfile as sf
 import matplotlib.pyplot as plt
 import random
 import matplotlib.pylab as pl
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
+import math
 
 print("Loading and compiling model...")
 model = create_model()
@@ -49,48 +50,41 @@ low_resolution_chunk = np.reshape(low_resolution_chunk, (len(low_resolution_chun
 input_batch = BATCH_SIZE * [low_resolution_chunk]
 input_batch = tf.constant(input_batch)
 
-x = np.linspace(1, 5, SAMPLE_DIMENSION)
-
-pl.figure(figsize=(20,20))
-ax = pl.subplot(projection='3d')
-
 number_of_layers = len(model.layers)
 subset_of_layers = []
 
-for layer_index in range(0, number_of_layers):
+layer_index = 0
+for layer in model.layers:
+    if 'conv' not in layer.name:
+        continue
     print("Plotting the output of layer {}...".format(layer_index))
-    subset_of_layers.append(model.layers[layer_index].output)
-    auxiliary_model = Model(inputs=model.inputs, outputs=model.outputs + subset_of_layers)
-    print(model.layers[layer_index].output)
+    subset_of_layers.append(layer.output)
+    auxiliary_model = Model(inputs=model.input, outputs=layer.output)#subset_of_layers)
+    auxiliary_model.summary()
+    # print(model.layers[layer_index].output)
     intermediate_layer_output = auxiliary_model.predict(input_batch)
 
-    if type(intermediate_layer_output) != list:
-        print("Intermediate layer output shape: {}".format(intermediate_layer_output[0].shape))
-        intermediate_layer_output = intermediate_layer_output[0]
-        print("Intermediate layer output shape after cropping array: {}".format(intermediate_layer_output.shape))
-        intermediate_layer_output = np.reshape(intermediate_layer_output, intermediate_layer_output.shape[0])
-        print("Intermediate layer output shape after reshaping: {}".format(intermediate_layer_output.shape))
-    else:
-        print("Intermediate layer output shape: {}".format(intermediate_layer_output[0].shape))
-        intermediate_layer_output = intermediate_layer_output[0]
-        print("Intermediate layer output shape after cropping array: {}".format(intermediate_layer_output.shape))
-        print(intermediate_layer_output)
-        intermediate_layer_output = np.reshape(intermediate_layer_output[0], intermediate_layer_output.shape[1])
-        print("Intermediate layer output shape after reshaping: {}".format(intermediate_layer_output.shape))
+    print(intermediate_layer_output.shape)
+    print(intermediate_layer_output.shape[0])
+    print(intermediate_layer_output.shape[1])
+    print(intermediate_layer_output[0].shape)
 
+    intermediate_layer_output = intermediate_layer_output[0]
+    number_of_samples = intermediate_layer_output.shape[0]
+    number_of_filters = intermediate_layer_output.shape[1]
 
-    z_layer_output = intermediate_layer_output # np.reshape(intermediate_layer_output, intermediate_layer_output.shape[0])
-    remaining_amount_of_zeroes = (SAMPLE_DIMENSION - len(z_layer_output)) // 2
-    zeroes = np.zeros(remaining_amount_of_zeroes)
-    z_layer_output = np.concatenate([zeroes, z_layer_output, zeroes])
-    y = np.ones(x.size)*layer_index
-    ax.plot(x, y, z_layer_output, color='r')
+    x = np.linspace(1, 5, number_of_samples)
+
+    pl.figure(figsize=(20, 20))
+    axes = pl.subplot(projection='3d')
+    colors = ['r', 'g', 'b', 'm', 'c', 'y', 'k', 'w']
+
+    for filter_index in range(0, number_of_filters):
+        y = np.ones(x.size) * filter_index
+        axes.plot(x, y, intermediate_layer_output[:, filter_index], color=colors[filter_index % len(colors)])
+        filter_index += 1
     print("Plotted layer {}'s output.".format(layer_index))
 
-ax.set_xlabel('Time axis')
-ax.set_zlabel('Amplitude')
-
-plt.savefig("outputs/intermediate-layer-outputs/layer-outputs.png")
-plt.show()
-
-
+    axes.set_xlabel('Time axis')
+    axes.set_zlabel('Amplitude')
+    plt.show()
