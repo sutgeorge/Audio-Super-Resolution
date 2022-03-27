@@ -2,5 +2,8 @@ Project/preprocessed_dataset/*
 Project/old-preprocessed-dataset-of-256-sample-size-chunks/*
 Project/__pycache__/*
 Project/preprocessed_dataset.zip
+Project/preprocessed_dataset_4800.zip
 Project/old-preprocessed-dataset-of-1200-4800-sample-size-chunks/*
 Project/checkpoints-stage-3.zip
+Project/layer_outputs/*
+~/

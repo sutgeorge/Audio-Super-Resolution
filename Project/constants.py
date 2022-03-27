@@ -1,16 +1,16 @@
 import os
 VCTK_DATASET_SAMPLING_RATE = 48000
 RESAMPLING_FACTOR = 4
-STAGE = 5
+STAGE = 6
 VERSION = 1
 DOWNSAMPLED_RATE = int(VCTK_DATASET_SAMPLING_RATE / RESAMPLING_FACTOR)
-OVERLAP = 2400           # 50 ms
-SAMPLE_DIMENSION = 4800  # 100 ms
+SAMPLE_DIMENSION = 4096
+OVERLAP = 2048
 LOW_RESOLUTION_DIMENSION = int(SAMPLE_DIMENSION / RESAMPLING_FACTOR)
 LEARNING_RATE = 0.0001
 NUMBER_OF_EPOCHS = 100
 NUMBER_OF_FILES = len(os.listdir("preprocessed_dataset/low_res/")) # The data that is used is from the set of chunks generated from the first 1000 tracks, which contains approximately 65000 pairs of low-res/high-res patches of 1200/4800 samples
-AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION = 4000
+AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION = 1000
 TRAINING_DATA_SPLIT_PERCENTAGE = 0.8
 VALIDATION_DATA_SPLIT_PERCENTAGE = 0.1
 TESTING_DATA_SPLIT_PERCENTAGE = 0.1
@@ -22,4 +22,4 @@ CHECKPOINT_PATH = "checkpoints/checkpoint-epoch-{epoch:04d}-mse_validation_loss-
 CHECKPOINT_DIRECTORY = os.path.dirname(CHECKPOINT_PATH)
 NUMBER_OF_PROCESSES = 4
 AMOUNT_OF_TRACKS_IN_A_DATA_GENERATION_BATCH = 1000
-MODEL_PATH = "models/model_stage_5_version_2_resampling_factor_4_overlap_2400_sample_dimension_4800_epochs_200_batch_size_16_learning_rate_0.0001_data_split_52540_6567_6567.h5"
+MODEL_PATH = "models/model_stage_6_version_1_resampling_factor_4_overlap_2048_sample_dimension_4096_epochs_100_batch_size_16_learning_rate_0.0001_data_split_61883_7735_7735.h5"
