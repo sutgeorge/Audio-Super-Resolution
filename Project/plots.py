@@ -5,13 +5,8 @@ import tensorflow as tf
 from DatasetGenerator import DatasetGenerator
 import numpy as np
 from metrics import *
-import librosa
-import librosa.display
-import soundfile as sf
-import datetime
 import matplotlib.pyplot as plt
 import random
-import re
 from tensorflow.python.ops.numpy_ops import np_config
 np_config.enable_numpy_behavior()
 
@@ -27,7 +22,7 @@ sample_array = None
 transcript = None
 recording_index = 0
 
-chosen_recording = random.randint(AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION + 1, AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION + 100)
+chosen_recording = AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION + 100
 
 for sample in dataset['train']:
     if recording_index == chosen_recording:

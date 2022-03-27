@@ -80,7 +80,7 @@ history = model.fit(input_data, target_data,
                     epochs=NUMBER_OF_EPOCHS,
                     validation_data=(input_validation_data, target_validation_data),
                     callbacks=[checkpoint_callback],
-                    initial_epoch = latest_epoch,
+                    initial_epoch=latest_epoch,
                     verbose=True)
 
 end_time = datetime.datetime.now()
@@ -122,5 +122,5 @@ plt.show()
 np.save("outputs/losses-as-numpy-arrays/loss_values.npy", history.history['loss'])
 np.save("outputs/losses-as-numpy-arrays/validation_loss_values.npy", history.history['val_loss'])
 
-print("Data generation started at {}".format(start_time.strftime("%Y-%m-%d %H:%M:%S")))
-print("Data generation ended at {}".format(end_time.strftime("%Y-%m-%d %H:%M:%S")))
+print("Training started at {}".format(start_time.strftime("%Y-%m-%d %H:%M:%S")))
+print("Training ended at {}".format(end_time.strftime("%Y-%m-%d %H:%M:%S")))
