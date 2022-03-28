@@ -233,10 +233,87 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 <img src="Project/model_stage_5.png" alt="model_stage_5" align="center" width="50%"/>
 
  - [X] Add BatchNorm to the downsampling blocks
- - [ ] Experiment with adding/removing BatchNorm and Dropout layers
- - [ ] Perform an ablation study to analyze how much each residual block contributes to the noise found in the model output
- - [ ] Try different resampling factors (2x, 4x, 6x, 8x etc.)
- - [ ] Execute experimental training runs with multiple chunk sizes (100ms, 200ms, 300ms etc.) and compare results
- - [ ] Replace the normal convolutions with depthwise separable 1D convolutions as an experiment
- - [ ] Compare the trained model with simple baselines (linear interpolation, cubic spline interpolation etc.)
 
+### 6th stage
+
+ - [X] Perform an ablation study to analyze how much each residual block contributes to the noise found in the model output
+
+### 7th stage
+
+<img src="Project/model_stage_7.png" alt="model_stage_5" align="center" width="50%"/>
+
+ - [X] Replace the normal convolutions with depthwise separable 1D convolutions as an experiment
+
+<table class="demo">
+	<caption>Table 1</caption>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<thead>
+		<tr>
+			  <th colspan="3" scope="colgroup">3-layer model</th>
+			  <th colspan="3" scope="colgroup">4-layer model</th>
+			  <th colspan="3" scope="colgroup">5-layer model</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+	</tr>
+	<tr>
+				<td>
+					67485
+				</td>
+				<td>
+					19.48
+				</td>
+				<td>
+					0.0053
+				</td>
+				<td>
+					66944
+				</td>
+				<td>
+					19.46
+				</td>
+				<td>
+					0.0053
+				</td>
+				<td>
+					68185
+				</td>
+				<td>
+					19.53
+				</td>
+				<td>
+					0.0053
+				</td>
+	</tr>
+	</tbody>
+</table>
