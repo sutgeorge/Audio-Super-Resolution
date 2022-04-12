@@ -20,7 +20,7 @@ model.load_weights(MODEL_PATH)
 
 adam_optimizer = tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE)
 model.compile(loss="mean_squared_error", optimizer=adam_optimizer,
-              metrics=[signal_to_noise_ratio, root_mean_squared_error, normalised_root_mean_squared_error])
+              metrics=[signal_to_noise_ratio, root_mean_squared_error, normalised_root_mean_squared_error_testing])
 
 input_test_data = np.array(input_test_data)
 target_test_data = np.array(target_test_data)

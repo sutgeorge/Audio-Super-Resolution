@@ -3,7 +3,7 @@ from model import create_model
 from constants import *
 from DatasetGenerator import DatasetGenerator
 import numpy as np
-from metrics import signal_to_noise_ratio, root_mean_squared_error, normalised_root_mean_squared_error
+from metrics import signal_to_noise_ratio, root_mean_squared_error, normalised_root_mean_squared_error_training, normalised_root_mean_squared_error_validation
 from tensorflow.keras.callbacks import ModelCheckpoint
 import matplotlib.pyplot as plt
 import datetime
@@ -54,7 +54,7 @@ start_time = datetime.datetime.now()
 
 adam_optimizer = tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE)
 model.compile(loss="mean_squared_error", optimizer=adam_optimizer,
-              metrics=[signal_to_noise_ratio, root_mean_squared_error, normalised_root_mean_squared_error])
+              metrics=[signal_to_noise_ratio, root_mean_squared_error, normalised_root_mean_squared_error_training, normalised_root_mean_squared_error_validation])
 
 model_filenames = os.listdir("models/")
 model_filenames.sort()
@@ -102,9 +102,22 @@ loss_files = os.listdir("outputs/losses-as-numpy-arrays")
 if len(loss_files) > 0:
     loss_values = np.load("outputs/losses-as-numpy-arrays/loss_values.npy").tolist()
     validation_loss_values = np.load("outputs/losses-as-numpy-arrays/validation_loss_values.npy").tolist()
-    history.history['loss'] = loss_values + history.history['loss'] 
-    history.history['val_loss'] = validation_loss_values + history.history['val_loss'] 
-    
+    snr_values = np.load("outputs/losses-as-numpy-arrays/snr.npy").tolist()
+    validation_snr_values = np.load("outputs/losses-as-numpy-arrays/val_snr.npy").tolist()
+    root_mse_values = np.load("outputs/losses-as-numpy-arrays/root_mse.npy").tolist()
+    validation_root_mse_values = np.load("outputs/losses-as-numpy-arrays/val_root_mse.npy").tolist()
+    nrmse_training_values = np.load("outputs/losses-as-numpy-arrays/nrmse_training_values.npy").tolist()
+    nrmse_validation_values = np.load("outputs/losses-as-numpy-arrays/nrmse_validation_values.npy").tolist()
+
+    history.history['loss'] = loss_values + history.history['loss']
+    history.history['val_loss'] = validation_loss_values + history.history['val_loss']
+    history.history['signal_to_noise_ratio'] = snr_values + history.history['signal_to_noise_ratio']
+    history.history['val_signal_to_noise_ratio'] = validation_snr_values + history.history['val_signal_to_noise_ratio']
+    history.history['root_mean_squared_error'] = root_mse_values + history.history['root_mean_squared_error']
+    history.history['val_root_mean_squared_error'] = validation_root_mse_values + history.history['val_root_mean_squared_error']
+    history.history['normalised_root_mean_squared_error_training'] = nrmse_training_values + history.history['normalised_root_mean_squared_error_training']
+    history.history['val_normalised_root_mean_squared_error_validation'] = nrmse_validation_values + history.history['val_normalised_root_mean_squared_error_validation']
+
 fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(16, 16))
 # fig.tight_layout(pad=2.0)
 axes.plot(history.history['loss'], label="Training loss", color=(255/255.0, 0/255.0, 0/255.0))
@@ -121,6 +134,12 @@ plt.show()
 
 np.save("outputs/losses-as-numpy-arrays/loss_values.npy", history.history['loss'])
 np.save("outputs/losses-as-numpy-arrays/validation_loss_values.npy", history.history['val_loss'])
+np.save("outputs/losses-as-numpy-arrays/snr.npy", history.history['signal_to_noise_ratio'])
+np.save("outputs/losses-as-numpy-arrays/val_snr.npy", history.history['val_signal_to_noise_ratio'])
+np.save("outputs/losses-as-numpy-arrays/root_mse.npy", history.history['root_mean_squared_error'])
+np.save("outputs/losses-as-numpy-arrays/val_root_mse.npy", history.history['val_root_mean_squared_error'])
+np.save("outputs/losses-as-numpy-arrays/nrmse_training_values.npy", history.history['normalised_root_mean_squared_error_training'])
+np.save("outputs/losses-as-numpy-arrays/nrmse_validation_values.npy", history.history['val_normalised_root_mean_squared_error_validation'])
 
 print("Training started at {}".format(start_time.strftime("%Y-%m-%d %H:%M:%S")))
 print("Training ended at {}".format(end_time.strftime("%Y-%m-%d %H:%M:%S")))

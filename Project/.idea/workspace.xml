@@ -8,6 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/training.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training_set_testing_set_distributions.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/training_set_testing_set_distributions.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -276,7 +278,7 @@
       <workItem from="1648367587410" duration="18380000" />
       <workItem from="1649570999917" duration="13040000" />
       <workItem from="1649588378135" duration="7757000" />
-      <workItem from="1649739220089" duration="3214000" />
+      <workItem from="1649739220089" duration="8184000" />
     </task>
     <servers />
   </component>
