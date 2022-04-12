@@ -20,7 +20,7 @@ model.load_weights(MODEL_PATH)
 
 adam_optimizer = tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE)
 model.compile(loss="mean_squared_error", optimizer=adam_optimizer,
-              metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
+              metrics=[signal_to_noise_ratio, root_mean_squared_error, normalised_root_mean_squared_error])
 
 input_test_data = np.array(input_test_data)
 target_test_data = np.array(target_test_data)
@@ -28,5 +28,10 @@ target_test_data = np.array(target_test_data)
 print("Input test data shape: {}".format(input_test_data.shape))
 print("Target test data shape: {}".format(target_test_data.shape))
 
-mean_squared_error_value, signal_to_noise_ratio_value, nrmse_value = model.evaluate(input_test_data, target_test_data, batch_size=BATCH_SIZE, verbose=True)
+mean_squared_error_value, signal_to_noise_ratio_value, rmse_value, nrmse_value = model.evaluate(input_test_data, target_test_data, batch_size=BATCH_SIZE, verbose=True)
+
+print("MSE: {}".format(mean_squared_error_value))
+print("SNR: {}".format(signal_to_noise_ratio_value))
+print("RMSE: {}".format(rmse_value))
+print("NRMSE: {}".format(nrmse_value))
 

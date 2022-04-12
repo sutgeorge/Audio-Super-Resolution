@@ -3,7 +3,7 @@ from model import create_model
 from constants import *
 from DatasetGenerator import DatasetGenerator
 import numpy as np
-from metrics import signal_to_noise_ratio, normalised_root_mean_squared_error
+from metrics import signal_to_noise_ratio, root_mean_squared_error, normalised_root_mean_squared_error
 from tensorflow.keras.callbacks import ModelCheckpoint
 import matplotlib.pyplot as plt
 import datetime
@@ -54,7 +54,7 @@ start_time = datetime.datetime.now()
 
 adam_optimizer = tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE)
 model.compile(loss="mean_squared_error", optimizer=adam_optimizer,
-              metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
+              metrics=[signal_to_noise_ratio, root_mean_squared_error, normalised_root_mean_squared_error])
 
 model_filenames = os.listdir("models/")
 model_filenames.sort()

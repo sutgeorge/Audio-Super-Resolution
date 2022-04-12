@@ -13,7 +13,7 @@ np_config.enable_numpy_behavior()
 print("Loading and compiling model...")
 model = create_model()
 model.compile(loss="mean_squared_error", optimizer='Adam',
-              metrics=[signal_to_noise_ratio, normalised_root_mean_squared_error])
+              metrics=[normalised_root_mean_squared_error])
 model.load_weights(MODEL_PATH)
 
 print("Loading the sample vocal recording from the VCTK dataset...")

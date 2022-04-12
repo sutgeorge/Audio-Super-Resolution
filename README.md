@@ -84,6 +84,7 @@ the Impact of Residual Connections on Learning](https://arxiv.org/pdf/1602.07261
  - [How to use Learning Curves to Diagnose Machine Learning Model Performance](https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/)
  - [Validation Error less than training error](https://stats.stackexchange.com/questions/187335/validation-error-less-than-training-error)
  - [How to successfully add large data sets to Google Drive](https://towardsdatascience.com/how-to-successfully-add-large-data-sets-to-google-drive-130beb320f1a)
+ - [Signal-to-noise ratio](https://github.com/hrtlacek/SNR/blob/main/SNR.ipynb)
 
 ## Possible uses
  - Improving sound quality of music
