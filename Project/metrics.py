@@ -17,4 +17,5 @@ def root_mean_squared_error(actual_signal, predicted_signal):
 
 
 def normalised_root_mean_squared_error(actual_signal, predicted_signal):
-    return tf.sqrt(tf.losses.mean_squared_error(actual_signal, predicted_signal)) / (MAXIMUM - MINIMUM)
+    return tf.sqrt(tf.losses.mean_squared_error(actual_signal, predicted_signal)) / (
+                TRAINING_SET_THIRD_QUANTILE - TRAINING_SET_FIRST_QUANTILE)

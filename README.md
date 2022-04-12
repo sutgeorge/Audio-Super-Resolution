@@ -115,6 +115,7 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
  - [Discrete Fourier Transform explained with example](https://www.youtube.com/watch?v=QcF9CMz8Bcc)
  - [DC offset](https://en.wikipedia.org/wiki/DC_bias)
  - [The FFT algorithm - simple step by step explanation](https://www.youtube.com/watch?v=htCj9exbGo0)
+ - [Article on normalizing the root mean square error](https://www.marinedatascience.co/blog/2019/01/07/normalizing-the-rmse/)
 
 
 ## Research advices
