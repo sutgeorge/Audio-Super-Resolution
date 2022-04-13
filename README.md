@@ -116,6 +116,7 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
  - [DC offset](https://en.wikipedia.org/wiki/DC_bias)
  - [The FFT algorithm - simple step by step explanation](https://www.youtube.com/watch?v=htCj9exbGo0)
  - [Article on normalizing the root mean square error](https://www.marinedatascience.co/blog/2019/01/07/normalizing-the-rmse/)
+ - [Understanding the Inception architecture](https://towardsdatascience.com/deep-learning-understand-the-inception-module-56146866e652)
 
 
 ## Research advices

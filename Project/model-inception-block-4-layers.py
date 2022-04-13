@@ -69,6 +69,8 @@ def create_model(batch_size=BATCH_SIZE, input_size=SAMPLE_DIMENSION // RESAMPLIN
     downsampling_blocks.append(x)
     x = create_downsampling_block(x, filters=256, kernel_size=32, stride=2)
     downsampling_blocks.append(x)
+    x = create_downsampling_block(x, filters=256, kernel_size=32, stride=2)
+    downsampling_blocks.append(x)
 
     x = Conv1D(padding='same', kernel_initializer='Orthogonal', filters=256, kernel_size=32, strides=2)(x)
     x = LeakyReLU()(x)
@@ -76,6 +78,8 @@ def create_model(batch_size=BATCH_SIZE, input_size=SAMPLE_DIMENSION // RESAMPLIN
     x = create_upsampling_block(x, filters=256, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
     downsampling_blocks.pop()
     x = create_upsampling_block(x, filters=128, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
+    downsampling_blocks.pop()
+    x = create_upsampling_block(x, filters=64, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
     downsampling_blocks.pop()
     x = create_upsampling_block(x, filters=64, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
     downsampling_blocks.pop()
