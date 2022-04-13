@@ -85,6 +85,9 @@ the Impact of Residual Connections on Learning](https://arxiv.org/pdf/1602.07261
  - [Validation Error less than training error](https://stats.stackexchange.com/questions/187335/validation-error-less-than-training-error)
  - [How to successfully add large data sets to Google Drive](https://towardsdatascience.com/how-to-successfully-add-large-data-sets-to-google-drive-130beb320f1a)
  - [Signal-to-noise ratio](https://github.com/hrtlacek/SNR/blob/main/SNR.ipynb)
+ - [Validation loss when using Dropout](https://stackoverflow.com/questions/48393438/validation-loss-when-using-dropout)
+ - [My validation loss is lower than my training loss, should I get rid of regularization?](https://stackoverflow.com/questions/67949311/my-validation-loss-is-lower-than-my-training-loss-should-i-get-rid-of-regulariz)
+ - [Dropout rate guidance for hidden layers in a convolution neural network](https://stackoverflow.com/questions/47892505/dropout-rate-guidance-for-hidden-layers-in-a-convolution-neural-network)
 
 ## Possible uses
  - Improving sound quality of music
