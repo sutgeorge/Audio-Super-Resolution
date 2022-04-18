@@ -48,7 +48,7 @@ def create_upsampling_inception_block(x, filters, kernel_size, padding='same', s
     first_branch = Conv1D(filters, kernel_size, kernel_initializer='orthogonal', strides=stride, padding=padding)(x)
     second_branch = Conv1D(filters, kernel_size*2, kernel_initializer='orthogonal', strides=stride, padding=padding)(x)
     third_branch = Conv1D(filters, kernel_size*4, kernel_initializer='orthogonal', strides=stride, padding=padding)(x)
-    max_pooling_layer = MaxPooling1D(pool_size=kernel_size, stride=stride, padding=padding)(x)
+    max_pooling_layer = MaxPooling1D(pool_size=kernel_size, strides=stride, padding=padding)(x)
 
     x = concatenate([first_branch, second_branch, third_branch, max_pooling_layer])
 

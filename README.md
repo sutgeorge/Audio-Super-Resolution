@@ -294,31 +294,31 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 	</tr>
 	<tr>
 				<td>
-					67485
+					67026
 				</td>
 				<td>
-					19.48
+					15.3199
 				</td>
 				<td>
-					0.0053
+					0.1779
 				</td>
 				<td>
-					66944
+					68838	
 				</td>
 				<td>
-					19.46
+					15.4536
 				</td>
 				<td>
-					0.0053
+					0.1667
 				</td>
 				<td>
-					68185
+					65029	
 				</td>
 				<td>
-					19.53
+					15.4775
 				</td>
 				<td>
-					0.0053
+					0.1676
 				</td>
 	</tr>
 	</tbody>
