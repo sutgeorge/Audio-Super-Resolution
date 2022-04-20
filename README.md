@@ -88,6 +88,7 @@ the Impact of Residual Connections on Learning](https://arxiv.org/pdf/1602.07261
  - [Validation loss when using Dropout](https://stackoverflow.com/questions/48393438/validation-loss-when-using-dropout)
  - [My validation loss is lower than my training loss, should I get rid of regularization?](https://stackoverflow.com/questions/67949311/my-validation-loss-is-lower-than-my-training-loss-should-i-get-rid-of-regulariz)
  - [Dropout rate guidance for hidden layers in a convolution neural network](https://stackoverflow.com/questions/47892505/dropout-rate-guidance-for-hidden-layers-in-a-convolution-neural-network)
+ - [Your validation loss is lower than the training loss? This is why.](https://towardsdatascience.com/what-your-validation-loss-is-lower-than-your-training-loss-this-is-why-5e92e0b1747e)
 
 ## Possible uses
  - Improving sound quality of music
