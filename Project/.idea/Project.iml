@@ -6,7 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/preprocessed_dataset" />
       <excludeFolder url="file://$MODULE_DIR$/old-preprocessed-dataset-of-256-sample-size-chunks" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (AudioSuperResolution)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (Project)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

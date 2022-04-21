@@ -188,8 +188,6 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ![Data generation, training and testing diagram in stage 1](Paper/AudioSuperResolution/diagram_stage_1.png)  
 
-<img src="Project/model_stage_1.png" alt="model_stage_1" align="center" width="50%"/>
-
  - [X] Write the data generator scripts (obtaining the low-res/high-res pairs of audio clips)
  - [X] Write the training/testing scripts 
  - [X] read more about why the loss approaches the nan value during training 
@@ -208,8 +206,6 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ![Data generation, training and testing diagram in stage 2](Paper/AudioSuperResolution/diagram_stage_2.png)  
 
-<img src="Project/model_stage_2.png" alt="model_stage_2" align="center" width="50%"/>
-
  - [X] Display the 5-number summary / boxplot of the generated dataset
  - [X] Create line plot of a couple of random samples (both in time-domain and in frequency-domain)
  - [X] Create histogram of a single sample 
@@ -225,19 +221,13 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ### 3rd stage
 
-<img src="Project/model_stage_3.png" alt="model_stage_3" align="center" width="50%"/>
-
  - [X] Increase the number of filters in the Conv1D layers from 32 to 64 and train
 
 ### 4th stage
 
-<img src="Project/model_stage_4.png" alt="model_stage_4" align="center" width="50%"/>
- 
  - [X] Set the filter no. configuration to 64-128-256-256-256-128-64, with the last 2 upsampling blocks retaining the 64-64 arrangement
 
 ### 5th stage
-
-<img src="Project/model_stage_5.png" alt="model_stage_5" align="center" width="50%"/>
 
  - [X] Add BatchNorm to the downsampling blocks
 
@@ -247,12 +237,10 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ### 7th stage
 
-<img src="Project/model_stage_7.png" alt="model_stage_5" align="center" width="50%"/>
-
  - [X] Replace the normal convolutions with depthwise separable 1D convolutions as an experiment
 
 <table class="demo">
-	<caption>Table 1</caption>
+	<caption>Evaluation metrics</caption>
 	<colgroup span="3"></colgroup>
 	<colgroup span="3"></colgroup>
 	<colgroup span="3"></colgroup>
@@ -320,6 +308,80 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 				</td>
 				<td>
 					0.1676
+				</td>
+	</tr>
+	</tbody>
+</table>
+
+<table class="demo">
+	<caption>Evaluation metrics (with Inception blocks)</caption>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<thead>
+		<tr>
+			  <th colspan="3" scope="colgroup">3-layer model</th>
+			  <th colspan="3" scope="colgroup">4-layer model</th>
+			  <th colspan="3" scope="colgroup">5-layer model</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+	</tr>
+	<tr>
+				<td>
+					170675
+				</td>
+				<td>
+					12.8846
+				</td>
+				<td>
+					0.4275
+				</td>
+				<td>
+					77636	
+				</td>
+				<td>
+					14.2703
+				</td>
+				<td>
+					0.2230
+				</td>
+				<td>
+					76438	
+				</td>
+				<td>
+					14.2168
+				</td>
+				<td>
+					0.2185
 				</td>
 	</tr>
 	</tbody>
