@@ -240,7 +240,7 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
  - [X] Replace the normal convolutions with depthwise separable 1D convolutions as an experiment
 
 <table class="demo">
-	<caption>Evaluation metrics</caption>
+	<caption>Evaluation metrics (mean for )</caption>
 	<colgroup span="3"></colgroup>
 	<colgroup span="3"></colgroup>
 	<colgroup span="3"></colgroup>
@@ -286,7 +286,7 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 					67026
 				</td>
 				<td>
-					15.3199
+					15.31
 				</td>
 				<td>
 					0.1779
@@ -295,19 +295,19 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 					68838	
 				</td>
 				<td>
-					15.4536
+					15.45
 				</td>
 				<td>
 					0.1667
 				</td>
 				<td>
-					65029	
+					64744	
 				</td>
 				<td>
-					15.4775
+					15.46
 				</td>
 				<td>
-					0.1676
+					0.1689
 				</td>
 	</tr>
 	</tbody>
@@ -360,28 +360,28 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 					170675
 				</td>
 				<td>
-					12.8846
+					12.88
 				</td>
 				<td>
 					0.4275
 				</td>
 				<td>
-					77636	
+					81340	
 				</td>
 				<td>
-					14.2703
+					14.16
 				</td>
 				<td>
-					0.2230
+					0.2289
 				</td>
 				<td>
-					76438	
+					75183
 				</td>
 				<td>
-					14.2168
+					14.28
 				</td>
 				<td>
-					0.2185
+					0.2341
 				</td>
 	</tr>
 	</tbody>

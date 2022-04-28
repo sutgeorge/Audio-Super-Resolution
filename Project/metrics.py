@@ -33,3 +33,15 @@ def normalised_root_mean_squared_error_validation(actual_signal, predicted_signa
 def normalised_root_mean_squared_error_testing(actual_signal, predicted_signal):
     return normalised_root_mean_squared_error(actual_signal, predicted_signal,
                                               TESTING_SET_THIRD_QUANTILE - TESTING_SET_FIRST_QUANTILE)
+
+
+def normalised_root_mean_squared_error_for_single_examples(actual_signal, predicted_signal, option):
+    minimum_value = tf.reduce_min(actual_signal)
+    maximum_value = tf.reduce_max(actual_signal)
+    if option == "mean":
+        return tf.sqrt(tf.losses.mean_squared_error(actual_signal, predicted_signal)) / tf.math.reduce_mean(actual_signal)
+    elif option == "sd":
+        return tf.sqrt(tf.losses.mean_squared_error(actual_signal, predicted_signal)) / tf.math.reduce_std(actual_signal)
+    elif option == "range":
+        return tf.sqrt(tf.losses.mean_squared_error(actual_signal, predicted_signal)) / (maximum_value - minimum_value)
+    raise Exception("Unexpected option parameter.")
