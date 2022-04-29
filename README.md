@@ -448,3 +448,9 @@ The values are the averages of the outputs for each test sample. These were comp
 	</tr>
 	</tbody>
 </table>
+
+### 9th stage
+
+- [ ] remove the dropout layers from the last two upsampling blocks of the normal 5-layer model and notice the effect
+
+
