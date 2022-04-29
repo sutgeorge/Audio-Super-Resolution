@@ -65,6 +65,9 @@ Learning](https://arxiv.org/pdf/2104.08002.pdf)
 Classification](https://arxiv.org/pdf/1603.06995.pdf)
  - [Inception-v4, Inception-ResNet and
 the Impact of Residual Connections on Learning](https://arxiv.org/pdf/1602.07261v2.pdf)
+ - [Article on normalizing the root mean square error](https://www.marinedatascience.co/blog/2019/01/07/normalizing-the-rmse/)
+ - [Understanding the Inception architecture](https://towardsdatascience.com/deep-learning-understand-the-inception-module-56146866e652)
+ - [Ordering of batch normalization and dropout](https://stackoverflow.com/questions/39691902/ordering-of-batch-normalization-and-dropout)
 
 ### Blogs
  - [Using Deep-Learning to Reconstruct High-Resolution Audio](https://blog.insightdatascience.com/using-deep-learning-to-reconstruct-high-resolution-audio-29deee8b7ccd)
@@ -89,6 +92,7 @@ the Impact of Residual Connections on Learning](https://arxiv.org/pdf/1602.07261
  - [My validation loss is lower than my training loss, should I get rid of regularization?](https://stackoverflow.com/questions/67949311/my-validation-loss-is-lower-than-my-training-loss-should-i-get-rid-of-regulariz)
  - [Dropout rate guidance for hidden layers in a convolution neural network](https://stackoverflow.com/questions/47892505/dropout-rate-guidance-for-hidden-layers-in-a-convolution-neural-network)
  - [Your validation loss is lower than the training loss? This is why.](https://towardsdatascience.com/what-your-validation-loss-is-lower-than-your-training-loss-this-is-why-5e92e0b1747e)
+ - [Dropout makes performance worse](https://stats.stackexchange.com/questions/299292/dropout-makes-performance-worse)
 
 ## Possible uses
  - Improving sound quality of music
@@ -119,8 +123,6 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
  - [Discrete Fourier Transform explained with example](https://www.youtube.com/watch?v=QcF9CMz8Bcc)
  - [DC offset](https://en.wikipedia.org/wiki/DC_bias)
  - [The FFT algorithm - simple step by step explanation](https://www.youtube.com/watch?v=htCj9exbGo0)
- - [Article on normalizing the root mean square error](https://www.marinedatascience.co/blog/2019/01/07/normalizing-the-rmse/)
- - [Understanding the Inception architecture](https://towardsdatascience.com/deep-learning-understand-the-inception-module-56146866e652)
 
 
 ## Research advices
@@ -239,8 +241,10 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
  - [X] Replace the normal convolutions with depthwise separable 1D convolutions as an experiment
 
+The values are the averages of the outputs for each test sample. These were computed with tf.keras.evaluate(...).
+
 <table class="demo">
-	<caption>Evaluation metrics (mean for )</caption>
+	<caption>Evaluation metrics</caption>
 	<colgroup span="3"></colgroup>
 	<colgroup span="3"></colgroup>
 	<colgroup span="3"></colgroup>
@@ -386,3 +390,9 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 	</tr>
 	</tbody>
 </table>
+
+### 8th stage
+
+	- [X] remove the dropout layers from the Inception blocks and notice the effect
+
+

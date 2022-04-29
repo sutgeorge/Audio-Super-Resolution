@@ -53,7 +53,7 @@ def create_upsampling_inception_block(x, filters, kernel_size, padding='same', s
     x = concatenate([first_branch, second_branch, third_branch, max_pooling_layer])
 
     x = LeakyReLU()(x)
-    x = Dropout(rate=0.5)(x)
+    # x = Dropout(rate=0.5)(x)
     x = subpixel1d(x.shape, r=2)(x)
     return x
 
