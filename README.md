@@ -451,6 +451,79 @@ The values are the averages of the outputs for each test sample. These were comp
 
 ### 9th stage
 
-- [ ] remove the dropout layers from the last two upsampling blocks of the normal 5-layer model and notice the effect
+- [X] remove the dropout layers from the last two upsampling blocks of the normal 5-layer model and notice the effect
 
 
+<table class="demo">
+	<caption>Evaluation metrics</caption>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<thead>
+		<tr>
+			  <th colspan="3" scope="colgroup">5-layer model (Inception modules with dropout)</th>
+			  <th colspan="3" scope="colgroup">5-layer model (Inception modules without dropout)</th>
+			  <th colspan="3" scope="colgroup">5-layer model (no Inception modules, no dropout in the last 2 layers)</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+	</tr>
+	<tr>
+				<td>
+					75183	
+				</td>
+				<td>
+					14.28
+				</td>
+				<td>
+					0.2341
+				</td>
+				<td>
+					42914
+				</td>
+				<td>
+					16.62
+				</td>
+				<td>
+					0.1116
+				</td>
+				<td>
+					45324
+				</td>
+				<td>
+					16.57
+				</td>
+				<td>
+					0.1125
+				</td>
+	</tr>
+	</tbody>
+</table>
