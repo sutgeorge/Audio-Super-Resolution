@@ -93,6 +93,9 @@ the Impact of Residual Connections on Learning](https://arxiv.org/pdf/1602.07261
  - [Dropout rate guidance for hidden layers in a convolution neural network](https://stackoverflow.com/questions/47892505/dropout-rate-guidance-for-hidden-layers-in-a-convolution-neural-network)
  - [Your validation loss is lower than the training loss? This is why.](https://towardsdatascience.com/what-your-validation-loss-is-lower-than-your-training-loss-this-is-why-5e92e0b1747e)
  - [Dropout makes performance worse](https://stats.stackexchange.com/questions/299292/dropout-makes-performance-worse)
+ - [How many concurrent requests does a single Flask process receive?](https://stackoverflow.com/questions/10938360/how-many-concurrent-requests-does-a-single-flask-process-receive)
+ - [Python: How to create a zip archive from multiple files](https://thispointer.com/python-how-to-create-a-zip-archive-from-multiple-files-or-directory/)
+ - [Java - How to download a zip file from a URL](https://stackoverflow.com/questions/8253852/how-to-download-a-zip-file-from-a-url-and-store-them-as-zip-file-only)
 
 ## Possible uses
  - Improving sound quality of music
@@ -453,6 +456,155 @@ The values are the averages of the outputs for each test sample. These were comp
 
 - [X] remove the dropout layers from the last two upsampling blocks of the normal 5-layer model and notice the effect
 
+
+<table class="demo">
+	<caption>Evaluation metrics</caption>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<thead>
+		<tr>
+			  <th colspan="3" scope="colgroup">5-layer model (Inception modules with dropout)</th>
+			  <th colspan="3" scope="colgroup">5-layer model (Inception modules without dropout)</th>
+			  <th colspan="3" scope="colgroup">5-layer model (no Inception modules, no dropout in the last 2 layers)</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+	</tr>
+	<tr>
+				<td>
+					75183	
+				</td>
+				<td>
+					14.28
+				</td>
+				<td>
+					0.2341
+				</td>
+				<td>
+					42914
+				</td>
+				<td>
+					16.62
+				</td>
+				<td>
+					0.1116
+				</td>
+				<td>
+					45324
+				</td>
+				<td>
+					16.57
+				</td>
+				<td>
+					0.1125
+				</td>
+	</tr>
+	</tbody>
+</table>
+
+### 10th stage
+
+- [ ] remove the dropout layers from the last two upsampling blocks of the normal 3-layer and 4-layer models and notice the effect
+
+<table class="demo">
+	<caption>Evaluation metrics</caption>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<thead>
+		<tr>
+			  <th colspan="3" scope="colgroup">4-layer model (Inception modules with dropout)</th>
+			  <th colspan="3" scope="colgroup">4-layer model (Inception modules without dropout)</th>
+			  <th colspan="3" scope="colgroup">4-layer model (no Inception modules, no dropout in the last 2 layers)</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+	</tr>
+	<tr>
+				<td>
+					81340	
+				</td>
+				<td>
+					14.16
+				</td>
+				<td>
+					0.2289
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+					47582
+				</td>
+				<td>
+					16.58
+				</td>
+				<td>
+					0.1125
+				</td>
+	</tr>
+	</tbody>
+</table>
 
 <table class="demo">
 	<caption>Evaluation metrics</caption>
