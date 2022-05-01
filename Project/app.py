@@ -35,7 +35,8 @@ def predict():
     transcript = None
     recording_index = 0
 
-    chosen_recording = AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION + 100
+    chosen_recording = random.randint(AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION + 1,
+                                      AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION + 10)
 
     for sample in dataset['train']:
         if recording_index == chosen_recording:
