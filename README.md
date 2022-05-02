@@ -466,7 +466,7 @@ The values are the averages of the outputs for each test sample. These were comp
 		<tr>
 			  <th colspan="3" scope="colgroup">5-layer model (Inception modules with dropout)</th>
 			  <th colspan="3" scope="colgroup">5-layer model (Inception modules without dropout)</th>
-			  <th colspan="3" scope="colgroup">5-layer model (no Inception modules, no dropout in the last 2 layers)</th>
+			  <th colspan="3" scope="colgroup">5-layer model (no Inception modules, no dropout in the last 2 blocks)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -533,7 +533,81 @@ The values are the averages of the outputs for each test sample. These were comp
 
 ### 10th stage
 
-- [ ] remove the dropout layers from the last two upsampling blocks of the normal 3-layer and 4-layer models and notice the effect
+- [X] remove the dropout layers from the last two upsampling blocks of the normal 3-layer and 4-layer models and notice the effect
+
+<table class="demo">
+	<caption>Evaluation metrics</caption>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<colgroup span="3"></colgroup>
+	<thead>
+		<tr>
+			  <th colspan="3" scope="colgroup">3-layer model (Inception modules with dropout)</th>
+			  <th colspan="3" scope="colgroup">3-layer model (Inception modules without dropout)</th>
+			  <th colspan="3" scope="colgroup">3-layer model (no Inception modules, no dropout in the last 2 blocks)</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+				<td>
+					MSE
+				</td>
+				<td>
+					SNR
+				</td>
+				<td>
+					NRMSE
+				</td>
+	</tr>
+	<tr>
+				<td>
+					170675
+				</td>
+				<td>
+					12.88
+				</td>
+				<td>
+					0.4275
+				</td>
+				<td>
+					49434
+				</td>
+				<td>
+					16.57
+				</td>
+				<td>
+					0.1143
+				</td>
+				<td>
+					51023
+				</td>
+				<td>
+					16.49
+				</td>
+				<td>
+					0.1162
+				</td>
+	</tr>
+	</tbody>
+</table>
 
 <table class="demo">
 	<caption>Evaluation metrics</caption>
@@ -544,7 +618,7 @@ The values are the averages of the outputs for each test sample. These were comp
 		<tr>
 			  <th colspan="3" scope="colgroup">4-layer model (Inception modules with dropout)</th>
 			  <th colspan="3" scope="colgroup">4-layer model (Inception modules without dropout)</th>
-			  <th colspan="3" scope="colgroup">4-layer model (no Inception modules, no dropout in the last 2 layers)</th>
+			  <th colspan="3" scope="colgroup">4-layer model (no Inception modules, no dropout in the last 2 blocks)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -588,10 +662,13 @@ The values are the averages of the outputs for each test sample. These were comp
 					0.2289
 				</td>
 				<td>
+					55401
 				</td>
 				<td>
+					16.40
 				</td>
 				<td>
+					0.1194
 				</td>
 				<td>
 					47582
@@ -615,7 +692,7 @@ The values are the averages of the outputs for each test sample. These were comp
 		<tr>
 			  <th colspan="3" scope="colgroup">5-layer model (Inception modules with dropout)</th>
 			  <th colspan="3" scope="colgroup">5-layer model (Inception modules without dropout)</th>
-			  <th colspan="3" scope="colgroup">5-layer model (no Inception modules, no dropout in the last 2 layers)</th>
+			  <th colspan="3" scope="colgroup">5-layer model (no Inception modules, no dropout in the last 2 blocks)</th>
 		</tr>
 	</thead>
 	<tbody>

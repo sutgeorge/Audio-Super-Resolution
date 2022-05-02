@@ -1,6 +1,6 @@
 import tensorflow as tf
 from tensorlayer.layers import SubpixelConv1d
-from tensorflow.keras.layers import Conv1D, LeakyReLU, Dropout, Lambda, concatenate, Input, add, Activation, SeparableConv1D, BatchNormalization
+from tensorflow.keras.layers import Conv1D, LeakyReLU, Dropout, Lambda, concatenate, Input, add, Activation, SeparableConv1D, BatchNormalization, MaxPooling1D
 from tensorflow.keras.models import Model
 from tensorflow.keras.utils import plot_model
 from constants import *
@@ -34,14 +34,27 @@ def create_downsampling_block(x, filters, kernel_size, stride=2):
     return x
 
 
-def create_upsampling_block(x, filters, kernel_size, padding='same', stride=1, corresponding_downsample_block=None, with_dropout=True):
+def create_upsampling_block(x, filters, kernel_size, padding='same', stride=1, corresponding_downsample_block=None):
     x = Conv1D(filters, kernel_size, kernel_initializer='orthogonal', strides=stride, padding=padding)(x)
     x = LeakyReLU()(x)
-    if with_dropout:
-        x = Dropout(rate=0.5)(x)
+    x = Dropout(rate=0.5)(x)
     x = subpixel1d(x.shape, r=2)(x)
     if corresponding_downsample_block is not None:
         x = concatenate([x, corresponding_downsample_block])
+    return x
+
+
+def create_upsampling_inception_block(x, filters, kernel_size, padding='same', stride=1):
+    first_branch = Conv1D(filters, kernel_size, kernel_initializer='orthogonal', strides=stride, padding=padding)(x)
+    second_branch = Conv1D(filters, kernel_size*2, kernel_initializer='orthogonal', strides=stride, padding=padding)(x)
+    third_branch = Conv1D(filters, kernel_size*4, kernel_initializer='orthogonal', strides=stride, padding=padding)(x)
+    max_pooling_layer = MaxPooling1D(pool_size=kernel_size, strides=stride, padding=padding)(x)
+
+    x = concatenate([first_branch, second_branch, third_branch, max_pooling_layer])
+
+    x = LeakyReLU()(x)
+    # x = Dropout(rate=0.5)(x)
+    x = subpixel1d(x.shape, r=2)(x)
     return x
 
 
@@ -51,8 +64,6 @@ def create_model(batch_size=BATCH_SIZE, input_size=SAMPLE_DIMENSION // RESAMPLIN
     downsampling_blocks = []
 
     x = create_downsampling_block(x, filters=64, kernel_size=32, stride=2)
-    downsampling_blocks.append(x)
-    x = create_downsampling_block(x, filters=128, kernel_size=32, stride=2)
     downsampling_blocks.append(x)
     x = create_downsampling_block(x, filters=128, kernel_size=32, stride=2)
     downsampling_blocks.append(x)
@@ -66,15 +77,13 @@ def create_model(batch_size=BATCH_SIZE, input_size=SAMPLE_DIMENSION // RESAMPLIN
     downsampling_blocks.pop()
     x = create_upsampling_block(x, filters=128, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
     downsampling_blocks.pop()
-    x = create_upsampling_block(x, filters=128, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
-    downsampling_blocks.pop()
     x = create_upsampling_block(x, filters=64, kernel_size=32, corresponding_downsample_block=downsampling_blocks[-1])
     downsampling_blocks.pop()
     x = create_upsampling_block(x, filters=64, kernel_size=32)
     x = add([x, x_input])
 
-    x = create_upsampling_block(x, filters=64, kernel_size=32, with_dropout=False)
-    x = create_upsampling_block(x, filters=64, kernel_size=32, with_dropout=False)
+    x = create_upsampling_inception_block(x, filters=64, kernel_size=32)
+    x = create_upsampling_inception_block(x, filters=64, kernel_size=32)
     x = Conv1D(filters=1, kernel_initializer='Orthogonal', kernel_size=1)(x)
 
     model = Model(x_input, x)
