@@ -535,21 +535,24 @@ The values are the averages of the outputs for each test sample. These were comp
 
 - [X] remove the dropout layers from the last two upsampling blocks of the normal 3-layer and 4-layer models and notice the effect
 
-<table class="demo">
-	<caption>Evaluation metrics</caption>
+
+<table>
+<br>
 	<colgroup span="3"></colgroup>
 	<colgroup span="3"></colgroup>
 	<colgroup span="3"></colgroup>
-	<thead>
-		<tr>
-			  <th colspan="3" scope="colgroup">3-layer model (Inception modules with dropout)</th>
-			  <th colspan="3" scope="colgroup">3-layer model (Inception modules without dropout)</th>
-			  <th colspan="3" scope="colgroup">3-layer model (no Inception modules, no dropout in the last 2 blocks)</th>
-		</tr>
-	</thead>
-	<tbody>
-	<tr>
-				<td>
+<thead>
+  <tr>
+    <th style="border: none;"></th>
+    <th colspan="3" scope="colgroup">3-blocks model</th>
+    <th colspan="3" scope="colgroup">4-blocks model</th>
+    <th colspan="3" scope="colgroup">5-blocks model</th>
+  </tr>
+</thead>
+<tbody>
+    <tr>
+			    <td style="border: none;"></td>
+                <td>
 					MSE
 				</td>
 				<td>
@@ -577,182 +580,57 @@ The values are the averages of the outputs for each test sample. These were comp
 					NRMSE
 				</td>
 	</tr>
-	<tr>
-				<td>
-					170675
-				</td>
-				<td>
-					12.88
-				</td>
-				<td>
-					0.4275
-				</td>
-				<td>
-					49434
-				</td>
-				<td>
-					16.57
-				</td>
-				<td>
-					0.1143
-				</td>
-				<td>
-					51023
-				</td>
-				<td>
-					16.49
-				</td>
-				<td>
-					0.1162
-				</td>
-	</tr>
-	</tbody>
+  <tr>
+    <td>upsampling blocks with dropout</td>
+    <td>67026</td>
+    <td>15.31</td>
+    <td>0.1779</td>
+    <td>68838</td>
+    <td>15.45</td>
+    <td>0.1667</td>
+    <td>64744</td>
+    <td>15.46</td>
+    <td>0.1689</td>
+  </tr>
+  <tr>
+    <td>upsampling blocks without dropout</td>
+    <td>51023</td>
+    <td>16.49</td>
+    <td>0.1162</td>
+    <td>47582</td>
+    <td>16.58</td>
+    <td>0.1125</td>
+    <td>45324</td>
+    <td>16.57</td>
+    <td>0.1125</td>
+</tr>
+  <tr>
+    <td>with Inception modules, with dropout</td>
+    <td>170675</td>
+    <td>12.88</td>
+    <td>0.4275</td>
+    <td>81340</td>
+    <td>14.16</td>
+    <td>0.2289</td>
+    <td>75183</td>
+    <td>14.28</td>
+    <td>0.2341</td>
+  </tr>
+  <tr>
+    <td>with Inception modules, without dropout</td>
+    <td>49434</td>
+    <td>16.57</td>
+    <td>0.1143</td>
+    <td>55401</td>
+    <td>16.40</td>
+    <td>0.1194</td>
+    <td>42914</td>
+    <td>16.62</td>
+    <td>0.1116</td>
+  </tr>
+</tbody>
 </table>
 
-<table class="demo">
-	<caption>Evaluation metrics</caption>
-	<colgroup span="3"></colgroup>
-	<colgroup span="3"></colgroup>
-	<colgroup span="3"></colgroup>
-	<thead>
-		<tr>
-			  <th colspan="3" scope="colgroup">4-layer model (Inception modules with dropout)</th>
-			  <th colspan="3" scope="colgroup">4-layer model (Inception modules without dropout)</th>
-			  <th colspan="3" scope="colgroup">4-layer model (no Inception modules, no dropout in the last 2 blocks)</th>
-		</tr>
-	</thead>
-	<tbody>
-	<tr>
-				<td>
-					MSE
-				</td>
-				<td>
-					SNR
-				</td>
-				<td>
-					NRMSE
-				</td>
-				<td>
-					MSE
-				</td>
-				<td>
-					SNR
-				</td>
-				<td>
-					NRMSE
-				</td>
-				<td>
-					MSE
-				</td>
-				<td>
-					SNR
-				</td>
-				<td>
-					NRMSE
-				</td>
-	</tr>
-	<tr>
-				<td>
-					81340	
-				</td>
-				<td>
-					14.16
-				</td>
-				<td>
-					0.2289
-				</td>
-				<td>
-					55401
-				</td>
-				<td>
-					16.40
-				</td>
-				<td>
-					0.1194
-				</td>
-				<td>
-					47582
-				</td>
-				<td>
-					16.58
-				</td>
-				<td>
-					0.1125
-				</td>
-	</tr>
-	</tbody>
-</table>
 
-<table class="demo">
-	<caption>Evaluation metrics</caption>
-	<colgroup span="3"></colgroup>
-	<colgroup span="3"></colgroup>
-	<colgroup span="3"></colgroup>
-	<thead>
-		<tr>
-			  <th colspan="3" scope="colgroup">5-layer model (Inception modules with dropout)</th>
-			  <th colspan="3" scope="colgroup">5-layer model (Inception modules without dropout)</th>
-			  <th colspan="3" scope="colgroup">5-layer model (no Inception modules, no dropout in the last 2 blocks)</th>
-		</tr>
-	</thead>
-	<tbody>
-	<tr>
-				<td>
-					MSE
-				</td>
-				<td>
-					SNR
-				</td>
-				<td>
-					NRMSE
-				</td>
-				<td>
-					MSE
-				</td>
-				<td>
-					SNR
-				</td>
-				<td>
-					NRMSE
-				</td>
-				<td>
-					MSE
-				</td>
-				<td>
-					SNR
-				</td>
-				<td>
-					NRMSE
-				</td>
-	</tr>
-	<tr>
-				<td>
-					75183	
-				</td>
-				<td>
-					14.28
-				</td>
-				<td>
-					0.2341
-				</td>
-				<td>
-					42914
-				</td>
-				<td>
-					16.62
-				</td>
-				<td>
-					0.1116
-				</td>
-				<td>
-					45324
-				</td>
-				<td>
-					16.57
-				</td>
-				<td>
-					0.1125
-				</td>
-	</tr>
-	</tbody>
-</table>
+
+
