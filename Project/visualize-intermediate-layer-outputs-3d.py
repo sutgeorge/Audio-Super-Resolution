@@ -12,6 +12,7 @@ import matplotlib.pylab as pl
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 import math
+import os
 
 print("Loading and compiling model...")
 model = create_model()
@@ -29,7 +30,7 @@ sample_array = None
 transcript = None
 recording_index = 0
 
-chosen_recording = random.randint(AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION + 1, AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION + 100)
+chosen_recording = AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION + 100
 
 for sample in dataset['train']:
     if recording_index == chosen_recording:
@@ -52,6 +53,8 @@ input_batch = tf.constant(input_batch)
 
 number_of_layers = len(model.layers)
 subset_of_layers = []
+
+os.mkdir("./layer-outputs")
 
 layer_index = 0
 for layer in model.layers:
@@ -78,7 +81,9 @@ for layer in model.layers:
         axes.plot(x, y, intermediate_layer_output[:, filter_index], color=colors[filter_index % len(colors)])
         filter_index += 1
     print("Plotted layer {}'s output.".format(layer_index))
-
+    axes.set_title("Output of layer/block no. {} - number of samples = {} - number of filters = {}".format(layer_index, number_of_samples, number_of_filters))
     axes.set_xlabel('Time axis')
     axes.set_zlabel('Amplitude')
+    layer_index += 1
+    plt.savefig("layer-outputs/features-extracted-by-layer-{}.png".format(layer_index))
     plt.show()

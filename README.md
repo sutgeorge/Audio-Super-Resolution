@@ -242,7 +242,7 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
 
 ### 7th stage
 
- - [X] Replace the normal convolutions with depthwise separable 1D convolutions as an experiment
+ - [X] Replace the last two upsampling blocks with 1D Inception modules as an experiment
 
 The values are the averages of the outputs for each test sample. These were computed with tf.keras.evaluate(...).
 

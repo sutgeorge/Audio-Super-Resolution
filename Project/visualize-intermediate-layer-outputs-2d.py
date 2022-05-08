@@ -29,8 +29,8 @@ sample_array = None
 transcript = None
 recording_index = 0
 
-if "layer_outputs" not in os.listdir("./"):
-    os.mkdir("./layer_outputs")
+if "layer-outputs" not in os.listdir("./"):
+    os.mkdir("./layer-outputs")
 
 chosen_recording = random.randint(AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION + 1, AMOUNT_OF_TRACKS_USED_FOR_DATA_GENERATION + 100)
 
@@ -70,7 +70,7 @@ axes[1].plot(high_resolution_chunk)
 axes[2].set_title("Super-res")
 axes[2].plot(super_resolution_chunk)
 figure.suptitle("Chunks")
-plt.savefig("./layer_outputs/chunks.png")
+plt.savefig("./layer-outputs/chunks.png")
 plt.close()
 
 figure, axes = plt.subplots(3, 1, figsize=(20, 20))
@@ -81,7 +81,7 @@ axes[1].plot(high_resolution_chunk[(len(high_resolution_chunk) // 2):(len(high_r
 axes[2].set_title("Super-res")
 axes[2].plot(super_resolution_chunk[(len(super_resolution_chunk) // 2):(len(super_resolution_chunk) // 2) + 100])
 figure.suptitle("Small parts of the chunks")
-plt.savefig("./layer_outputs/minuscule-parts-of-the-chunks.png")
+plt.savefig("./layer-outputs/minuscule-parts-of-the-chunks.png")
 plt.close()
 
 for layer_index in range(0, number_of_layers):
@@ -113,7 +113,7 @@ for layer_index in range(0, number_of_layers):
 
             axes[1, 1].set_title("Block {} | Filter {}".format(residual_block_index, current_filter_index + 3))
             axes[1, 1].plot(intermediate_layer_output[:, current_filter_index + 3], color=colors[(current_filter_index + 3) % len(colors)])
-            plt.savefig("./layer_outputs/{}".format(str(plot_index) + ".png"))
+            plt.savefig("./layer-outputs/{}".format(str(plot_index) + ".png"))
             plot_index += 1
         except Exception as e:
             continue
