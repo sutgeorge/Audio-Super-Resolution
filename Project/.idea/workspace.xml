@@ -6,17 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="6d36769a-56cc-4b90-8e7a-9ff63c68819a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_stage_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/model_stage_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/plots.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stage-6-1024-4096 models/3-layers-100-epochs-fixed-nrmse-metric/scatterplot-high-res-interpolated.png" beforeDir="false" afterPath="$PROJECT_DIR$/stage-6-1024-4096 models/3-layers-100-epochs-fixed-nrmse-metric/scatterplot-high-res-interpolated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stage-6-1024-4096 models/3-layers-100-epochs-fixed-nrmse-metric/scatterplot-high-res-super-res.png" beforeDir="false" afterPath="$PROJECT_DIR$/stage-6-1024-4096 models/3-layers-100-epochs-fixed-nrmse-metric/scatterplot-high-res-super-res.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stage-6-1024-4096 models/3-layers-100-epochs-fixed-nrmse-metric/small-part-of-a-chunk.png" beforeDir="false" afterPath="$PROJECT_DIR$/stage-6-1024-4096 models/3-layers-100-epochs-fixed-nrmse-metric/small-part-of-a-chunk.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stage-6-1024-4096 models/3-layers-100-epochs-fixed-nrmse-metric/whole-chunks.png" beforeDir="false" afterPath="$PROJECT_DIR$/stage-6-1024-4096 models/3-layers-100-epochs-fixed-nrmse-metric/whole-chunks.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualize-intermediate-layer-outputs-2d.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualize-intermediate-layer-outputs-2d.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualize-intermediate-layer-outputs-3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualize-intermediate-layer-outputs-3d.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer-outputs/features-extracted-by-layer-9.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +85,7 @@
       <recent name="$PROJECT_DIR$/outputs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.visualize-intermediate-layer-outputs-3d">
+  <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,8 +205,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.visualize-intermediate-layer-outputs-3d" />
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.visualize-intermediate-layer-outputs-3d" />
         <item itemvalue="Python.predict" />
         <item itemvalue="Python.plots" />
         <item itemvalue="Python.training" />
@@ -324,7 +332,9 @@
       <workItem from="1651461326535" duration="1647000" />
       <workItem from="1651513395196" duration="1287000" />
       <workItem from="1651744614869" duration="1233000" />
-      <workItem from="1652028531466" duration="3143000" />
+      <workItem from="1652028531466" duration="3663000" />
+      <workItem from="1652088498963" duration="5274000" />
+      <workItem from="1652160885510" duration="506000" />
     </task>
     <servers />
   </component>
@@ -349,7 +359,7 @@
     <SUITE FILE_PATH="coverage/Project$testing.coverage" NAME="testing Coverage Results" MODIFIED="1648385247544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$visualize_intermediate_layer_outputs.coverage" NAME="visualize-intermediate-layer-outputs Coverage Results" MODIFIED="1648304191346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$predict.coverage" NAME="predict Coverage Results" MODIFIED="1651514571629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Project$app.coverage" NAME="app Coverage Results" MODIFIED="1651744627690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$app.coverage" NAME="app Coverage Results" MODIFIED="1652161069324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$verify_low_res_high_res_pair_randomly.coverage" NAME="verify_low_res_high_res_pair_randomly Coverage Results" MODIFIED="1648295377303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$generate_dataset.coverage" NAME="generate_dataset Coverage Results" MODIFIED="1648209953632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$training.coverage" NAME="training Coverage Results" MODIFIED="1649839511148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
