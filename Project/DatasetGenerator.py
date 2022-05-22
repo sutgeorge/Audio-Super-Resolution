@@ -3,9 +3,11 @@ import tensorflow_datasets as tfds
 from scipy import interpolate
 from constants import *
 import tensorflow as tf
+import matplotlib.pyplot as plt
 import numpy as np
 import datetime
 import os
+from scipy.interpolate import interp1d
 
 
 class DatasetGenerator:
@@ -93,3 +95,16 @@ class DatasetGenerator:
         evaluated_spline = interpolate.splev(high_resolution_range, spline)
 
         return evaluated_spline
+
+    @staticmethod
+    def linear_upsample(low_resolution_array, resampling_factor):
+        low_resolution_array = low_resolution_array.flatten()
+        high_resolution_length = len(low_resolution_array) * resampling_factor
+
+        x = np.arange(0, len(low_resolution_array))
+        f = interp1d(x, low_resolution_array)
+
+        xnew = np.linspace(0, len(low_resolution_array) - 1, num=high_resolution_length)
+        ynew = f(xnew)
+
+        return ynew

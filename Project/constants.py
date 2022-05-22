@@ -19,7 +19,7 @@ TESTING_DATA_SPLIT_PERCENTAGE = 0.1
 NUMBER_OF_TRAINING_TENSORS = int(TRAINING_DATA_SPLIT_PERCENTAGE * NUMBER_OF_FILES)
 NUMBER_OF_VALIDATION_TENSORS = int(VALIDATION_DATA_SPLIT_PERCENTAGE * NUMBER_OF_FILES)
 NUMBER_OF_TESTING_TENSORS = int(TESTING_DATA_SPLIT_PERCENTAGE * NUMBER_OF_FILES)
-BATCH_SIZE = 64  # The number of input tensors should be divisible by the batch size
+BATCH_SIZE = 1  # The number of input tensors should be divisible by the batch size
 CHECKPOINT_PATH = "checkpoints/checkpoint-epoch-{epoch:04d}-mse_validation_loss-{val_loss:10f}-nrmse_val-{" \
                   "val_normalised_root_mean_squared_error_validation:10f}.ckpt "
 CHECKPOINT_DIRECTORY = os.path.dirname(CHECKPOINT_PATH)
