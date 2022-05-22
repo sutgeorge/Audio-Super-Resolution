@@ -19,13 +19,13 @@ TESTING_DATA_SPLIT_PERCENTAGE = 0.1
 NUMBER_OF_TRAINING_TENSORS = int(TRAINING_DATA_SPLIT_PERCENTAGE * NUMBER_OF_FILES)
 NUMBER_OF_VALIDATION_TENSORS = int(VALIDATION_DATA_SPLIT_PERCENTAGE * NUMBER_OF_FILES)
 NUMBER_OF_TESTING_TENSORS = int(TESTING_DATA_SPLIT_PERCENTAGE * NUMBER_OF_FILES)
-BATCH_SIZE = 16  # The number of input tensors should be divisible by the batch size
+BATCH_SIZE = 64  # The number of input tensors should be divisible by the batch size
 CHECKPOINT_PATH = "checkpoints/checkpoint-epoch-{epoch:04d}-mse_validation_loss-{val_loss:10f}-nrmse_val-{" \
                   "val_normalised_root_mean_squared_error_validation:10f}.ckpt "
 CHECKPOINT_DIRECTORY = os.path.dirname(CHECKPOINT_PATH)
 NUMBER_OF_PROCESSES = 4
 AMOUNT_OF_TRACKS_IN_A_DATA_GENERATION_BATCH = 1000
-MODEL_PATH = "models/model_stage_7_version_1_resampling_factor_4_overlap_2048_sample_dimension_4096_epochs_100_batch_size_16_learning_rate_0.0001_data_split_61883_7735_7735.h5"
+MODEL_PATH = "models/model_stage_8_version_1_resampling_factor_4_overlap_2048_sample_dimension_4096_epochs_100_batch_size_16_learning_rate_0.0001_data_split_61883_7735_7735.h5"
 
 TRAINING_SET_MEAN = -0.08101532
 TRAINING_SET_STD = 1809.791
