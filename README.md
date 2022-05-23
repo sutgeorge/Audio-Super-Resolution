@@ -632,5 +632,31 @@ The values are the averages of the outputs for each test sample. These were comp
 </table>
 
 
+## Baseline comparisons
+The linear and cubic spline baselines have been computed as the means of the signal-to-noise ratio for all test samples. To compute the SNR for the model with Inception modules containing no dropout, a batch size of 1 is used, since Keras.evaluate technically computes a mean over the output metrics for each test sample (using a larger batch size would skew the result).
 
 
+
+<table>
+<br>
+<thead>
+  <tr>
+    <th>Linear interpolation</th>
+    <th>Cubic spline interpolation</th>
+    <th>5-layer model with Inception blocks containing no dropout</th>
+  </tr>
+</thead>
+<tbody>
+    <tr>
+		<td>
+			15.9266		
+		</td>
+		<td>
+			18.4735
+		</td>
+		<td>
+			18.8159
+		</td>
+	</tr>
+</tbody>
+</table>
