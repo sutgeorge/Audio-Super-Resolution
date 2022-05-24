@@ -126,6 +126,7 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
  - [Discrete Fourier Transform explained with example](https://www.youtube.com/watch?v=QcF9CMz8Bcc)
  - [DC offset](https://en.wikipedia.org/wiki/DC_bias)
  - [The FFT algorithm - simple step by step explanation](https://www.youtube.com/watch?v=htCj9exbGo0)
+ - [What is a good signal-to-noise ratio?](https://www.omnicalculator.com/physics/signal-to-noise-ratio#what-is-a-good-signal-to-noise-ratio)
 
 
 ## Research advices
@@ -583,49 +584,49 @@ The values are the averages of the outputs for each test sample. These were comp
   <tr>
     <td>upsampling blocks with dropout</td>
     <td>67026</td>
-    <td>15.31</td>
+    <td>22.78</td>
     <td>0.1779</td>
-    <td>68838</td>
-    <td>15.45</td>
-    <td>0.1667</td>
+    <td>66944</td>
+    <td>22.92</td>
+    <td>0.1737</td>
     <td>64744</td>
-    <td>15.46</td>
+    <td>23.07</td>
     <td>0.1689</td>
   </tr>
   <tr>
     <td>upsampling blocks without dropout</td>
     <td>51023</td>
-    <td>16.49</td>
+    <td>25.43</td>
     <td>0.1162</td>
     <td>47582</td>
-    <td>16.58</td>
+    <td>25.74</td>
     <td>0.1125</td>
     <td>45324</td>
-    <td>16.57</td>
+    <td>25.73</td>
     <td>0.1125</td>
 </tr>
   <tr>
     <td>with Inception modules, with dropout</td>
     <td>170675</td>
-    <td>12.88</td>
+    <td>15.23</td>
     <td>0.4275</td>
     <td>81340</td>
-    <td>14.16</td>
+    <td>19.79</td>
     <td>0.2289</td>
     <td>75183</td>
-    <td>14.28</td>
+    <td>20.27</td>
     <td>0.2341</td>
   </tr>
   <tr>
     <td>with Inception modules, without dropout</td>
     <td>49434</td>
-    <td>16.57</td>
+    <td>25.64</td>
     <td>0.1143</td>
     <td>55401</td>
-    <td>16.40</td>
+    <td>25.41</td>
     <td>0.1194</td>
     <td>42914</td>
-    <td>16.62</td>
+    <td>25.87</td>
     <td>0.1116</td>
   </tr>
 </tbody>
@@ -649,13 +650,13 @@ The linear and cubic spline baselines have been computed as the means of the sig
 <tbody>
     <tr>
 		<td>
-			15.9266		
+			19.67
 		</td>
 		<td>
-			18.4735
+			26.80
 		</td>
 		<td>
-			18.8159
+			27.57
 		</td>
 	</tr>
 </tbody>

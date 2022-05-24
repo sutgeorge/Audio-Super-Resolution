@@ -6,9 +6,9 @@ from constants import *
 
 def signal_to_noise_ratio(actual_signal, predicted_signal):
     noise = predicted_signal - actual_signal
-    noise_power = K.mean(noise ** 2)
-    signal_power = K.mean(actual_signal ** 2)
-    ratio = 10 * K.log(signal_power) / K.log(noise_power)
+    noise_power = K.sqrt(K.mean(noise ** 2))
+    signal_power = K.sqrt(K.mean(actual_signal ** 2))
+    ratio = 10 * K.log(signal_power / noise_power)
     return K.mean(ratio)
 
 
