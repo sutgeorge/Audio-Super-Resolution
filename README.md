@@ -9,11 +9,40 @@ The datasets used will be VCTK and some music dataset, possibly MagnaTagATune or
  - [X] [Time-frequency Networks For Audio Super-Resolution](https://teckyianlim.me/audio-sr/res/3828.pdf)
  - [X] [Bandwidth extension on raw audio via generative adversarial networks](https://arxiv.org/pdf/1903.09027.pdf)
 
+## MSc research project
+
+### Papers
+
+- [Phase-aware music super-resolution using generative adversarial networks](https://arxiv.org/pdf/2010.04506.pdf)
+
+- [A two-stage U-Net for high-fidelity denoising of historical recordings](https://arxiv.org/pdf/2202.08702.pdf)
+
+- [Realistic Gramophone Noise Synthesis Using A Diffusion Model](https://arxiv.org/pdf/2206.06259.pdf)
+
+- [BEHM-GAN: Bandwidth Extension of Historical Music using Generative Adversarial Networks](https://arxiv.org/pdf/2204.06478.pdf)
+
+### Data augmentation
+
+- [Imaging Time-Series to Improve Classification and Imputation](https://arxiv.org/pdf/1506.00327.pdf)
+
+- [Data augmentation for audio - Medium](https://medium.com/@makcedward/data-augmentation-for-audio-76912b01fdf6)
+
+- [Data augmentation approaches for improving animal audio
+classification](https://arxiv.org/pdf/1912.07756.pdf)
+
+### Other resources
+
+- [Introduction to diffusion models for machine learning](https://www.assemblyai.com/blog/diffusion-models-for-machine-learning-introduction/)
+
+### Data
+
+- [Phonobase : Early Gramophone Records
+and Phonograph Cylinders On-line Database](https://www.phonobase.org/wmodemp.php)
+
 ## Related papers that could be used as references
 
 ### Audio signals
  - [Adversarial Training for Speech Super-Resolution](https://www.researchgate.net/publication/332201260_Adversarial_Training_for_Speech_Super-Resolution)
- - [Phase-aware music super-resolution using generative adversarial networks](https://arxiv.org/pdf/2010.04506.pdf)
  - [MidiNet: A Convolutional Generative Adversarial Network for Symbolic-domain Music Generation](https://arxiv.org/pdf/1703.10847.pdf)
  - [On the evaluation of generative models in music](https://musicinformatics.gatech.edu/wp-content_nondefault/uploads/2018/11/postprint.pdf)
  - [INCO-GAN: Variable-Length Music Generation Method Based
