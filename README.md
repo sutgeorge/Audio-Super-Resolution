@@ -21,6 +21,10 @@ The datasets used will be VCTK and some music dataset, possibly MagnaTagATune or
 
 - [BEHM-GAN: Bandwidth Extension of Historical Music using Generative Adversarial Networks](https://arxiv.org/pdf/2204.06478.pdf)
 
+- [Learning to denoise historical music](https://arxiv.org/pdf/2008.02027.pdf)
+
+- [SDR – half-baked or well done?](https://arxiv.org/pdf/1811.02508.pdf)
+
 ### Data augmentation
 
 - [Imaging Time-Series to Improve Classification and Imputation](https://arxiv.org/pdf/1506.00327.pdf)
@@ -30,7 +34,15 @@ The datasets used will be VCTK and some music dataset, possibly MagnaTagATune or
 - [Data augmentation approaches for improving animal audio
 classification](https://arxiv.org/pdf/1912.07756.pdf)
 
+- [Audiomentations - Python library for audio data augmentation](https://github.com/iver56/audiomentations)
+
+### Data transformation
+
+- [Digital audio antiquing - Signal processing methods for imitating the sound quality of historical recordings](https://www.researchgate.net/publication/287114601_Digital_audio_antiquing_-_Signal_processing_methods_for_imitating_the_sound_quality_of_historical_recordings)
+
 ### Other resources
+
+- [Different types of convolutional layers](https://ikhlestov.github.io/pages/machine-learning/convolutions-types/#grouped-convolutions)
 
 - [Introduction to diffusion models for machine learning](https://www.assemblyai.com/blog/diffusion-models-for-machine-learning-introduction/)
 
@@ -42,6 +54,7 @@ and Phonograph Cylinders On-line Database](https://www.phonobase.org/wmodemp.php
 ## Related papers that could be used as references
 
 ### Audio signals
+ - [Deep Learning for Audio Signal Processing](https://arxiv.org/pdf/1905.00078.pdf)
  - [Adversarial Training for Speech Super-Resolution](https://www.researchgate.net/publication/332201260_Adversarial_Training_for_Speech_Super-Resolution)
  - [MidiNet: A Convolutional Generative Adversarial Network for Symbolic-domain Music Generation](https://arxiv.org/pdf/1703.10847.pdf)
  - [On the evaluation of generative models in music](https://musicinformatics.gatech.edu/wp-content_nondefault/uploads/2018/11/postprint.pdf)
@@ -156,6 +169,7 @@ by using the [Griffin-Lim algorithm](https://stackoverflow.com/questions/6113257
  - [DC offset](https://en.wikipedia.org/wiki/DC_bias)
  - [The FFT algorithm - simple step by step explanation](https://www.youtube.com/watch?v=htCj9exbGo0)
  - [What is a good signal-to-noise ratio?](https://www.omnicalculator.com/physics/signal-to-noise-ratio#what-is-a-good-signal-to-noise-ratio)
+ - [Log-uniform distribution](https://www.mathworks.com/help/stats/loguniform-distribution.html)
 
 
 ## Research advices
