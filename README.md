@@ -25,6 +25,13 @@ The datasets used will be VCTK and some music dataset, possibly MagnaTagATune or
 
 - [SDR – half-baked or well done?](https://arxiv.org/pdf/1811.02508.pdf)
 
+- [Objective Measures of Perceptual Audio Quality
+Reviewed: An Evaluation of Their Application
+Domain Dependence](https://arxiv.org/pdf/2110.11438.pdf)
+
+- [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision
+Applications](https://arxiv.org/pdf/1704.04861.pdf)
+
 ### Data augmentation
 
 - [Imaging Time-Series to Improve Classification and Imputation](https://arxiv.org/pdf/1506.00327.pdf)
@@ -42,11 +49,17 @@ classification](https://arxiv.org/pdf/1912.07756.pdf)
 
 ### Other resources
 
+- [How to upgrade Colab with more compute instances?](https://medium.com/@yufengg/how-to-upgrade-colab-with-more-compute-64d53a9b05dc)
+
 - [Different types of convolutional layers](https://ikhlestov.github.io/pages/machine-learning/convolutions-types/#grouped-convolutions)
 
 - [Introduction to diffusion models for machine learning](https://www.assemblyai.com/blog/diffusion-models-for-machine-learning-introduction/)
 
 ### Data
+
+- [Learning Features of Music from Scratch](https://arxiv.org/abs/1611.09827)
+
+- [MusicNet - Kaggle](https://www.kaggle.com/datasets/imsparsh/musicnet-dataset)
 
 - [Phonobase : Early Gramophone Records
 and Phonograph Cylinders On-line Database](https://www.phonobase.org/wmodemp.php)
